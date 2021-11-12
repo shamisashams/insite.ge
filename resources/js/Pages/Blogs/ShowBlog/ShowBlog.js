@@ -10,8 +10,11 @@ import Layout from "../../../Layouts/Layout";
 import Moment from 'react-moment';
 import {Next} from "../../News/ShowNews/Next";
 import {Previous} from "../../News/ShowNews/Previous";
+import Meta from "../../Meta/Meta";
+import DocumentMeta from 'react-document-meta';
 
 const ShowNews = ({data}) => {
+    const meta = Meta('Some Meta Title', 'keyword', 'description');
     const [currentImg, setCurrentImg] = useState(0);
     const imgLength = DataImg.length;
 
@@ -28,77 +31,79 @@ const ShowNews = ({data}) => {
 
     let blog = data.blog;
     return (
-        <Layout>
-            <div className="news_blog_show Blog wrapper">
-                <Text35 text={blog.title}/>
-                <p className="date op06">
-                    <Moment format="YYYY/MM/DD">
-                        {blog.created_at}
-                    </Moment></p>
-                <div className="l_img img">
+        <DocumentMeta {...meta}>
+            <Layout>
+                <div className="news_blog_show Blog wrapper">
+                    <Text35 text={blog.title}/>
+                    <p className="date op06">
+                        <Moment format="YYYY/MM/DD">
+                            {blog.created_at}
+                        </Moment></p>
+                    <div className="l_img img">
+                        {
+                            blog.main_file ?
+                                <img src={"/" + blog.main_file.path + "/" + blog.main_file.title} alt=""/> : ""
+                        }
+                    </div>
+                    <Hr hrClass="hr center"/>
+
+                    <p dangerouslySetInnerHTML={{__html: blog.content}}>
+                    </p>
+                    {/*<div className="flex img_slider">*/}
+                    {/*    <SlideBtns direction="prev" moveSlide={prevImg}/>*/}
+                    {/*    <div className="img">*/}
+                    {/*        {DataImg.map((img, index) => {*/}
+                    {/*            return (*/}
+                    {/*                <img*/}
+                    {/*                    src={img.image}*/}
+                    {/*                    alt=""*/}
+                    {/*                    className={index === currentImg ? "slide on" : "slidea"}*/}
+                    {/*                />*/}
+                    {/*            );*/}
+                    {/*        })}*/}
+                    {/*    </div>*/}
+                    {/*    <SlideBtns direction="next" moveSlide={nextImg}/>*/}
+                    {/*</div>*/}
+                    <Hr hrClass="hr"/>
+                    <div className="flex" style={{marginTop: "20px"}}>
+
+                        <SocialMedia/>
+                    </div>
                     {
-                        blog.main_file ?
-                            <img src={"/" + blog.main_file.path + "/" + blog.main_file.title} alt=""/> : ""
+                        !data.previousBlog && data.nextBlog ?
+                            <Next
+                                imgNext={data.nextBlog.main_file}
+                                titleNext={data.nextBlog.title}
+                                idNext={data.nextBlog.id}
+                                paraNext={data.nextBlog.description}
+                                hrefNext={'/blog-details/' + data.nextBlog.id}
+                            /> :
+                            (data.previousBlog && data.nextBlog ?
+                                    <PrevNext
+                                        imgPrev={data.previousBlog.main_file}
+                                        idPrev={data.previousBlog.id}
+                                        titlePrev={data.previousBlog.title}
+                                        paraPrev={data.previousBlog.description}
+                                        imgNext={data.nextBlog.main_file}
+                                        titleNext={data.nextBlog.title}
+                                        idNext={data.nextBlog.id}
+                                        paraNext={data.nextBlog.description}
+                                        hrefNext={'/blog-details/' + data.nextBlog.id}
+                                        hrefPrev={'/blog-details/' + data.previousBlog.id}
+                                    /> : (data.previousBlog && !data.nextBlog ?
+                                            <Previous
+                                                imgPrev={data.previousBlog.main_file}
+                                                idPrev={data.previousBlog.id}
+                                                titlePrev={data.previousBlog.title}
+                                                paraPrev={data.previousBlog.description}
+                                                hrefPrev={'/blog-details/' + data.previousBlog.id}
+                                            /> : ""
+                                    )
+                            )
                     }
                 </div>
-                <Hr hrClass="hr center"/>
-
-                <p dangerouslySetInnerHTML={{__html: blog.content}}>
-                </p>
-                {/*<div className="flex img_slider">*/}
-                {/*    <SlideBtns direction="prev" moveSlide={prevImg}/>*/}
-                {/*    <div className="img">*/}
-                {/*        {DataImg.map((img, index) => {*/}
-                {/*            return (*/}
-                {/*                <img*/}
-                {/*                    src={img.image}*/}
-                {/*                    alt=""*/}
-                {/*                    className={index === currentImg ? "slide on" : "slidea"}*/}
-                {/*                />*/}
-                {/*            );*/}
-                {/*        })}*/}
-                {/*    </div>*/}
-                {/*    <SlideBtns direction="next" moveSlide={nextImg}/>*/}
-                {/*</div>*/}
-                <Hr hrClass="hr"/>
-                <div className="flex" style={{marginTop: "20px"}}>
-
-                    <SocialMedia/>
-                </div>
-                {
-                    !data.previousBlog && data.nextBlog ?
-                        <Next
-                            imgNext={data.nextBlog.main_file}
-                            titleNext={data.nextBlog.title}
-                            idNext={data.nextBlog.id}
-                            paraNext={data.nextBlog.description}
-                            hrefNext={'/blog-details/' + data.nextBlog.id}
-                        /> :
-                        (data.previousBlog && data.nextBlog ?
-                                <PrevNext
-                                    imgPrev={data.previousBlog.main_file}
-                                    idPrev={data.previousBlog.id}
-                                    titlePrev={data.previousBlog.title}
-                                    paraPrev={data.previousBlog.description}
-                                    imgNext={data.nextBlog.main_file}
-                                    titleNext={data.nextBlog.title}
-                                    idNext={data.nextBlog.id}
-                                    paraNext={data.nextBlog.description}
-                                    hrefNext={'/blog-details/' + data.nextBlog.id}
-                                    hrefPrev={'/blog-details/' + data.previousBlog.id}
-                                /> : (data.previousBlog && !data.nextBlog ?
-                                        <Previous
-                                            imgPrev={data.previousBlog.main_file}
-                                            idPrev={data.previousBlog.id}
-                                            titlePrev={data.previousBlog.title}
-                                            paraPrev={data.previousBlog.description}
-                                            hrefPrev={'/blog-details/' + data.previousBlog.id}
-                                        /> : ""
-                                )
-                        )
-                }
-            </div>
-        </Layout>
+            </Layout>
+        </DocumentMeta>
     );
 };
 
