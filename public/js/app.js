@@ -6052,6 +6052,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_Text35__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Components/Text35 */ "./resources/js/Components/Text35.js");
 /* harmony import */ var _Components_Form_Form__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../Components/Form/Form */ "./resources/js/Components/Form/Form.js");
 /* harmony import */ var _Layouts_Layout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../Layouts/Layout */ "./resources/js/Layouts/Layout.js");
+/* harmony import */ var react_document_meta__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-document-meta */ "./node_modules/react-document-meta/dist/index.js");
+/* harmony import */ var _Meta_Meta__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../Meta/Meta */ "./resources/js/Pages/Meta/Meta.js");
+
+
 
 
 
@@ -6067,7 +6071,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var MainPage = function MainPage(_ref) {
   var blogs = _ref.blogs;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_11__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_13__.default)('Some Meta Title', 'keyword', 'description');
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_document_meta__WEBPACK_IMPORTED_MODULE_12__.default, meta, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_11__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "main_page"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "hero_section",
@@ -6169,7 +6174,7 @@ var MainPage = function MainPage(_ref) {
     className: "op06"
   }, "\u0425\u043E\u0442\u0438\u0442\u0435 \u0441 \u043D\u0430\u043C\u0438 \u043F\u043E\u043E\u0431\u0449\u0430\u0435\u0442\u0441\u044F? \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043E\u0441\u0442\u0430\u0432\u044C\u0442\u0435 \u0441\u0432\u043E\u0439 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0435 \u0434\u0430\u043D\u043D\u044B\u0435 \u0438 \u043C\u044B \u0441 \u0432\u0430\u043C\u0438 \u0441\u0432\u044F\u0436\u0435\u043C\u0441\u044F \u043F\u043E \u0443\u0434\u043E\u0431\u043D\u043E\u043C\u0443 \u0432\u0430\u043C\u0438 \u043C\u0435\u0442\u043E\u0434\u0443. \u041D\u0430\u0448\u0430 \u043A\u043E\u043C\u0430\u043D\u0434\u0430 \u0432\u0441\u0435\u0433\u0434\u0430 \u0440\u0430\u0434\u0430 \u0432\u0430\u043C \u043F\u043E\u043C\u043E\u0447\u044C!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Form_Form__WEBPACK_IMPORTED_MODULE_10__.default, {
     title: ""
-  }))));
+  })))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MainPage);
