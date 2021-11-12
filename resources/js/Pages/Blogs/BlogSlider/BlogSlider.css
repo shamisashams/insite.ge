@@ -1,0 +1,118 @@
+.blog_slider {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog_slider .btn_slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.blog_slider .btn_slide.prev {
+  left: 0;
+}
+.blog_slider .btn_slide.next {
+  right: 0;
+}
+.blog_slider .slider {
+  height: 70%;
+}
+.blog_slider .slide {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+.blog_slider .slide.slide-active {
+  visibility: visible;
+  opacity: 1;
+}
+.blog_slider .slide .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: scale(1.4);
+  transition: 2s;
+}
+.blog_slider .slide.slide-active .bg {
+  transform: scale(1);
+}
+.blog_slider .slide .content {
+  background-color: #fff;
+  width: 490px;
+  padding: 56px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: 2s;
+  margin: 0;
+}
+.blog_slider .slide.slide-active .content {
+  opacity: 1;
+  transform: scale(1);
+}
+.blog_slider .slide .content .date {
+  color: #565563;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+.blog_slider .slide .content .title {
+  font-size: 25px;
+  font-family: "book";
+  margin-bottom: 38px;
+}
+.blog_slider .slide .in_link {
+  margin: auto;
+  width: 75px;
+}
+
+/* height */
+@media screen and (max-height: 700px) {
+  .blog_slider .slider {
+    height: 60%;
+  }
+  .blog_slider .slide .content {
+    width: 400px;
+    padding: 30px 15px;
+  }
+  .blog_slider .slide .content .date {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .blog_slider .slide .content .title {
+    font-size: 23px;
+    margin-bottom: 26px;
+  }
+}
+/* width */
+@media screen and (max-width: 600px) {
+  .blog_slider .btn_slide {
+    position: absolute;
+    top: auto;
+    transform: none;
+    bottom: -70px;
+  }
+  .blog_slider .slide .content {
+    width: 85%;
+    padding: 30px 15px;
+  }
+  .blog_slider .slide {
+    width: 100%;
+  }
+}

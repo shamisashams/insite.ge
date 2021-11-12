@@ -1,0 +1,125 @@
+.blogs_page .wrapper.main {
+  width: 1050px;
+  padding-bottom: 90px;
+  padding-top: 20px;
+  margin-top: -120px;
+}
+.blogs_page .news_item .img {
+  height: auto;
+  margin-bottom: 5px;
+}
+.blogs_page .news_item .location,
+.blogs_page .news_item .bm_2 {
+  display: none;
+}
+.blogs_page .form {
+  margin: auto;
+  margin-top: 90px;
+}
+.blogs_page .scroll {
+  color: #b1b1b1;
+  font-size: 16px;
+  text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+.blogs_page .scroll svg {
+  fill: #b1b1b1;
+  display: block;
+  transition: 0.4s;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.blogs_page .scroll:hover {
+  color: #e81747;
+}
+.blogs_page .scroll:hover svg {
+  fill: #e81747;
+}
+.blogs_page .scroll p {
+  text-align: center;
+}
+
+/* show blog */
+.news_blog_show.Blog .img_slider {
+  margin-bottom: 30px;
+}
+.news_blog_show.Blog .img_slider .img {
+  width: 80%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.news_blog_show.Blog .img_slider .img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.7s;
+  transform: scale(1.4) rotate(10deg);
+  opacity: 0;
+  user-select: none;
+  z-index: -1;
+}
+.news_blog_show.Blog .img_slider .img img.on {
+  transform: scale(1) rotate(0);
+  opacity: 1;
+}
+.news_blog_show.Blog .licm {
+  color: #9a99a1;
+}
+.news_blog_show.Blog .licm img {
+  position: relative;
+  bottom: -2px;
+  margin-right: 5px;
+}
+.news_blog_show.Blog .licm div {
+  margin-right: 20px;
+  font-family: "book";
+}
+.news_blog_show.Blog .blog_extra {
+  padding-top: 48px;
+  border-top: #e5e5e5 2px solid;
+  margin-top: 50px;
+}
+.news_blog_show.Blog .blog_extra .text35 {
+  font-size: 25px;
+  font-family: "book";
+  margin-bottom: 22px;
+}
+.news_blog_show.Blog .blog_extra .comment_box {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 14px 25px;
+  margin: 30px 0;
+}
+.news_blog_show.Blog .blog_extra .comment_box p {
+  font-family: "light";
+}
+.news_blog_show.Blog .blog_extra .comment_box p span {
+  font-family: "bold";
+  margin-right: 20px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  .blogs_page .wrapper.main {
+    width: 95%;
+    padding-bottom: 90px;
+    padding-top: 20px;
+    margin-top: -120px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .news_blog_show.Blog .img_slider .img {
+    width: 77%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .news_blog_show.Blog .img_slider .img {
+    width: 66%;
+    height: 200px;
+  }
+}

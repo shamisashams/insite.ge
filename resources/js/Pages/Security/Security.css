@@ -1,0 +1,128 @@
+.security_page .showcase {
+  width: 100%;
+  height: 100vh;
+  background-position: center !important;
+  background-size: cover !important;
+  color: #fff;
+  padding-top: 243px;
+}
+.security_page .showcase .main_btn {
+  background: #fff;
+}
+.security_page .showcase .main_btn .stationary {
+  color: #272639;
+}
+.security_page .wrapper.paragraph {
+  padding: 69px 150px;
+}
+
+/* security box */
+
+.security_box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 18px 20px;
+  padding-bottom: 30px;
+  cursor: default;
+}
+.security_box::after {
+  width: 100%;
+  height: 10px;
+  left: 0;
+  bottom: 0;
+  background: #e81747;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: 0.4s;
+}
+.security_box:hover::after {
+  transform: scaleY(1);
+}
+.security_box .para {
+  color: #565563;
+  margin-top: 19px;
+  font-family: "book";
+}
+
+.security_page .main_content {
+  background-position: center !important;
+  background-size: cover !important;
+  padding: 25px 0;
+}
+.security_page .main_content .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  width: 800px;
+  margin: 45px auto;
+}
+.security_page .main_content .checks {
+  width: 490px;
+  margin: auto;
+  margin-top: 69px;
+}
+.security_page .main_content .checked_box {
+  margin-bottom: 40px;
+}
+.security_page .main_content .checked_box .check {
+  background: #e9e8e9;
+}
+.security_page .main_content .checked_box:first-child .check,
+.security_page .main_content .checked_box:nth-child(2) .check {
+  background: #dfe0e1;
+}
+.security_page .title1 .head {
+  font-family: "medium";
+}
+.security_page .form {
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 78px;
+}
+
+@media screen and (max-width: 900px) {
+  .security_page .main_content .grid {
+    width: 100%;
+  }
+  .security_page .wrapper.paragraph {
+    padding: 44px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .security_page .main_content .grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .security_page .showcase {
+    padding-top: 137px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .security_page .main_content .checks {
+    width: 90%;
+  }
+  .checked_box {
+    height: auto;
+    padding: 15px;
+    padding-left: 25px;
+  }
+  .security_page .main_content .checked_box:nth-child(2) .check {
+    background: #e9e8e9;
+  }
+  .security_page .main_content .checked_box:last-child .check {
+    background: #dfe0e1;
+  }
+  .security_page .showcase2 p {
+    opacity: 0.9;
+  }
+}
+@media screen and (max-width: 460px) {
+  .security_page .main_content .grid {
+    grid-template-columns: 1fr;
+  }
+  .security_page .wrapper.paragraph {
+    padding: 24px;
+  }
+}

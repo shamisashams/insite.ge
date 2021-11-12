@@ -1,0 +1,139 @@
+.impact_box {
+  background: #fff;
+  border-radius: 3px;
+  padding: 25px 15px;
+  height: 220px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: default;
+  text-align: left;
+}
+.impact_box:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.impact_box::after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.5;
+  transition: 0.5s;
+  transform: translateY(-100%);
+  transform-origin: top;
+}
+.impact_box:hover::after {
+  transform: translateY(0);
+}
+.impact_box .rate {
+  font-size: 40px;
+  font-family: "bold";
+  margin-bottom: 4px;
+  position: relative;
+  z-index: 10;
+}
+.impact_box .icon {
+  width: 37px;
+  height: 37px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 10;
+}
+.impact_box:hover .icon img {
+  animation: pulse infinite 1s linear;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.impact_box .op06 {
+  font-family: "light";
+  position: relative;
+  z-index: 10;
+  transition: 0.5s;
+}
+.impact_box:hover .op06 {
+  opacity: 1;
+}
+
+.impact_box.a .icon {
+  background: #54c1fb;
+}
+.impact_box.b .icon {
+  background: #6d71f9;
+}
+.impact_box.c .icon {
+  background: #ff505a;
+}
+.impact_box.d .icon {
+  background: #ff8057;
+}
+.impact_box.e .icon {
+  background: #11ce8c;
+}
+.impact_box.f .icon {
+  background: #916cdf;
+}
+.impact_box.a .rate {
+  color: #54c1fb;
+}
+.impact_box.b .rate {
+  color: #6d71f9;
+}
+.impact_box.c .rate {
+  color: #ff505a;
+}
+.impact_box.d .rate {
+  color: #ff8057;
+}
+.impact_box.e .rate {
+  color: #11ce8c;
+}
+.impact_box.f .rate {
+  color: #916cdf;
+}
+.impact_box.a::after {
+  background: linear-gradient(to bottom, #54c1fb, transparent, transparent);
+}
+.impact_box.b::after {
+  background: linear-gradient(to bottom, #6d71f9, transparent, transparent);
+}
+.impact_box.c::after {
+  background: linear-gradient(to bottom, #ff505a, transparent, transparent);
+}
+.impact_box.d::after {
+  background: linear-gradient(to bottom, #ff8057, transparent, transparent);
+}
+.impact_box.e::after {
+  background: linear-gradient(to bottom, #11ce8c, transparent, transparent);
+}
+.impact_box.f::after {
+  background: linear-gradient(to bottom, #916cdf, transparent, transparent);
+}
+
+/* portfolio */
+.portbox {
+  padding: 45px 55px;
+  justify-content: flex-start;
+}
+.portbox .icon {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #2881e5, #6cdef7);
+  overflow: hidden;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+.portbox .head {
+  font-size: 18px;
+  font-family: "bold";
+  margin-bottom: 20px;
+}

@@ -1,0 +1,322 @@
+.techno_section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+}
+
+/* objects */
+.techobj {
+  text-align: center;
+  font-size: 18px;
+}
+.techobj p {
+  font-family: "book";
+}
+
+/* categopries */
+.relative_object {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.relative_object .category {
+  font-family: "book";
+  font-size: 35px;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px;
+  transition: 0.4s;
+  color: #272639;
+  cursor: pointer;
+}
+.relative_object .category::after {
+  width: 100%;
+  height: 100%;
+  background-color: #e81747;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.4s;
+}
+.relative_object .top .category {
+  top: -53px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.relative_object .top:hover .category {
+  color: #fff;
+}
+.relative_object .bottom:hover .category {
+  color: #fff;
+}
+.relative_object .left:hover .category {
+  color: #fff;
+}
+.relative_object .right:hover .category {
+  color: #fff;
+}
+.relative_object .top .category::after {
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.relative_object .top:hover .category::after {
+  transform: scaleY(1);
+}
+.relative_object .bottom .category {
+  bottom: -51px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.relative_object .bottom .category::after {
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.relative_object .bottom:hover .category::after {
+  transform: scaleY(1);
+}
+.relative_object .right .category {
+  right: -145px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.relative_object .right .category::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.relative_object .right:hover .category::after {
+  transform: scaleX(1);
+}
+.relative_object .left .category {
+  left: -145px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.relative_object .left .category::after {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.relative_object .left:hover .category::after {
+  transform: scaleX(1);
+}
+
+/* category fadeins */
+.relative_object .fadein {
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.4s;
+  z-index: 100;
+}
+.relative_object .top .fadein,
+.relative_object .top .space {
+  width: 100vw;
+  height: 220px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -300px;
+  transition: 0.4s;
+}
+.relative_object .top .fadein {
+  transform: translateX(-50%) translateY(-100%);
+}
+.relative_object .left .fadein,
+.relative_object .left .space {
+  width: 35vw;
+  height: 640px;
+  position: absolute;
+  left: -50vw;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+.relative_object .left .fadein {
+  transform: translateY(-50%) translateX(-100%);
+}
+.relative_object .bottom .fadein,
+.relative_object .bottom .space {
+  width: 100vw;
+  height: 220px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -300px;
+  transition: 0.4s;
+}
+.relative_object .bottom .fadein {
+  transform: translateX(-50%) translateY(100%);
+}
+.relative_object .right .fadein,
+.relative_object .right .space {
+  width: 35vw;
+  height: 640px;
+  position: absolute;
+  right: -50vw;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+.relative_object .right .fadein {
+  transform: translateY(-50%) translateX(100%);
+}
+
+.relative_object .top .fadein .arrow {
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+}
+
+.relative_object .bottom .fadein .arrow {
+  position: absolute;
+  left: 50%;
+  top: -18px;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.relative_object .right .fadein .arrow {
+  position: absolute;
+  left: -39.6px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.relative_object .left .fadein .arrow {
+  position: absolute;
+  right: -39.9px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+/* category contents */
+.relative_object .top .category_content {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+}
+.relative_object .top .category_content .techobj,
+.relative_object .bottom .category_content .techobj {
+  margin: 0 30px;
+}
+.relative_object .bottom .category_content {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-start;
+}
+.relative_object .left .category_content {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.relative_object .left .category_content .techobj {
+  margin: 10px 0;
+}
+.relative_object .right .category_content {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.relative_object .right .category_content .techobj {
+  max-width: 100px;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+/* final hover effect */
+
+.relative_object .top:hover .fadein {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.relative_object .bottom:hover .fadein {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.relative_object .right:hover .fadein {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.relative_object .left:hover .fadein {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/*************** responsiveness ***************/
+@media screen and (max-width: 1200px) {
+  .relative_object .right .category_content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .relative_object .right .fadein {
+    width: 30vw;
+    right: -48vw;
+  }
+  .relative_object .left .fadein {
+    width: 30vw;
+    left: -48vw;
+  }
+}
+@media screen and (max-width: 950px) {
+  .relative_object .right .fadein {
+    width: 40vw;
+  }
+  .relative_object .left .fadein {
+    width: 40vw;
+  }
+  .relative_object .left .fadein .arrow,
+  .relative_object .right .fadein .arrow {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .relative_object .right .fadein {
+    width: 50vw;
+  }
+  .relative_object .left .fadein {
+    width: 50vw;
+  }
+  .relative_object .category_content .techobj {
+    max-width: 70px !important;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .relative_object .right .category_content {
+    grid-template-columns: 1fr;
+  }
+  .relative_object .category {
+    font-size: 30px;
+  }
+  .relative_object .right .category {
+    right: -123px;
+  }
+  .relative_object .left .category {
+    left: -123px;
+  }
+  .technology_section {
+    padding-top: 32px;
+  }
+}

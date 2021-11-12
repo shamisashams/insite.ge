@@ -1,0 +1,136 @@
+/* SNCs */
+.quote {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 9px 130px;
+  font-size: 25px;
+  font-family: "book";
+  position: relative;
+  margin: 10px 0;
+}
+.quote span {
+  position: absolute;
+  font-size: 45px;
+  font-family: "bold";
+  top: 0;
+  left: 110px;
+}
+
+.hr {
+  width: 60px;
+  height: 2px;
+  background: #e81747;
+}
+.hr.center {
+  margin: auto;
+  margin-bottom: 37px;
+}
+
+.prev_next {
+  width: 100%;
+  margin-top: 40px;
+}
+.prev_next a {
+  font-family: "bold";
+  font-size: 16px;
+}
+
+.prev_next a img {
+  margin: 0 10px;
+  position: relative;
+  bottom: -1px;
+}
+.prev_next .pn_item {
+  align-items: flex-start;
+  margin-top: 27px;
+  max-width: 400px;
+  text-align: left;
+}
+.prev_next .pn_item .img {
+  width: 95px;
+  height: 85px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.prev_next .pn_item .title {
+  font-size: 16px;
+  font-family: "medium";
+  margin-bottom: 12px;
+}
+.prev_next .pn_item p {
+  font-size: 14px;
+  font-family: "light";
+}
+.prev_next .next {
+  text-align: right;
+}
+
+/* main */
+.news_blog_show {
+  width: 1050px;
+  padding: 150px 0;
+}
+.news_blog_show .l_img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 35px;
+}
+.news_blog_show .sm {
+  justify-content: flex-end;
+}
+.news_blog_show .sm a {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.news_blog_show .sm svg {
+  fill: #9a99a1;
+}
+.news_blog_show p {
+  font-family: "light";
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .news_blog_show {
+    width: 95%;
+    padding: 110px 0;
+  }
+  .quote {
+    padding: 9px 33px;
+    font-size: 20px;
+  }
+  .quote span {
+    left: 10px;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .prev_next {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .prev_next .next {
+    text-align: left;
+    margin-top: 20px;
+  }
+  .prev_next .pn_item {
+    margin-top: 10px;
+  }
+  .hr.center {
+    margin-bottom: 22px;
+  }
+  .news_blog_show .l_img {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .quote {
+    padding: 9px 19px;
+    font-size: 16px;
+  }
+  .quote span {
+    left: 3px;
+    font-size: 37px;
+    top: -3px;
+  }
+}

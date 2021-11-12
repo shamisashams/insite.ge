@@ -1,0 +1,26 @@
+.dev_btn {
+  font-family: "bold";
+  position: relative;
+  padding: 3px 12px 7px 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #272639;
+  overflow: hidden;
+}
+.dev_btn span {
+  position: relative;
+  z-index: 10;
+}
+.dev_btn::after {
+  width: 80px;
+  height: 100%;
+  background-color: #e81747;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  transition: 0.7s;
+  z-index: 1;
+}
+.dev_btn:hover::after {
+  left: 100%;
+}

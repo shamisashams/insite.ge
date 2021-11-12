@@ -1,0 +1,29 @@
+.showcase2 .title {
+  font-family: "bold";
+  font-size: 70px;
+  margin-bottom: 12px;
+}
+.showcase2 .sub {
+  font-family: "medium";
+  font-size: 18px;
+  opacity: 0.6;
+}
+.showcase2 p {
+  font-size: 18px;
+  font-family: "light";
+  opacity: 0.6;
+}
+.showcase2 .main_btn {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .showcase2 p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .showcase2 p {
+    font-size: 14px;
+  }
+}

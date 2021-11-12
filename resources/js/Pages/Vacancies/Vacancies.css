@@ -1,0 +1,150 @@
+.vacancy_page {
+    background-color: #fff;
+    padding-bottom: 100px;
+}
+
+.vacancy_page .showcase1 {
+    height: 540px;
+    text-align: center;
+}
+
+.vacancy_page .showcase1 p {
+    text-align: center;
+}
+
+.vacancy_page .showcase1 p::after {
+    display: block;
+}
+
+.vacancy_list {
+    margin-top: -120px;
+}
+
+.vac_box {
+    max-width: 930px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 5px 25px #2a293733;
+    background-color: #fff;
+}
+
+.vac_box .main {
+    padding: 30px 36px 24px 30px;
+}
+
+.vac_box .bold {
+    font-family: "bold";
+    font-size: 16px;
+    color: #23232a;
+}
+
+.vac_box .title span {
+    color: #565563;
+    opacity: 0.6;
+    font-family: "book";
+}
+
+.vac_box .description {
+    font-family: "light";
+    margin-top: 16px;
+    max-width: 600px;
+}
+
+.vac_box .btns {
+    margin-left: 30px;
+}
+
+.vac_box .btns .button {
+    width: 109px;
+    height: 35px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: "bold";
+    background-color: #f36969;
+    color: #fff;
+    display: block;
+    margin: 0;
+    cursor: auto;
+}
+
+.vac_box .btns .button.apply {
+    background-color: #37d09c;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.vac_box .btns .button.apply:active {
+    transform: scale(0.9);
+}
+
+.vac_box .bottom {
+    background-color: #f5f5f5;
+    padding: 14px 30px;
+    justify-content: flex-start;
+}
+
+.vac_box .bottom .bold:first-child {
+    margin-right: 40px;
+}
+
+.vac_box .bottom .bold img {
+    margin-right: 5px;
+    position: relative;
+    bottom: -2px;
+}
+
+@media screen and (max-width: 1000px) {
+    .vacancy_page .showcase1 {
+        height: 320px;
+    }
+
+    .vacancy_list {
+        margin-top: -34px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .vac_box .main {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 19px;
+    }
+
+    .vac_box .btns {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .vac_box .btns .button {
+        display: inline-block;
+    }
+
+    .vac_box .btns .button.apply {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    .vac_box .bottom {
+        padding: 11px 19px;
+    }
+
+    .vac_box .bold {
+        font-size: 14px;
+    }
+
+    .vac_box .description {
+        font-size: 14px;
+    }
+
+    .vac_box .bottom .bold:first-child {
+        margin-right: 20px;
+    }
+}
+
+.error-block {
+    color: red;
+    margin-top:-8px;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,72 @@
+/* hero section */
+.hero_section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* service section */
+.services_section {
+  padding: 60px 0;
+  padding-bottom: 80px;
+}
+.services_section .service_boxes {
+  margin-top: 50px;
+  text-align: center;
+}
+.main_page .in_link {
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 70px;
+  margin-bottom: -40px;
+  z-index: 100;
+}
+
+/* technology section */
+.technology_section {
+  height: 637px;
+  padding-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* work with us */
+.work_with_us {
+  padding-top: 55px;
+  margin-bottom: 55px;
+}
+
+/* blogs */
+.blogs_section {
+  padding-bottom: 160px;
+}
+.blogs_section .title1 {
+  margin-bottom: 20px;
+}
+.blogs_section hr {
+  width: 0;
+  height: 584px;
+  border-top: 0;
+  border-left: 1px solid #70707023;
+  margin: 0 45px;
+}
+
+/*  bottom main_page  */
+.bottom.main_page {
+  padding-bottom: 100px;
+}
+.bottom.main_page p {
+  max-width: 536px;
+  margin-top: 22px;
+  font-family: "book";
+}
+
+@media screen and (max-width: 1000px) {
+  .bottom.main_page {
+    flex-direction: column;
+  }
+  .bottom.main_page p {
+    max-width: none;
+    margin-bottom: 40px;
+  }
+}

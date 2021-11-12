@@ -1,0 +1,180 @@
+.calculate_page .calculator {
+    height: 100vh;
+    overflow: hidden;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    color: #000;
+}
+.calculate_page .calculator .wrapper {
+    width: 1200px;
+}
+.calculate_page .calculator .list button {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 16px;
+    opacity: 0.4;
+    transition: 0.3s;
+}
+.calculate_page .calculator .list button.active {
+    opacity: 1;
+}
+.calculate_page .result {
+    width: 300px;
+}
+.calculate_page .result strong {
+    font-family: "bold";
+    font-size: 30px;
+    color: #e9214f;
+}
+.calculate_page .result p {
+    font-family: "light";
+    font-size: 20px;
+    margin: 25px 0;
+}
+.calculate_page .result button {
+    display: flex;
+    align-items: center;
+}
+.calculate_page .result button.cm {
+    color: #5e8aac;
+    font-size: 20px;
+}
+.calculate_page .result button.cm img {
+    margin-right: 10px;
+}
+.calculate_page .result .comment {
+    width: 267px;
+    background: #fff;
+    box-shadow: 0 3px 15px #2b2c371f;
+    position: relative;
+    transition: 0.4s;
+    transform: translateY(100px);
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    padding-bottom: 30px;
+}
+.calculate_page .result .comment.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(20px);
+}
+.calculate_page .result .comment textarea {
+    width: 100%;
+    height: auto;
+    min-height: 120px;
+    padding: 15px;
+    resize: none;
+}
+.calculate_page .result .comment .add {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+}
+.calculate_page .result .comment .add img {
+    margin-right: 5px;
+}
+
+.common_questions {
+    margin: 100px auto;
+}
+.common_questions .faq_title {
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.common_questions .co_que {
+    width: 750px;
+    margin: auto;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 0.5px solid #70707067;
+}
+.common_questions .co_que .q {
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-family: "book";
+}
+
+/* responsiveness */
+@media screen and (max-width: 1250px) {
+    .calculate_page .calculator .wrapper {
+        width: 95%;
+    }
+    .cost_steps .title1 .head {
+        margin-bottom: 7px !important;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .calculate_page .calculator .wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+
+    .calculate_page .result {
+        width: 260px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .calculate_page .list {
+        display: none;
+    }
+    .calculate_page .calculator .wrapper {
+        align-items: center;
+        padding-top: 0;
+    }
+    .calculate_page .result {
+        margin-left: 0;
+        width: 250px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .calculate_page .calculator .wrapper {
+        padding-bottom: 100vh;
+        padding-top: 70px;
+        text-align: center;
+    }
+    .calculate_page .result {
+        width: auto;
+        margin: auto;
+    }
+    .calculate_page .result p {
+        font-size: 18px;
+        margin: 4px 0;
+    }
+    .calculate_page .calculator {
+        height: auto;
+    }
+    .common_questions .co_que {
+        width: 95%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    .common_questions .co_que .q {
+        font-size: 25px;
+        margin-bottom: 12px;
+    }
+    .common_questions .faq_title {
+        width: 277px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .common_questions .faq_title {
+        width: 192px;
+    }
+    .common_questions .co_que .q {
+        font-size: 18px;
+    }
+    .common_questions .co_que .a {
+        font-size: 13px;
+    }
+    .common_questions {
+        margin: 50px auto;
+    }
+}

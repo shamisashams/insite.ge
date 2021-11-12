@@ -1,0 +1,67 @@
+{
+    "menu": [
+        {
+            "url": "blog.index",
+            "name": "blog",
+            "i18n": "blog",
+            "icon": "assignment",
+            "slug": "blog"
+        },
+        {
+            "url": "news.index",
+            "name": "news",
+            "i18n": "news",
+            "icon": "assignment",
+            "slug": "news"
+        },
+        {
+            "url": "vacancy.index",
+            "name": "vacancy",
+            "i18n": "vacancy",
+            "icon": "perm_contact_calendar",
+            "slug": "vacancy"
+        },
+        {
+            "url": "vacancyRequest.index",
+            "name": "vacancyRequest",
+            "i18n": "vacancyRequest",
+            "icon": "call_made",
+            "slug": "vacancyRequest"
+        },
+        {
+            "url": "feature.index",
+            "name": "feature",
+            "i18n": "feature",
+            "icon": "brightness_low",
+            "slug": "feature"
+        },
+        {
+            "url": "answer.index",
+            "name": "answer",
+            "i18n": "answer",
+            "icon": "brightness_low",
+            "slug": "answer"
+        },
+        {
+            "url": "project.index",
+            "name": "project",
+            "i18n": "project",
+            "icon": "brightness_low",
+            "slug": "project"
+        },
+        {
+            "url": "setting.index",
+            "name": "setting",
+            "i18n": "setting",
+            "icon": "brightness_low",
+            "slug": "setting"
+        },
+        {
+            "url": "change-password",
+            "name": "change_password",
+            "i18n": "change_password",
+            "icon": "brightness_low",
+            "slug": "change password"
+        }
+    ]
+}

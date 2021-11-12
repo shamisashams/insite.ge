@@ -1,0 +1,69 @@
+.service_object {
+  display: inline-block;
+  width: 480px;
+  height: 228px;
+  box-shadow: 0 3px 15px #2e32411e;
+  margin: 5px 8px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #fff;
+  padding-top: 40px;
+  transition: 0.5s;
+  cursor: default;
+}
+.service_object img {
+  margin-bottom: 25px;
+  height: 70px;
+  width: auto;
+  transition: 0.5s;
+}
+.service_object .title {
+  font-family: "book";
+  font-size: 35px;
+  transition: 0.5s;
+}
+.service_object .para {
+  font-size: 16px;
+  opacity: 0;
+  transition: 0.5s;
+  margin: 30px auto;
+  width: 90%;
+}
+.service_object .main_btn {
+  transition: 0.5s;
+}
+
+.service_object:hover {
+  padding-top: 20px;
+}
+.service_object:hover .title {
+  font-size: 28px;
+}
+.service_object:hover img {
+  height: 40px;
+  margin-bottom: 5px;
+}
+.service_object:hover .para {
+  margin: 10px auto;
+  opacity: 0.6;
+}
+.service_object:hover .main_btn {
+  width: 150px;
+  height: 40px;
+}
+
+/************ Responsiveness ************/
+@media screen and (max-width: 1050px) {
+  .service_object {
+    width: 350px;
+    height: 247px;
+    padding-top: 48px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service_object {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
