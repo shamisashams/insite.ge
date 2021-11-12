@@ -8,59 +8,65 @@ import RecentEvents from "./RecentEvents/RecentEvents";
 import Pagination from "../../Components/Pagination";
 import Layout from "../../Layouts/Layout";
 import {usePage} from "@inertiajs/inertia-react";
+import DocumentMeta from 'react-document-meta';
+import Meta from "../Meta/Meta";
 
 const News = ({news}) => {
+    const meta = Meta('Some Meta Title', 'keyword', 'description');
+
     const {locale} = usePage().props;
 
     return (
-        <Layout>
-            <div className="news_page">
-                <Showcase1
-                    bgSrc="url(/images/sc-bgs/news-bg.png)"
-                    color="#fff"
-                    fontFamily="bold"
-                    head="Новости И События"
-                    para="Have A Project? Feel Free To Call, Send Us An Email Or Complete The Enquiry Form."
-                    imgSrc="/images/news/sc.png"
-                />
-                <div className="wrapper flex news_page_content">
-                    <div className="main_column">
-                        {news.data.data.map((item, index) => (
-                            <NewsItem
-                                key={index}
-                                imgSrc={item.main_file ? "/" + item.main_file.path + "/" + item.main_file.title : ""}
-                                date={item.created_at}
-                                location={item.location}
-                                title={item.title}
-                                description={item.description}
-                                hrefBtn={'/news-details/' + item.id}
-                            />
-                        ))
-                        }
-                        {
-                            news.data.data.length?
-                            <Pagination links={news.data.links}/>:""
-                        }
-                        <Form title="Оставьте нам записку"/>
-                    </div>
-                    <div className="recents">
-                        <Text35 text="Recent News & Events"/>
-                        {
-                            news.blogs.map((item, index) => (
-                                <RecentEvents
+        <DocumentMeta {...meta}>
+            <Layout>
+                <div className="news_page">
+                    <Showcase1
+                        bgSrc="url(/images/sc-bgs/news-bg.png)"
+                        color="#fff"
+                        fontFamily="bold"
+                        head="Новости И События"
+                        para="Have A Project? Feel Free To Call, Send Us An Email Or Complete The Enquiry Form."
+                        imgSrc="/images/news/sc.png"
+                    />
+                    <div className="wrapper flex news_page_content">
+                        <div className="main_column">
+                            {news.data.data.map((item, index) => (
+                                <NewsItem
                                     key={index}
-                                    href={'/blog-details/' + item.id}
-                                    img={item.main_file ? "/" + item.main_file.path + "/" + item.main_file.title : ""}
+                                    imgSrc={item.main_file ? "/" + item.main_file.path + "/" + item.main_file.title : ""}
                                     date={item.created_at}
+                                    location={item.location}
                                     title={item.title}
                                     description={item.description}
+                                    hrefBtn={'/news-details/' + item.id}
                                 />
                             ))
-                        }
+                            }
+                            {
+                                news.data.data.length ?
+                                    <Pagination links={news.data.links}/> : ""
+                            }
+                            <Form title="Оставьте нам записку"/>
+                        </div>
+                        <div className="recents">
+                            <Text35 text="Recent News & Events"/>
+                            {
+                                news.blogs.map((item, index) => (
+                                    <RecentEvents
+                                        key={index}
+                                        href={'/blog-details/' + item.id}
+                                        img={item.main_file ? "/" + item.main_file.path + "/" + item.main_file.title : ""}
+                                        date={item.created_at}
+                                        title={item.title}
+                                        description={item.description}
+                                    />
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
-            </div>
-        </Layout>
+            </Layout>
+        </DocumentMeta>
     );
 };
 
