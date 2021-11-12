@@ -1,105 +1,97 @@
 .solutions_page section {
-  width: 100%;
-  height: 100vh;
-  background-position: center !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    overflow: hidden;
+    position: relative;
 }
 .solutions_page section.one .content {
-  top: calc((0 * 100vh) + var(--scroll-var));
+    top: calc((0 * 100vh) + var(--scroll-var));
 }
 .solutions_page section.two .content {
-  top: calc((-1 * 100vh) + var(--scroll-var));
+    top: calc((-1 * 100vh) + var(--scroll-var));
 }
 .solutions_page section.three .content {
-  top: calc((-2 * 100vh) + var(--scroll-var));
+    top: calc((-2 * 100vh) + var(--scroll-var));
 }
 .solutions_page section.four .content {
-  top: calc((-3 * 100vh) + var(--scroll-var));
+    top: calc((-3 * 100vh) + var(--scroll-var));
 }
 .solutions_page section.five .content {
-  top: calc((-4 * 100vh) + var(--scroll-var));
+    top: calc((-4 * 100vh) + var(--scroll-var));
 }
 .solutions_page section.six .content {
-  top: calc((-5 * 100vh) + var(--scroll-var));
+    top: calc((-5 * 100vh) + var(--scroll-var));
 }
 .solutions_page section.seven .content {
-  top: calc((-6 * 100vh) + var(--scroll-var));
+    top: calc((-6 * 100vh) + var(--scroll-var));
 }
 .solutions_page section.eight .content {
-  top: calc((-7 * 100vh) + var(--scroll-var));
+    top: calc((-7 * 100vh) + var(--scroll-var));
 }
 .solutions_page .content {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
 }
 
 :root {
-  --scroll-var: 0px;
-}
-
-.bottom_form {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 100px auto;
+    --scroll-var: 0px;
 }
 
 @media screen and (max-width: 1200px) {
-  .solutions_page .se_content {
-    max-width: 40%;
-  }
+    .solutions_page .se_content {
+        max-width: 40%;
+    }
 }
 @media screen and (max-width: 1000px) {
-  .solutions_page .se_content {
-    max-width: 90%;
-  }
-  .solutions_page .sec.right .se_content {
-    right: auto;
-    left: 0;
-  }
-  .solutions_page section::after {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-  }
-  .solutions_page section.one::after {
-    background: #00ccff;
-  }
-  .solutions_page section.two::after {
-    background: #00ccff;
-  }
-  .solutions_page section.three::after {
-    background: linear-gradient(to bottom, #e44c25, #2d93c4);
-  }
-  .solutions_page section.four::after {
-    background: #75ac64;
-  }
-  .solutions_page section.five::after {
-    background: #5c2d91;
-  }
-  .solutions_page section.six::after {
-    background: #ff2d20;
-  }
-  .solutions_page section.seven::after {
-    background: #8a93be;
-  }
-  .solutions_page section.eight::after {
-    background: #9571f6;
-  }
+    .solutions_page .se_content {
+        max-width: 90%;
+    }
+    .solutions_page .sec.right .se_content {
+        right: auto;
+        left: 0;
+    }
+    .solutions_page section::after {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+    }
+    .solutions_page section.one::after {
+        background: #00ccff;
+    }
+    .solutions_page section.two::after {
+        background: #00ccff;
+    }
+    .solutions_page section.three::after {
+        background: linear-gradient(to bottom, #e44c25, #2d93c4);
+    }
+    .solutions_page section.four::after {
+        background: #75ac64;
+    }
+    .solutions_page section.five::after {
+        background: #5c2d91;
+    }
+    .solutions_page section.six::after {
+        background: #ff2d20;
+    }
+    .solutions_page section.seven::after {
+        background: #8a93be;
+    }
+    .solutions_page section.eight::after {
+        background: #9571f6;
+    }
 }
 @media screen and (max-width: 500px) {
-  .solutions_page .se_content {
-    max-width: none;
-  }
+    .solutions_page .se_content {
+        max-width: none;
+    }
 }

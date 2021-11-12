@@ -1,202 +1,230 @@
 .design_page .showcase {
-  padding-top: 150px;
-  padding-bottom: 450px;
-  position: relative;
+    padding-top: 150px;
+    padding-bottom: 450px;
+    position: relative;
 }
 .design_page .showcase .bg {
-  position: absolute;
-  bottom: -300px;
-  z-index: -1;
+    position: absolute;
+    bottom: -300px;
+    z-index: -1;
 }
 .design_page .showcase p {
-  max-width: 800px;
-  margin-bottom: 15px;
-  opacity: 1;
+    max-width: 800px;
+    margin-bottom: 15px;
+    opacity: 1;
 }
 .design_page .showcase .sub {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
+}
+.design_page .showcase .expertise {
+    margin-left: 30px;
 }
 .design_page .showcase .expertise h6 {
-  font-size: 25px;
-  font-family: "bold";
-  margin-bottom: 50px;
+    font-size: 25px;
+    font-family: "bold";
+    margin-bottom: 50px;
 }
 .design_page .showcase .expertise .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 20px;
-  grid-column-gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 60px;
 }
 .design_page .showcase .expertise .in_link {
-  color: #272639;
-  padding-left: 20px;
-  transform: none;
-  white-space: nowrap;
+    color: #272639;
+    padding-left: 20px;
+    transform: none;
+    white-space: normal;
 }
 .design_page .showcase .expertise .in_link img {
-  opacity: 1;
-  transform: translateY(-50%);
+    opacity: 1;
+    transform: translateY(-50%);
+    top: 0;
+    transform: none;
 }
 .design_page .process .title1 .head {
-  font-size: 75px;
-  max-width: 1150px;
-  margin: auto;
-  margin-bottom: 75px;
+    font-size: 75px;
+    max-width: 1150px;
+    margin: auto;
+    margin-bottom: 75px;
 }
 .design_page .process .title1 .head::after {
-  height: 5px;
+    height: 5px;
 }
 .design_page .process_body {
-  text-align: center;
-  position: relative;
-  margin: auto;
+    text-align: center;
+    position: relative;
+    margin: auto;
 }
 .design_page .process_body .process_item {
-  position: absolute;
+    position: absolute;
 }
 .design_page .process_body .process_item.left {
-  left: 0;
+    left: 0;
 }
 .design_page .process_body .process_item.right {
-  right: 0;
+    right: 0;
 }
 .design_page .process_body .process_item.a {
-  top: 80px;
+    top: 80px;
 }
 .design_page .process_body .process_item.b {
-  top: 280px;
+    top: 280px;
 }
 .design_page .process_body .process_item.c {
-  bottom: 280px;
+    bottom: 280px;
 }
 .design_page .process_body .process_item.d {
-  bottom: 80px;
+    bottom: 80px;
 }
 .design_page .form {
-  margin: 130px auto;
-  margin-top: 50px;
-  text-align: center;
+    margin: 130px auto;
+    margin-top: 50px;
+    text-align: center;
 }
 
 @media screen and (max-width: 1500px) {
-  .design_page .showcase {
-    padding-bottom: 270px;
-    padding-top: 125px;
-  }
-  .design_page .process .title1 .head {
-    font-size: 70px;
-  }
-  .design_page .showcase .bg {
-    bottom: -255px;
-  }
-  .showcase2 .title {
-    font-size: 60px;
-  }
+    .design_page .showcase {
+        padding-bottom: 270px;
+        padding-top: 125px;
+    }
+    .design_page .process .title1 .head {
+        font-size: 70px;
+    }
+    .design_page .showcase .bg {
+        bottom: -255px;
+    }
+    .showcase2 .title {
+        font-size: 60px;
+    }
 }
 @media screen and (max-width: 1300px) {
-  .design_page .showcase p {
-    max-width: 76%;
-  }
+    /* .design_page .showcase p {
+      max-width: 76%;
+  } */
+    .design_page .showcase .expertise .grid {
+        grid-column-gap: 6px;
+    }
 }
 @media screen and (max-width: 1250px) {
-  .design_page .showcase {
-    padding-bottom: 287px;
-  }
-  .design_page .showcase .bg {
-    bottom: -160px;
-  }
-  .showcase2 .title {
-    font-size: 50px;
-  }
-  .design_page .showcase .sub {
-    margin-bottom: 25px;
-  }
-  .design_page .showcase p {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-  .design_page .showcase .expertise h6 {
-    font-size: 22px;
-    margin-bottom: 25px;
-  }
+    .design_page .showcase {
+        padding-bottom: 287px;
+    }
+    .design_page .showcase .bg {
+        bottom: -160px;
+    }
+    .showcase2 .title {
+        font-size: 50px;
+    }
+    .design_page .showcase .sub {
+        margin-bottom: 25px;
+    }
+    .design_page .showcase p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .design_page .showcase .expertise h6 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
 }
 @media screen and (max-width: 900px) {
-  .design_page .process_body .process_item {
-    position: relative;
-  }
-  .design_page .process_body .process_item.left {
-    left: auto;
-  }
-  .design_page .process_body .process_item.right {
-    right: auto;
-  }
-  .design_page .process_body .process_item.a {
-    top: auto;
-  }
-  .design_page .process_body .process_item.b {
-    top: auto;
-  }
-  .design_page .process_body .process_item.c {
-    bottom: auto;
-  }
-  .design_page .process_body .process_item.d {
-    bottom: auto;
-  }
-  .design_page .showcase {
-    padding-bottom: 175px;
-  }
-  .design_page .showcase .bg {
-    bottom: -135px;
-  }
-  .design_page .process .title1 .head {
-    font-size: 55px;
-  }
+    .design_page .process_body .process_item {
+        position: relative;
+    }
+    .design_page .process_body .process_item.left {
+        left: auto;
+    }
+    .design_page .process_body .process_item.right {
+        right: auto;
+    }
+    .design_page .process_body .process_item.a {
+        top: auto;
+    }
+    .design_page .process_body .process_item.b {
+        top: auto;
+    }
+    .design_page .process_body .process_item.c {
+        bottom: auto;
+    }
+    .design_page .process_body .process_item.d {
+        bottom: auto;
+    }
+    .design_page .showcase {
+        padding-bottom: 175px;
+    }
+    .design_page .showcase .bg {
+        bottom: -135px;
+    }
+    .design_page .process .title1 .head {
+        font-size: 55px;
+    }
 }
 @media screen and (max-width: 800px) {
-  .design_page .showcase .wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .design_page .showcase p {
-    max-width: none;
-  }
-  .showcase2 .main_btn {
-    margin-top: 13px;
-    margin-bottom: 40px;
-  }
-  .design_page .showcase .expertise .grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 26px;
-    grid-column-gap: 45px;
-  }
-  .showcase2 .title {
-    font-size: 40px;
-  }
+    .design_page .showcase .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .design_page .showcase p {
+        max-width: none;
+    }
+    .showcase2 .main_btn {
+        margin-top: 13px;
+        margin-bottom: 40px;
+    }
+    .design_page .showcase .expertise .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .showcase2 .title {
+        font-size: 40px;
+    }
+    .design_page .showcase {
+        padding-bottom: 250px;
+    }
+    .design_page .showcase .expertise {
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 650px) {
-  .design_page .showcase .expertise .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .design_page .process .title1 .head {
-    font-size: 45px;
-    margin-bottom: 50px;
-  }
-  .design_page .showcase {
-    padding-bottom: 214px;
-  }
-  .design_page .showcase .bg {
-    bottom: -80px;
-  }
+    .design_page .showcase .expertise .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .design_page .process .title1 .head {
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+    .design_page .showcase {
+        padding-bottom: 214px;
+    }
+    .design_page .showcase .bg {
+        bottom: -80px;
+    }
 }
 @media screen and (max-width: 500px) {
-  .design_page .showcase .expertise .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .design_page .showcase .bg {
-    bottom: 0px;
-  }
-  .design_page .process .title1 .head {
-    font-size: 36px;
-    margin-bottom: 23px;
-  }
+    .design_page .showcase .expertise .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .design_page .process .title1 .head {
+        font-size: 25px;
+        margin-bottom: 23px;
+    }
+    .design_page .showcase {
+        padding-bottom: 152px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .design_page .showcase {
+        padding-bottom: 125px;
+        margin-bottom: 20px;
+        padding-top: 89px;
+    }
+    .design_page .showcase .expertise .grid {
+        grid-template-columns: 1fr;
+    }
+    .process_item .head {
+        font-size: 22px;
+    }
+    .showcase2 .title {
+        font-size: 30px;
+    }
 }

@@ -2,13 +2,19 @@ import React from "react";
 import Form from "../../Components/Form/Form";
 import SeContent from "../CDN/SeContent/SeContent";
 import "./Solutions.css";
+import "../CDN/CDN.css";
 import Layout from "../../Layouts/Layout";
 
 const Solutions = () => {
     window.addEventListener("scroll", (event) => {
         let scroll =
-            window.scrollY || window.scrollTop || event.srcElement.body.scrollTop;
-        document.documentElement.style.setProperty("--scroll-var", scroll + "px");
+            window.scrollY ||
+            window.scrollTop ||
+            event.srcElement.body.scrollTop;
+        document.documentElement.style.setProperty(
+            "--scroll-var",
+            scroll + "px"
+        );
     });
     return (
         <Layout>
@@ -16,7 +22,9 @@ const Solutions = () => {
                 <div className="solutions_page">
                     <section
                         className="sec left one"
-                        style={{background: "url(images/solutions/1.png) no-repeat"}}
+                        style={{
+                            background: "url(images/solutions/1.png) no-repeat",
+                        }}
                     >
                         <div className="wrapper">
                             <div className="content">
@@ -29,7 +37,9 @@ const Solutions = () => {
                     </section>
                     <section
                         className="sec right two"
-                        style={{background: "url(images/solutions/2.png) no-repeat"}}
+                        style={{
+                            background: "url(images/solutions/2.png) no-repeat",
+                        }}
                     >
                         <div className="wrapper">
                             <div className="content">
@@ -42,7 +52,9 @@ const Solutions = () => {
                     </section>
                     <section
                         className="sec left three"
-                        style={{background: "url(images/solutions/3.png) no-repeat"}}
+                        style={{
+                            background: "url(images/solutions/3.png) no-repeat",
+                        }}
                     >
                         <div className="wrapper">
                             <div className="content">
@@ -55,7 +67,9 @@ const Solutions = () => {
                     </section>
                     <section
                         className="sec left four"
-                        style={{background: "url(images/solutions/4.png) no-repeat"}}
+                        style={{
+                            background: "url(images/solutions/4.png) no-repeat",
+                        }}
                     >
                         <div className="wrapper">
                             <div className="content">
@@ -68,7 +82,9 @@ const Solutions = () => {
                     </section>
                     <section
                         className="sec right five"
-                        style={{background: "url(images/solutions/5.png) no-repeat"}}
+                        style={{
+                            background: "url(images/solutions/5.png) no-repeat",
+                        }}
                     >
                         <div className="wrapper">
                             <div className="content">
@@ -81,7 +97,9 @@ const Solutions = () => {
                     </section>
                     <section
                         className="sec left six"
-                        style={{background: "url(images/solutions/6.png) no-repeat"}}
+                        style={{
+                            background: "url(images/solutions/6.png) no-repeat",
+                        }}
                     >
                         <div className="wrapper">
                             <div className="content">
@@ -94,7 +112,9 @@ const Solutions = () => {
                     </section>
                     <section
                         className="sec right seven"
-                        style={{background: "url(images/solutions/7.png) no-repeat"}}
+                        style={{
+                            background: "url(images/solutions/7.png) no-repeat",
+                        }}
                     >
                         <div className="wrapper">
                             <div className="content">
@@ -107,7 +127,9 @@ const Solutions = () => {
                     </section>
                     <section
                         className="sec left eight"
-                        style={{background: "url(images/solutions/8.png) no-repeat"}}
+                        style={{
+                            background: "url(images/solutions/8.png) no-repeat",
+                        }}
                     >
                         <div className="wrapper">
                             <div className="content">
@@ -120,7 +142,7 @@ const Solutions = () => {
                     </section>
                 </div>
                 <div className="bottom_form wrapper">
-                    <Form title="Оставьте нам записку"/>
+                    <Form title="Оставьте нам записку" />
                 </div>
             </>
         </Layout>
