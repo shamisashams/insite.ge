@@ -25,6 +25,7 @@ const CDN = () => {
                 <>
                     <div className="cdn_page">
                         <section
+                            id="cloudflare"
                             className="sec left one"
                             style={{
                                 background: "url(images/cdn/1.png) no-repeat",
@@ -40,6 +41,7 @@ const CDN = () => {
                             </div>
                         </section>
                         <section
+                            id="route53"
                             className="sec right two"
                             style={{
                                 background: "url(images/cdn/2.png) no-repeat",
