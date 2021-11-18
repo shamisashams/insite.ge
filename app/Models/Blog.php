@@ -52,15 +52,15 @@ class Blog extends Model implements Searchable
             ],
             'title' => [
                 'hasParam' => true,
-                'scopeMethod' => 'titleTranslation'
+                'scopeMethod' => 'title'
             ],
             'description' => [
                 'hasParam' => true,
-                'scopeMethod' => 'descriptionTranslation'
+                'scopeMethod' => 'description'
             ],
             'content' => [
                 'hasParam' => true,
-                'scopeMethod' => 'contentTranslation'
+                'scopeMethod' => 'content'
             ]
         ];
     }
