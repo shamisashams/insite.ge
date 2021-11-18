@@ -25,7 +25,7 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
     let [disableSendRequestButton, setDisableSendRequestButton] = useState(false)
 
     const toggleRequest = (e) => {
-        if (e.target.id == 'send-request') {
+        if (e.target.id == 'send-request' && data.length > 0) {
             setDisableSendRequestButton(true);
             Inertia.post('/services/calculator-save', {
                 data,
@@ -40,7 +40,7 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
                     setDisableSendRequestButton(false);
                 }
             })
-        } else {
+        } else if (data.length > 0) {
             setRequest(!request);
         }
     };
@@ -114,7 +114,8 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
                             <div className="flex">
                                 <Button2 large text="MAKE CHANGES"
                                          href={'/services/calculator?state=' + encodeURI(requestData) + "&totalPrice=" + totalPrice}/>
-                                <CostBtn disabled={disableSendRequestButton} id="send-request" large text="SEND REQUESTS"
+                                <CostBtn disabled={disableSendRequestButton} id="send-request" large
+                                         text="SEND REQUESTS"
                                          click={(e) => toggleRequest(e)}/>
                             </div>
                         </div>

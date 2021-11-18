@@ -5244,7 +5244,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
       setDisableSendRequestButton = _useState14[1];
 
   var toggleRequest = function toggleRequest(e) {
-    if (e.target.id == 'send-request') {
+    if (e.target.id == 'send-request' && data.length > 0) {
       setDisableSendRequestButton(true);
       _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_7__.Inertia.post('/services/calculator-save', {
         data: data,
@@ -5259,7 +5259,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
           setDisableSendRequestButton(false);
         }
       });
-    } else {
+    } else if (data.length > 0) {
       setRequest(!request);
     }
   };
