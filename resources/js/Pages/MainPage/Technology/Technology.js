@@ -84,8 +84,16 @@ const Technology = () => {
                                 alt=""
                             />
                             <div className="category_content">
-                                <TechObj link="/" title="Vmware" imgNum={9} />
-                                <TechObj link="/" title="Proxmox" imgNum={10} />
+                                <TechObj
+                                    link="/services/virtualization"
+                                    title="Vmware"
+                                    imgNum={9}
+                                />
+                                <TechObj
+                                    link="/services/virtualization"
+                                    title="Proxmox"
+                                    imgNum={10}
+                                />
                             </div>
                         </div>
                         <div className="space"></div>
