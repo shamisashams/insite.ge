@@ -4,6 +4,8 @@ import "./Form.css";
 import {Inertia} from "@inertiajs/inertia";
 import {locale_route} from "../../Pages/Helpers/locale_route";
 import {usePage} from "@inertiajs/inertia-react";
+import withReactContent from "sweetalert2-react-content";
+import Swal from "sweetalert2";
 
 const Form = ({title, para}) => {
     const [values, setValues] = useState({
@@ -11,10 +13,36 @@ const Form = ({title, para}) => {
         mail: "",
         message: "",
     });
+    const {flash} = usePage().props;
+    const MySwal = withReactContent(Swal)
+    let [buttonDisabled, setButtonDisabled] = useState(false)
+
+    if (flash.success) {
+        MySwal.fire({
+            icon: 'success',
+            title: <p style={{textAlign: 'center'}}>{flash.success}</p>,
+        })
+        flash.success = false;
+    }
 
     function handleSubmit(e) {
-        e.preventDefault()
-        Inertia.post('/contact-us', values, {preserveScroll: true})
+        e.preventDefault();
+        setButtonDisabled(true);
+        Inertia.post('/contact-us', values, {
+            onSuccess: (page) => {
+                setValues(values => ({
+                    ...values,
+                    ['name']: "",
+                    ['mail']: "",
+                    ['message']: "",
+                }))
+            },
+            onFinish: () => {
+                setButtonDisabled(false);
+            },
+            preserveScroll: true
+
+        })
     }
 
     const {errors} = usePage().props;
@@ -45,7 +73,7 @@ const Form = ({title, para}) => {
                       value={values.message}></textarea>
             {/*{errors.message && <div className="error-block">{errors.message}</div>}*/}
 
-            <button className="form_btn">
+            <button disabled={buttonDisabled} className="form_btn">
                 <span>Submit</span>
             </button>
         </form>

@@ -130,10 +130,4 @@ class FeatureRepository extends BaseRepository implements FeatureRepositoryInter
 //        return (bool)$success;
 //    }
 
-    public function delete(int $id)
-    {
-        $data = $this->find($id);
-        return $data->delete();
-    }
-
 }

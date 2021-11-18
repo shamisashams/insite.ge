@@ -3127,6 +3127,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var _Pages_Helpers_locale_route__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Pages/Helpers/locale_route */ "./resources/js/Pages/Helpers/locale_route.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var sweetalert2_react_content__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! sweetalert2-react-content */ "./node_modules/sweetalert2-react-content/dist/sweetalert2-react-content.umd.js");
+/* harmony import */ var sweetalert2_react_content__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(sweetalert2_react_content__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_7__);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -3152,6 +3156,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 var Form = function Form(_ref) {
   var title = _ref.title,
       para = _ref.para;
@@ -3165,9 +3171,40 @@ var Form = function Form(_ref) {
       values = _useState2[0],
       setValues = _useState2[1];
 
+  var flash = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_5__.usePage)().props.flash;
+  var MySwal = sweetalert2_react_content__WEBPACK_IMPORTED_MODULE_6___default()((sweetalert2__WEBPACK_IMPORTED_MODULE_7___default()));
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState4 = _slicedToArray(_useState3, 2),
+      buttonDisabled = _useState4[0],
+      setButtonDisabled = _useState4[1];
+
+  if (flash.success) {
+    MySwal.fire({
+      icon: 'success',
+      title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+        style: {
+          textAlign: 'center'
+        }
+      }, flash.success)
+    });
+    flash.success = false;
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
+    setButtonDisabled(true);
     _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_3__.Inertia.post('/contact-us', values, {
+      onSuccess: function onSuccess(page) {
+        setValues(function (values) {
+          var _objectSpread2;
+
+          return _objectSpread(_objectSpread({}, values), {}, (_objectSpread2 = {}, _defineProperty(_objectSpread2, 'name', ""), _defineProperty(_objectSpread2, 'mail', ""), _defineProperty(_objectSpread2, 'message', ""), _objectSpread2));
+        });
+      },
+      onFinish: function onFinish() {
+        setButtonDisabled(false);
+      },
       preserveScroll: true
     });
   }
@@ -3213,6 +3250,7 @@ var Form = function Form(_ref) {
     onChange: handleChange,
     value: values.message
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    disabled: buttonDisabled,
     className: "form_btn"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Submit")));
 };
@@ -4285,6 +4323,7 @@ var CDN = function CDN() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_document_meta__WEBPACK_IMPORTED_MODULE_5__.default, meta, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_4__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "cdn_page"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "cloudflare",
     className: "sec left one",
     style: {
       background: "url(images/cdn/1.png) no-repeat"
@@ -4297,6 +4336,7 @@ var CDN = function CDN() {
     title: "Cloudflare",
     para: "Cloudflare \u2014 \u044D\u0442\u043E \u0441\u0435\u0442\u044C \u0441\u0435\u0440\u0432\u0435\u0440\u043E\u0432 \u043F\u043E \u0432\u0441\u0435\u043C\u0443 \u043C\u0438\u0440\u0443, \u043A \u043A\u043E\u0442\u043E\u0440\u043E\u0439 \u043B\u044E\u0434\u0438 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0430\u044E\u0442 \u0441\u0432\u043E\u0438 \u0441\u0430\u0439\u0442\u044B, \u0447\u0442\u043E\u0431\u044B \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0438\u0445 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438 \u0438 \u0437\u0430\u0449\u0438\u0442\u0438\u0442\u044C \u043E\u0442 DDoS-\u0430\u0442\u0430\u043A. \u0422\u0430\u043A\u0436\u0435 \u043F\u0440\u0438 \u043F\u043E\u043C\u043E\u0449\u0438 \u044D\u0442\u043E\u0433\u043E \u0441\u0435\u0440\u0432\u0438\u0441\u0430 \u043C\u043E\u0436\u043D\u043E \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C DNS-\u0437\u0430\u043F\u0438\u0441\u044F\u043C\u0438 \u043D\u0430 \u0434\u043E\u043C\u0435\u043D\u0435 \u0438 \u043F\u0435\u0440\u0435\u0432\u0435\u0441\u0442\u0438 \u0441\u0430\u0439\u0442 \u043D\u0430 HTTPS. \u0423 Cloudflare \u0435\u0441\u0442\u044C \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u044B\u0439 \u0442\u0430\u0440\u0438\u0444 \u0438 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043F\u043B\u0430\u0442\u043D\u044B\u0445. \u0412 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438 \u043E\u0442 \u0442\u0430\u0440\u0438\u0444\u0430 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0437\u0430\u0449\u0438\u0442\u044B \u0438 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u043F\u043E \u0443\u0441\u043A\u043E\u0440\u0435\u043D\u0438\u044E \u0441\u0430\u0439\u0442\u0430 \u0431\u0443\u0434\u0443\u0442 \u043E\u0442\u043B\u0438\u0447\u0430\u0442\u044C\u0441\u044F."
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "route53",
     className: "sec right two",
     style: {
       background: "url(images/cdn/2.png) no-repeat"
@@ -5198,8 +5238,14 @@ var ResultEstimate = function ResultEstimate(_ref) {
       buttonDisabled = _useState12[0],
       setButtonDisabled = _useState12[1];
 
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState14 = _slicedToArray(_useState13, 2),
+      disableSendRequestButton = _useState14[0],
+      setDisableSendRequestButton = _useState14[1];
+
   var toggleRequest = function toggleRequest(e) {
     if (e.target.id == 'send-request') {
+      setDisableSendRequestButton(true);
       _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_7__.Inertia.post('/services/calculator-save', {
         data: data,
         totalPrice: totalPrice,
@@ -5209,11 +5255,13 @@ var ResultEstimate = function ResultEstimate(_ref) {
         onFinish: function onFinish() {
           projectId = idRef.current.value;
           setProjectId(projectId);
+          setRequest(!request);
+          setDisableSendRequestButton(false);
         }
       });
+    } else {
+      setRequest(!request);
     }
-
-    setRequest(!request);
   };
 
   var downloadPdf = function downloadPdf() {
@@ -5283,6 +5331,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex btm_btns"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    disabled: disableSendRequestButton,
     onClick: function onClick(e) {
       return toggleRequest(e);
     },
@@ -5300,6 +5349,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
     text: "MAKE CHANGES",
     href: '/services/calculator?state=' + encodeURI(requestData) + "&totalPrice=" + totalPrice
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostSteps_CostBox__WEBPACK_IMPORTED_MODULE_3__.CostBtn, {
+    disabled: disableSendRequestButton,
     id: "send-request",
     large: true,
     text: "SEND REQUESTS",
@@ -6257,15 +6307,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+
 
 
 var TechObj = function TechObj(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    href: props.link
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "techobj"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "images/icons/techs/".concat(props.imgNum, ".png"),
     alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, props.title, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " ", props.title2));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, props.title, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " ", props.title2)));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TechObj);
@@ -6315,9 +6369,11 @@ var Technology = function Technology() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "category_content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TechObj__WEBPACK_IMPORTED_MODULE_2__.default, {
+    link: "/cdn#cloudflare",
     title: "Cloudflare",
     imgNum: 3
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TechObj__WEBPACK_IMPORTED_MODULE_2__.default, {
+    link: "/cdn#route53",
     title: "Route 53",
     imgNum: 4
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -6335,18 +6391,23 @@ var Technology = function Technology() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "category_content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TechObj__WEBPACK_IMPORTED_MODULE_2__.default, {
+    link: "/solutions#node_js",
     title: "NODE.js",
     imgNum: 5
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TechObj__WEBPACK_IMPORTED_MODULE_2__.default, {
+    link: "/solutions#native_js",
     title: "Native JS",
     imgNum: 1
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TechObj__WEBPACK_IMPORTED_MODULE_2__.default, {
+    link: "/solutions#php",
     title: "PHP",
     imgNum: 6
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TechObj__WEBPACK_IMPORTED_MODULE_2__.default, {
+    link: "/solutions#net_core",
     title: ".NET CORE",
     imgNum: 7
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TechObj__WEBPACK_IMPORTED_MODULE_2__.default, {
+    link: "/solutions#laravel",
     title: "LARAVEL",
     imgNum: 8
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -6364,9 +6425,11 @@ var Technology = function Technology() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "category_content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TechObj__WEBPACK_IMPORTED_MODULE_2__.default, {
+    link: "/",
     title: "Vmware",
     imgNum: 9
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TechObj__WEBPACK_IMPORTED_MODULE_2__.default, {
+    link: "/",
     title: "Proxmox",
     imgNum: 10
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -6384,10 +6447,12 @@ var Technology = function Technology() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "category_content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TechObj__WEBPACK_IMPORTED_MODULE_2__.default, {
+    link: "/solutions#react_js",
     title: "ReactJS",
     title2: "React Native",
     imgNum: 1
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TechObj__WEBPACK_IMPORTED_MODULE_2__.default, {
+    link: "/solutions#html_css",
     title: "HTML/CSS",
     imgNum: 2
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -7598,6 +7663,7 @@ var Solutions = function Solutions() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_document_meta__WEBPACK_IMPORTED_MODULE_6__.default, meta, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_5__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "solutions_page"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "react_js",
     className: "sec left one",
     style: {
       background: "url(images/solutions/1.png) no-repeat"
@@ -7610,6 +7676,7 @@ var Solutions = function Solutions() {
     title: "React JS",
     para: "React \u043C\u043E\u0436\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u0434\u043B\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043E\u0434\u043D\u043E\u0441\u0442\u0440\u0430\u043D\u0438\u0447\u043D\u044B\u0445 \u0438 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u044B\u0445 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439. \u0415\u0433\u043E \u0446\u0435\u043B\u044C \u2014 \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0432\u044B\u0441\u043E\u043A\u0443\u044E \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C, \u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0443 \u0438 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u0443\u0435\u043C\u043E\u0441\u0442\u044C. \u0412 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0438 \u0434\u043B\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0445 \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u043E\u0432 React \u0447\u0430\u0441\u0442\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u0441 \u0434\u0440\u0443\u0433\u0438\u043C\u0438 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430\u043C\u0438, \u0442\u0430\u043A\u0438\u043C\u0438 \u043A\u0430\u043A MobX, Redux \u0438 GraphQL"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "react_native",
     className: "sec right two",
     style: {
       background: "url(images/solutions/2.png) no-repeat"
@@ -7622,6 +7689,7 @@ var Solutions = function Solutions() {
     title: "React native",
     para: "React Native \u2014 \u044D\u0442\u043E \u043A\u0440\u043E\u0441\u0441\u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0435\u043D\u043D\u044B\u0439 \u0444\u0440\u0435\u0439\u043C\u0432\u043E\u0440\u043A \u0441 \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u043C \u0438\u0441\u0445\u043E\u0434\u043D\u044B\u043C \u043A\u043E\u0434\u043E\u043C \u0434\u043B\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043D\u0430\u0442\u0438\u0432\u043D\u044B\u0445 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u044B\u0445 \u0438 \u043D\u0430\u0441\u0442\u043E\u043B\u044C\u043D\u044B\u0445 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439 \u043D\u0430 JavaScript \u0438 TypeScript, \u0441\u043E\u0437\u0434\u0430\u043D\u043D\u044B\u0439 Facebook, Inc. React Native \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442 \u0442\u0430\u043A\u0438\u0435 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B \u043A\u0430\u043A Android, Android TV, iOS, macOS, Apple tvOS, Web, Windows \u0438 UWP, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0430\u043C \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0438 React \u0432\u043D\u0435 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430 \u0434\u043B\u044F \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F \u043D\u0430\u0442\u0438\u0432\u043D\u044B\u0445 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439, \u0438\u043C\u0435\u044E\u0449\u0438\u0445 \u043F\u043E\u043B\u043D\u044B\u0439 \u0434\u043E\u0441\u0442\u0443\u043F \u043A \u0441\u0438\u0441\u0442\u0435\u043C\u043D\u044B\u043C API \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C."
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "html_css",
     className: "sec left three",
     style: {
       background: "url(images/solutions/3.png) no-repeat"
@@ -7634,6 +7702,7 @@ var Solutions = function Solutions() {
     title: "HTML/CSS",
     para: "\u0412 \u0442\u043E \u0432\u0440\u0435\u043C\u044F \u043A\u0430\u043A HTML \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0439 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u043E\u0439 \u0432\u0430\u0448\u0435\u0433\u043E \u0441\u0430\u0439\u0442\u0430, CSS - \u044D\u0442\u043E \u0442\u043E, \u0447\u0442\u043E \u0434\u0430\u0435\u0442 \u0432\u0441\u0435\u043C\u0443 \u0432\u0430\u0448\u0435\u043C\u0443 \u0441\u0430\u0439\u0442\u0443 \u0441\u0442\u0438\u043B\u044C. \u0426\u0432\u0435\u0442\u0430, \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u044B\u0435 \u0448\u0440\u0438\u0444\u0442\u044B \u0438 \u0444\u043E\u043D\u043E\u0432\u044B\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u2013 \u0432\u0441\u0435 \u044D\u0442\u043E \u0437\u0430\u0441\u043B\u0443\u0433\u0430 CSS. \u042D\u0442\u043E\u0442 \u044F\u0437\u044B\u043A \u0432\u043B\u0438\u044F\u0435\u0442 \u043D\u0430 \u0432\u0441\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u0435 \u0432\u0435\u0431-\u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B, \u0447\u0442\u043E \u0434\u0435\u043B\u0430\u0435\u0442 \u0435\u0433\u043E \u043D\u0435\u0432\u0435\u0440\u043E\u044F\u0442\u043D\u043E \u043C\u043E\u0449\u043D\u044B\u043C \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u043E\u043C \u0438 \u0432\u0430\u0436\u043D\u044B\u043C \u043D\u0430\u0432\u044B\u043A\u043E\u043C \u0434\u043B\u044F \u0432\u0435\u0431-\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u043E\u0432. \u041E\u043D \u0442\u0430\u043A\u0436\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u0430\u043C \u0430\u0434\u0430\u043F\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u043C \u0440\u0430\u0437\u043C\u0435\u0440\u0430\u043C \u044D\u043A\u0440\u0430\u043D\u0430 \u0438 \u0442\u0438\u043F\u0430\u043C \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432."
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "node_js",
     className: "sec left four",
     style: {
       background: "url(images/solutions/4.png) no-repeat"
@@ -7646,6 +7715,7 @@ var Solutions = function Solutions() {
     title: "NODE.js",
     para: "Node \u0438\u043B\u0438 Node.js \u2014 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u0430\u044F \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0430, \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u0430\u044F \u043D\u0430 \u0434\u0432\u0438\u0436\u043A\u0435 V8 (\u0442\u0440\u0430\u043D\u0441\u043B\u0438\u0440\u0443\u044E\u0449\u0435\u043C JavaScript \u0432 \u043C\u0430\u0448\u0438\u043D\u043D\u044B\u0439 \u043A\u043E\u0434), \u043F\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u044E\u0449\u0430\u044F JavaScript \u0438\u0437 \u0443\u0437\u043A\u043E\u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0433\u043E \u044F\u0437\u044B\u043A\u0430 \u0432 \u044F\u0437\u044B\u043A \u043E\u0431\u0449\u0435\u0433\u043E \u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F. Node.js \u0434\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C JavaScript \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C \u0441 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430\u043C\u0438 \u0432\u0432\u043E\u0434\u0430-\u0432\u044B\u0432\u043E\u0434\u0430 \u0447\u0435\u0440\u0435\u0437 \u0441\u0432\u043E\u0439 API, \u043D\u0430\u043F\u0438\u0441\u0430\u043D\u043D\u044B\u0439 \u043D\u0430 C++, \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u0434\u0440\u0443\u0433\u0438\u0435 \u0432\u043D\u0435\u0448\u043D\u0438\u0435 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0438, \u043D\u0430\u043F\u0438\u0441\u0430\u043D\u043D\u044B\u0435 \u043D\u0430 \u0440\u0430\u0437\u043D\u044B\u0445 \u044F\u0437\u044B\u043A\u0430\u0445, \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u044F \u0432\u044B\u0437\u043E\u0432\u044B \u043A \u043D\u0438\u043C \u0438\u0437 JavaScript-\u043A\u043E\u0434\u0430. Node.js \u043F\u0440\u0438\u043C\u0435\u043D\u044F\u0435\u0442\u0441\u044F \u043F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440\u0435, \u0432\u044B\u043F\u043E\u043B\u043D\u044F\u044F \u0440\u043E\u043B\u044C \u0432\u0435\u0431-\u0441\u0435\u0440\u0432\u0435\u0440\u0430, \u043D\u043E \u0435\u0441\u0442\u044C \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0440\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u0442\u044C \u043D\u0430 Node.js \u0438 \u0434\u0435\u0441\u043A\u0442\u043E\u043F\u043D\u044B\u0435 \u043E\u043A\u043E\u043D\u043D\u044B\u0435 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F (\u043F\u0440\u0438 \u043F\u043E\u043C\u043E\u0449\u0438 NW.js, AppJS \u0438\u043B\u0438 Electron \u0434\u043B\u044F Linux, Windows \u0438 macOS) \u0438 \u0434\u0430\u0436\u0435 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043C\u0438\u043A\u0440\u043E\u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u044B (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, tessel, low.js \u0438 espruino). \u0412 \u043E\u0441\u043D\u043E\u0432\u0435 Node.js \u043B\u0435\u0436\u0438\u0442 \u0441\u043E\u0431\u044B\u0442\u0438\u0439\u043D\u043E-\u043E\u0440\u0438\u0435\u043D\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0435 \u0438 \u0430\u0441\u0438\u043D\u0445\u0440\u043E\u043D\u043D\u043E\u0435 (\u0438\u043B\u0438 \u0440\u0435\u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0435) \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0441 \u043D\u0435\u0431\u043B\u043E\u043A\u0438\u0440\u0443\u044E\u0449\u0438\u043C \u0432\u0432\u043E\u0434\u043E\u043C/\u0432\u044B\u0432\u043E\u0434\u043E\u043C."
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "net_core",
     className: "sec right five",
     style: {
       background: "url(images/solutions/5.png) no-repeat"
@@ -7658,6 +7728,7 @@ var Solutions = function Solutions() {
     title: ".NET Core",
     para: "\u0412 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435 \u0433\u043E\u0434\u044B \u0432\u0441\u0435 \u0431\u043E\u043B\u0435\u0435 \u043F\u043E\u043F\u0443\u043B\u044F\u0440\u043D\u043E\u0439 \u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u0430\u044F \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0430 .NET. \u041E\u043D\u0430 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u043C\u043D\u043E\u0433\u0438\u043C\u0438 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0430\u043C\u0438 \u0434\u043B\u044F \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F \u0438 \u0442\u0435\u0441\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439, \u044D\u0442\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E \u0437\u0430 \u0441\u0447\u0435\u0442 \u043E\u0442\u043A\u0440\u044B\u0442\u043E\u0433\u043E \u0438\u0441\u0445\u043E\u0434\u043D\u043E\u0433\u043E \u043A\u043E\u0434\u0430. \u041E\u0434\u043D\u0438\u043C \u0438\u0437 \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u043E\u0432 \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\u044F \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B \u0432 \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0435 \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0441\u0442\u0430\u043B\u0430 .NET Core. \u0421 \u0435\u0435 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044F \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u044B \u0441 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F\u043C\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u043B\u0438\u0441\u044C \u0434\u043B\u044F Windows \u0438 \u043F\u0440\u043E\u0447\u0438\u0445 \u041E\u0421."
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "laravel",
     className: "sec left six",
     style: {
       background: "url(images/solutions/6.png) no-repeat"
@@ -7670,6 +7741,7 @@ var Solutions = function Solutions() {
     title: "LARAVEL",
     para: "Laravel \u2014 \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u044B\u0439 \u0432\u0435\u0431-\u0444\u0440\u0435\u0439\u043C\u0432\u043E\u0440\u043A \u0441 \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u043C \u043A\u043E\u0434\u043E\u043C, \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u043D\u044B\u0439 \u0434\u043B\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u043D\u043E\u0439 \u043C\u043E\u0434\u0435\u043B\u0438 MVC (\u0430\u043D\u0433\u043B. Model View Controller \u2014 \u043C\u043E\u0434\u0435\u043B\u044C-\u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435-\u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440). Laravel \u0432\u044B\u043F\u0443\u0449\u0435\u043D \u043F\u043E\u0434 \u043B\u0438\u0446\u0435\u043D\u0437\u0438\u0435\u0439 MIT."
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "php",
     className: "sec right seven",
     style: {
       background: "url(images/solutions/7.png) no-repeat"
@@ -7682,6 +7754,7 @@ var Solutions = function Solutions() {
     title: "PHP",
     para: "\u041F\u0435\u0440\u0432\u043E\u0435, \u0447\u0442\u043E \u043D\u0443\u0436\u043D\u043E \u043F\u043E\u043D\u0438\u043C\u0430\u0442\u044C, php - \u044D\u0442\u043E \u043F\u0440\u043E\u0441\u0442\u043E \u044F\u0437\u044B\u043A \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F. \u041D\u043E \u0434\u0435\u043B\u043E \u0432 \u0442\u043E\u043C, \u0447\u0442\u043E \u044D\u0442\u043E\u0442 \u044F\u0437\u044B\u043A \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u043E\u0440\u0438\u0435\u043D\u0442\u0438\u0440\u043E\u0432\u0430\u043D \u043D\u0430 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u0432\u0435\u0431-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439 \u0438 \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u043E\u0432. \u042D\u0442\u043E \u0442\u0430\u043A \u043D\u0430\u0437\u044B\u0432\u0430\u0435\u043C\u044B\u0439 \u0441\u0435\u0440\u0432\u0435\u0440\u043D\u044B\u0439 \u044F\u0437\u044B\u043A \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u0438\u043B\u0438 backend. \u0422. \u0435. \u043E\u0431\u0440\u0430\u0442\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C \u044F\u0437\u044B\u043A\u0430 php, \u0435\u0441\u043B\u0438 \u0412\u044B \u0435\u0433\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0435 \u0434\u043B\u044F \u0446\u0435\u043B\u0435\u0439 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u043E\u0432 \u0438 \u0434\u043B\u044F \u0446\u0435\u043B\u0435\u0439 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043A\u0430\u043A\u0438\u0445-\u0442\u043E \u0441\u043A\u0440\u0438\u043F\u0442\u043E\u0432 \u0438 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439, \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u043D\u0430 \u0443\u0434\u0430\u043B\u0435\u043D\u043D\u043E\u043C \u0441\u0435\u0440\u0432\u0435\u0440\u0435 \u043D\u0430 \u043A\u0430\u043A\u043E\u043C-\u0442\u043E \u0445\u043E\u0441\u0442\u0438\u043D\u0433\u0435, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442 \u044D\u0442\u043E\u0442 \u0432\u0435\u0431-\u0441\u0435\u0440\u0432\u0435\u0440. "
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "native_js",
     className: "sec left eight",
     style: {
       background: "url(images/solutions/8.png) no-repeat"
@@ -9242,7 +9315,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".techno_section {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n}\n.circle {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n    width: 110px;\n    height: 110px;\n}\n\n/* objects */\n.techobj {\n    text-align: center;\n    font-size: 18px;\n}\n.techobj p {\n    text-align: center;\n    font-family: \"book\";\n}\n\n/* categopries */\n.relative_object {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n.relative_object .category {\n    font-family: \"book\";\n    font-size: 35px;\n    position: absolute;\n    white-space: nowrap;\n    padding: 5px;\n    transition: 0.4s;\n    color: #272639;\n    cursor: pointer;\n}\n.relative_object .category::after {\n    width: 100%;\n    height: 100%;\n    background-color: #e81747;\n    left: 0;\n    top: 0;\n    z-index: -1;\n    transition: 0.4s;\n}\n.relative_object .top .category {\n    top: -53px;\n    left: 50%;\n    transform: translateX(-50%);\n}\n.relative_object .top:hover .category {\n    color: #fff;\n}\n.relative_object .bottom:hover .category {\n    color: #fff;\n}\n.relative_object .left:hover .category {\n    color: #fff;\n}\n.relative_object .right:hover .category {\n    color: #fff;\n}\n.relative_object .top .category::after {\n    transform: scaleY(0);\n    transform-origin: top;\n}\n.relative_object .top:hover .category::after {\n    transform: scaleY(1);\n}\n.relative_object .bottom .category {\n    bottom: -51px;\n    left: 50%;\n    transform: translateX(-50%);\n}\n.relative_object .bottom .category::after {\n    transform: scaleY(0);\n    transform-origin: bottom;\n}\n.relative_object .bottom:hover .category::after {\n    transform: scaleY(1);\n}\n.relative_object .right .category {\n    right: -145px;\n    top: 50%;\n    transform: translateY(-50%);\n}\n.relative_object .right .category::after {\n    transform: scaleX(0);\n    transform-origin: right;\n}\n.relative_object .right:hover .category::after {\n    transform: scaleX(1);\n}\n.relative_object .left .category {\n    left: -145px;\n    top: 50%;\n    transform: translateY(-50%);\n}\n.relative_object .left .category::after {\n    transform: scaleX(0);\n    transform-origin: left;\n}\n.relative_object .left:hover .category::after {\n    transform: scaleX(1);\n}\n\n/* category fadeins */\n.relative_object .fadein {\n    background-color: rgba(255, 255, 255, 0.9);\n    transition: 0.4s;\n    z-index: 100;\n}\n.relative_object .top .fadein,\n.relative_object .top .space {\n    width: 100vw;\n    height: 220px;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    top: -300px;\n    transition: 0.4s;\n}\n.relative_object .top .fadein {\n    transform: translateX(-50%) translateY(-100%);\n}\n.relative_object .left .fadein,\n.relative_object .left .space {\n    width: 35vw;\n    height: 640px;\n    position: absolute;\n    left: -50vw;\n    top: 50%;\n    transform: translateY(-50%);\n    transition: 0.4s;\n}\n.relative_object .left .fadein {\n    transform: translateY(-50%) translateX(-100%);\n}\n.relative_object .bottom .fadein,\n.relative_object .bottom .space {\n    width: 100vw;\n    height: 220px;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    bottom: -300px;\n    transition: 0.4s;\n}\n.relative_object .bottom .fadein {\n    transform: translateX(-50%) translateY(100%);\n}\n.relative_object .right .fadein,\n.relative_object .right .space {\n    width: 35vw;\n    height: 640px;\n    position: absolute;\n    right: -50vw;\n    top: 50%;\n    transform: translateY(-50%);\n    transition: 0.4s;\n}\n.relative_object .right .fadein {\n    transform: translateY(-50%) translateX(100%);\n}\n\n.relative_object .top .fadein .arrow {\n    position: absolute;\n    left: 50%;\n    bottom: -18px;\n    transform: translateX(-50%);\n}\n\n.relative_object .bottom .fadein .arrow {\n    position: absolute;\n    left: 50%;\n    top: -18px;\n    transform: translateX(-50%) rotate(180deg);\n}\n\n.relative_object .right .fadein .arrow {\n    position: absolute;\n    left: -39.6px;\n    top: 50%;\n    transform: translateY(-50%) rotate(90deg);\n}\n\n.relative_object .left .fadein .arrow {\n    position: absolute;\n    right: -39.9px;\n    top: 50%;\n    transform: translateY(-50%) rotate(-90deg);\n}\n\n/* category contents */\n.relative_object .top .category_content {\n    position: absolute;\n    bottom: 30px;\n    left: 50%;\n    transform: translateX(-50%);\n    display: flex;\n    align-items: flex-end;\n}\n.relative_object .top .category_content .techobj,\n.relative_object .bottom .category_content .techobj {\n    margin: 0 30px;\n}\n.relative_object .bottom .category_content {\n    position: absolute;\n    top: 30px;\n    left: 50%;\n    transform: translateX(-50%);\n    display: flex;\n    align-items: flex-start;\n}\n.relative_object .left .category_content {\n    position: absolute;\n    right: 30px;\n    top: 50%;\n    transform: translateY(-50%);\n    display: flex;\n    flex-direction: column;\n}\n.relative_object .left .category_content .techobj {\n    margin: 10px 0;\n}\n.relative_object .right .category_content {\n    position: absolute;\n    left: 30px;\n    top: 50%;\n    transform: translateY(-50%);\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    grid-gap: 20px;\n}\n.relative_object .right .category_content .techobj {\n    max-width: 100px;\n    margin: auto;\n    margin-bottom: 0;\n}\n\n/* final hover effect */\n\n.relative_object .top:hover .fadein {\n    opacity: 1;\n    transform: translateX(-50%) translateY(0);\n}\n\n.relative_object .bottom:hover .fadein {\n    opacity: 1;\n    transform: translateX(-50%) translateY(0);\n}\n\n.relative_object .right:hover .fadein {\n    opacity: 1;\n    transform: translateY(-50%) translateX(0);\n}\n\n.relative_object .left:hover .fadein {\n    opacity: 1;\n    transform: translateY(-50%) translateX(0);\n}\n\n/*************** responsiveness ***************/\n@media screen and (max-width: 1200px) {\n    .relative_object .right .category_content {\n        grid-template-columns: repeat(2, 1fr);\n    }\n    .relative_object .right .fadein {\n        width: 30vw;\n        right: -48vw;\n    }\n    .relative_object .left .fadein {\n        width: 30vw;\n        left: -48vw;\n    }\n}\n@media screen and (max-width: 950px) {\n    .relative_object .right .fadein {\n        width: 40vw;\n    }\n    .relative_object .left .fadein {\n        width: 40vw;\n    }\n    .relative_object .left .fadein .arrow,\n    .relative_object .right .fadein .arrow {\n        display: none;\n    }\n}\n@media screen and (max-width: 700px) {\n    .relative_object .right .fadein {\n        width: 50vw;\n    }\n    .relative_object .left .fadein {\n        width: 50vw;\n    }\n    .relative_object .category_content .techobj {\n        max-width: 70px !important;\n        font-size: 14px;\n    }\n}\n@media screen and (max-width: 500px) {\n    .relative_object .right .category_content {\n        grid-template-columns: 1fr;\n    }\n    .relative_object .category {\n        font-size: 30px;\n    }\n    .relative_object .right .category {\n        right: -123px;\n    }\n    .relative_object .left .category {\n        left: -123px;\n    }\n    .technology_section {\n        padding-top: 32px;\n    }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".techno_section {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n}\n.circle {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n    width: 110px;\n    height: 110px;\n}\n\n/* objects */\n.techobj {\n    text-align: center;\n    font-size: 18px;\n    cursor: pointer;\n}\n.techobj p {\n    text-align: center;\n    font-family: \"book\";\n}\n\n/* categopries */\n.relative_object {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n.relative_object .category {\n    font-family: \"book\";\n    font-size: 35px;\n    position: absolute;\n    white-space: nowrap;\n    padding: 5px;\n    transition: 0.4s;\n    color: #272639;\n    cursor: pointer;\n}\n.relative_object .category::after {\n    width: 100%;\n    height: 100%;\n    background-color: #e81747;\n    left: 0;\n    top: 0;\n    z-index: -1;\n    transition: 0.4s;\n}\n.relative_object .top .category {\n    top: -53px;\n    left: 50%;\n    transform: translateX(-50%);\n}\n.relative_object .top:hover .category {\n    color: #fff;\n}\n.relative_object .bottom:hover .category {\n    color: #fff;\n}\n.relative_object .left:hover .category {\n    color: #fff;\n}\n.relative_object .right:hover .category {\n    color: #fff;\n}\n.relative_object .top .category::after {\n    transform: scaleY(0);\n    transform-origin: top;\n}\n.relative_object .top:hover .category::after {\n    transform: scaleY(1);\n}\n.relative_object .bottom .category {\n    bottom: -51px;\n    left: 50%;\n    transform: translateX(-50%);\n}\n.relative_object .bottom .category::after {\n    transform: scaleY(0);\n    transform-origin: bottom;\n}\n.relative_object .bottom:hover .category::after {\n    transform: scaleY(1);\n}\n.relative_object .right .category {\n    right: -145px;\n    top: 50%;\n    transform: translateY(-50%);\n}\n.relative_object .right .category::after {\n    transform: scaleX(0);\n    transform-origin: right;\n}\n.relative_object .right:hover .category::after {\n    transform: scaleX(1);\n}\n.relative_object .left .category {\n    left: -145px;\n    top: 50%;\n    transform: translateY(-50%);\n}\n.relative_object .left .category::after {\n    transform: scaleX(0);\n    transform-origin: left;\n}\n.relative_object .left:hover .category::after {\n    transform: scaleX(1);\n}\n\n/* category fadeins */\n.relative_object .fadein {\n    background-color: rgba(255, 255, 255, 0.9);\n    transition: 0.4s;\n    z-index: 100;\n}\n.relative_object .top .fadein,\n.relative_object .top .space {\n    width: 100vw;\n    height: 220px;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    top: -300px;\n    transition: 0.4s;\n}\n.relative_object .top .fadein {\n    transform: translateX(-50%) translateY(-100%);\n}\n.relative_object .left .fadein,\n.relative_object .left .space {\n    width: 35vw;\n    height: 640px;\n    position: absolute;\n    left: -50vw;\n    top: 50%;\n    transform: translateY(-50%);\n    transition: 0.4s;\n}\n.relative_object .left .fadein {\n    transform: translateY(-50%) translateX(-100%);\n}\n.relative_object .bottom .fadein,\n.relative_object .bottom .space {\n    width: 100vw;\n    height: 220px;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    bottom: -300px;\n    transition: 0.4s;\n}\n.relative_object .bottom .fadein {\n    transform: translateX(-50%) translateY(100%);\n}\n.relative_object .right .fadein,\n.relative_object .right .space {\n    width: 35vw;\n    height: 640px;\n    position: absolute;\n    right: -50vw;\n    top: 50%;\n    transform: translateY(-50%);\n    transition: 0.4s;\n}\n.relative_object .right .fadein {\n    transform: translateY(-50%) translateX(100%);\n}\n\n.relative_object .top .fadein .arrow {\n    position: absolute;\n    left: 50%;\n    bottom: -18px;\n    transform: translateX(-50%);\n}\n\n.relative_object .bottom .fadein .arrow {\n    position: absolute;\n    left: 50%;\n    top: -18px;\n    transform: translateX(-50%) rotate(180deg);\n}\n\n.relative_object .right .fadein .arrow {\n    position: absolute;\n    left: -39.6px;\n    top: 50%;\n    transform: translateY(-50%) rotate(90deg);\n}\n\n.relative_object .left .fadein .arrow {\n    position: absolute;\n    right: -39.9px;\n    top: 50%;\n    transform: translateY(-50%) rotate(-90deg);\n}\n\n/* category contents */\n.relative_object .top .category_content {\n    position: absolute;\n    bottom: 30px;\n    left: 50%;\n    transform: translateX(-50%);\n    display: flex;\n    align-items: flex-end;\n}\n.relative_object .top .category_content .techobj,\n.relative_object .bottom .category_content .techobj {\n    margin: 0 30px;\n}\n.relative_object .bottom .category_content {\n    position: absolute;\n    top: 30px;\n    left: 50%;\n    transform: translateX(-50%);\n    display: flex;\n    align-items: flex-start;\n}\n.relative_object .left .category_content {\n    position: absolute;\n    right: 30px;\n    top: 50%;\n    transform: translateY(-50%);\n    display: flex;\n    flex-direction: column;\n}\n.relative_object .left .category_content .techobj {\n    margin: 10px 0;\n}\n.relative_object .right .category_content {\n    position: absolute;\n    left: 30px;\n    top: 50%;\n    transform: translateY(-50%);\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    grid-gap: 20px;\n}\n.relative_object .right .category_content .techobj {\n    max-width: 100px;\n    margin: auto;\n    margin-bottom: 0;\n}\n\n/* final hover effect */\n\n.relative_object .top:hover .fadein {\n    opacity: 1;\n    transform: translateX(-50%) translateY(0);\n}\n\n.relative_object .bottom:hover .fadein {\n    opacity: 1;\n    transform: translateX(-50%) translateY(0);\n}\n\n.relative_object .right:hover .fadein {\n    opacity: 1;\n    transform: translateY(-50%) translateX(0);\n}\n\n.relative_object .left:hover .fadein {\n    opacity: 1;\n    transform: translateY(-50%) translateX(0);\n}\n\n/*************** responsiveness ***************/\n@media screen and (max-width: 1200px) {\n    .relative_object .right .category_content {\n        grid-template-columns: repeat(2, 1fr);\n    }\n    .relative_object .right .fadein {\n        width: 30vw;\n        right: -48vw;\n    }\n    .relative_object .left .fadein {\n        width: 30vw;\n        left: -48vw;\n    }\n}\n@media screen and (max-width: 950px) {\n    .relative_object .right .fadein {\n        width: 40vw;\n    }\n    .relative_object .left .fadein {\n        width: 40vw;\n    }\n    .relative_object .left .fadein .arrow,\n    .relative_object .right .fadein .arrow {\n        display: none;\n    }\n}\n@media screen and (max-width: 700px) {\n    .relative_object .right .fadein {\n        width: 50vw;\n    }\n    .relative_object .left .fadein {\n        width: 50vw;\n    }\n    .relative_object .category_content .techobj {\n        max-width: 70px !important;\n        font-size: 14px;\n    }\n}\n@media screen and (max-width: 500px) {\n    .relative_object .right .category_content {\n        grid-template-columns: 1fr;\n    }\n    .relative_object .category {\n        font-size: 30px;\n    }\n    .relative_object .right .category {\n        right: -123px;\n    }\n    .relative_object .left .category {\n        left: -123px;\n    }\n    .technology_section {\n        padding-top: 32px;\n    }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
