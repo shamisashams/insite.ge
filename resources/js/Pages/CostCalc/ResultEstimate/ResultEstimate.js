@@ -22,9 +22,11 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
     let idRef = useRef('')
     let [projectId, setProjectId] = useState('');
     let [buttonDisabled, setButtonDisabled] = useState(false)
+    let [disableSendRequestButton, setDisableSendRequestButton] = useState(false)
 
     const toggleRequest = (e) => {
-        if (e.target.id == 'send-request') {
+        if (e.target.id == 'send-request' && data.length > 0) {
+            setDisableSendRequestButton(true);
             Inertia.post('/services/calculator-save', {
                 data,
                 totalPrice,
@@ -34,10 +36,13 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
                 onFinish: () => {
                     projectId = idRef.current.value;
                     setProjectId(projectId);
+                    setRequest(!request);
+                    setDisableSendRequestButton(false);
                 }
             })
+        } else if (data.length > 0) {
+            setRequest(!request);
         }
-        setRequest(!request);
     };
     const downloadPdf = () => {
         fetch(`/download-pdf?projectId=${projectId}`).then(response => response.json())
@@ -101,14 +106,17 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
                                        totalEndTime={totalEndTime}/>
                         </div>
                         <div className="flex btm_btns">
-                            <button onClick={(e) => toggleRequest(e)} className="dl_pdf flex center">
+                            <button disabled={disableSendRequestButton} onClick={(e) => toggleRequest(e)}
+                                    className="dl_pdf flex center">
                                 <img src="/images/calculator/pdf.svg" alt=""/>
                                 <span id="send-request" className="op06">Download PDF</span>
                             </button>
                             <div className="flex">
                                 <Button2 large text="MAKE CHANGES"
                                          href={'/services/calculator?state=' + encodeURI(requestData) + "&totalPrice=" + totalPrice}/>
-                                <CostBtn id="send-request" large text="SEND REQUESTS" click={(e) => toggleRequest(e)}/>
+                                <CostBtn disabled={disableSendRequestButton} id="send-request" large
+                                         text="SEND REQUESTS"
+                                         click={(e) => toggleRequest(e)}/>
                             </div>
                         </div>
                     </div>

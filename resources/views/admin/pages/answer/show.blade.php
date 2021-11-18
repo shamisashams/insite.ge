@@ -68,10 +68,12 @@
                             <td>End Time:</td>
                             <td>{{$answer->end_time}}</td>
                         </tr>
-                        <tr>
-                            <td>Feature:</td>
-                            <td>{{$answer->feature?$answer->feature->feature->title:""}}</td>
-                        </tr>
+                        @if($answer->feature && $answer->feature->feature)
+                            <tr>
+                                <td>Feature:</td>
+                                <td>{{$answer->feature->feature->title}}</td>
+                            </tr>
+                        @endif
 
                         {{--                        <tr>--}}
                         {{--                            <td>Feature:</td>--}}

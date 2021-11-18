@@ -1,6 +1,6 @@
 @extends('client.layout.site')
 @section('subhead')
-    <title>IberCompany</title>
+    <title>Insite</title>
     <meta name="description"
           content="iber-company">
 @endsection
