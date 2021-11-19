@@ -12,7 +12,7 @@ import DocumentMeta from 'react-document-meta';
 import Meta from "../../Meta/Meta";
 
 const ShowVacancy = ({data}) => {
-    const meta = Meta('Some Meta Title', 'keyword', 'description');
+    const meta = Meta(data.vacancy.meta_title, data.vacancy.meta_keyword, data.vacancy.meta_description);
 
     const [appForm, setAppForm] = useState(false);
     const toggleAppForm = () => {

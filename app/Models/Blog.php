@@ -35,6 +35,9 @@ class Blog extends Model implements Searchable
         'content',
         'category_id',
         'status',
+        'meta_title',
+        'meta_description',
+        'meta_keyword',
     ];
 
 

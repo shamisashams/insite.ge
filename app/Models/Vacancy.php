@@ -40,6 +40,9 @@ class Vacancy extends Model
         'experience',
         'commitment',
         'status',
+        'meta_title',
+        'meta_description',
+        'meta_keyword',
     ];
 
 
