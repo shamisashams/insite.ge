@@ -15,6 +15,7 @@
 
 .news_page .wrapper {
     width: 1300px;
+    margin-bottom: 60px;
 }
 
 .news_page_content {
@@ -151,7 +152,10 @@
         padding: 30px 18px;
         max-width: none;
         margin: auto;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
+    }
+    .news_page .wrapper {
+        margin-bottom: 0;
     }
 }
 

@@ -78,7 +78,7 @@
 }
 
 .common_questions {
-    margin: 100px auto;
+    margin: 100px auto !important;
 }
 .common_questions .faq_title {
     margin: auto;
@@ -92,6 +92,9 @@
     margin-bottom: 25px;
     padding-bottom: 25px;
     border-bottom: 0.5px solid #70707067;
+}
+.common_questions .co_que:last-child {
+    border-bottom: none;
 }
 .common_questions .co_que .q {
     font-size: 35px;
@@ -175,6 +178,6 @@
         font-size: 13px;
     }
     .common_questions {
-        margin: 50px auto;
+        margin: 50px auto !important;
     }
 }

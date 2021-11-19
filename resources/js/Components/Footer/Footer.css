@@ -42,7 +42,7 @@
 }
 #language_switcher {
     position: relative;
-    width: 120px;
+    width: 131px;
 }
 #language_switcher .main {
     border: 2px solid #272639;
@@ -61,9 +61,16 @@
     cursor: pointer;
     position: relative;
     transition: 0.3s;
+    overflow: hidden;
 }
 #language_switcher .lang img {
     margin-left: 5px;
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: 0;
+    top: 0;
+    opacity: 1;
 }
 #language_switcher .dropup {
     position: absolute;

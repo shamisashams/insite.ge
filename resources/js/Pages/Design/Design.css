@@ -35,6 +35,7 @@
     padding-left: 20px;
     transform: none;
     white-space: normal;
+    cursor: default;
 }
 .design_page .showcase .expertise .in_link img {
     opacity: 1;
@@ -43,6 +44,10 @@
     transform: none;
 }
 .design_page .process .title1 .head {
+    font-size: 75px;
+    max-width: 1150px;
+    margin: auto;
+    margin-bottom: 75px;
     font-size: 75px;
     max-width: 1150px;
     margin: auto;

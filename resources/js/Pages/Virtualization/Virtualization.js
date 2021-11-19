@@ -2,14 +2,18 @@ import React from "react";
 import Form from "../../Components/Form/Form";
 import Showcase2 from "../../Components/Showcase2/Showcase2";
 import Text35 from "../../Components/Text35";
-import {Impacts, PortBox} from "./Boxes/Boxes";
+import { Impacts, PortBox } from "./Boxes/Boxes";
 import "./Virtualization.css";
 import Layout from "../../Layouts/Layout";
 import Meta from "../Meta/Meta";
-import DocumentMeta from 'react-document-meta';
+import DocumentMeta from "react-document-meta";
 
 const Virtualization = () => {
-    const meta = Meta('Some Meta Title', 'keyword', 'description');
+    const meta = Meta(
+        "Insite – Виртуализация",
+        "Виртуализация, vshpere, vmware, esxi, proxmox, vcenter, настройка vmware, настройка esxi",
+        "Мы поможем вам настроит и запустить разные виды виртуализации"
+    );
 
     return (
         <DocumentMeta {...meta}>
@@ -17,17 +21,20 @@ const Virtualization = () => {
                 <div className="virtualization_page">
                     <div
                         className="showcase"
-                        style={{background: "url(/images/virtual/1.png) no-repeat"}}
+                        style={{
+                            background: "url(/images/virtual/1.png) no-repeat",
+                        }}
                     >
                         <div className="wrapper flex center">
                             <Showcase2
                                 title="Виртуализация"
                                 subtitle="Виртуализация - это процесс создания виртуальной версии сервера или компьютерной системы с использованием программного обеспечения, а не оборудования. Это позволяет нескольким операционным системам работать одновременно на одной машине."
+                                href="/contact"
                             />
                         </div>
                     </div>
                     <div className="impact_sec wrapper">
-                        <Text35 text="Анализ данных: услуги виртуализации и влияние на бизнес"/>
+                        <Text35 text="Анализ данных: услуги виртуализации и влияние на бизнес" />
                         <div className="grid">
                             <Impacts
                                 impClass="a"
@@ -68,7 +75,7 @@ const Virtualization = () => {
                         </div>
                     </div>
                     <div className="portfolio_sec wrapper">
-                        <img src="/images/virtual/2.png" alt=""/>
+                        <img src="/images/virtual/2.png" alt="" />
                         <h3>НАШ ПОРТФЕЛЬ КОНСУЛЬТАЦИОННЫХ УСЛУГ ВКЛЮЧАЕТ:</h3>
                         <PortBox
                             bg="#F5F5F5"
@@ -109,7 +116,7 @@ const Virtualization = () => {
                             head="Виртуализация хранилища"
                             para="Это процесс группирования физического хранилища из нескольких сетевых устройств хранения таким образом, чтобы он работал так, как если бы он находился на одном устройстве."
                         />
-                        <Form title="Оставьте нам записку"/>
+                        <Form title="Оставьте нам записку" />
                     </div>
                 </div>
             </Layout>

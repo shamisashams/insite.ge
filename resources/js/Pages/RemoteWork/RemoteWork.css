@@ -1,166 +1,167 @@
 .remote_page .showcase {
-  padding: 220px 0;
-  background-position: center !important;
-  background-size: cover !important;
+    padding: 220px 0;
+    background-position: center !important;
+    background-size: cover !important;
 }
 .remote_page .showcase .wrapper {
-  width: 1300px;
+    width: 1300px;
 }
 .remote_page .showcase .main_btn {
-  display: none;
+    display: none;
 }
 .remote_page .showcase p {
-  max-width: 420px;
-  text-align: left;
-  margin-top: -10px;
-  margin-bottom: 20px;
+    max-width: 420px;
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 .remote_page .showcase .form .inputs {
-  margin-top: 16px;
+    margin-top: 16px;
 }
 .remote_page .showcase .form .text35 {
-  text-align: left;
+    text-align: left;
 }
 .remote_page .first_boxes {
-  margin-top: -55px;
-  margin-bottom: 45px;
+    margin-top: -55px;
+    margin-bottom: 45px;
 }
 .remote_page .text35 {
-  max-width: 570px;
-  margin: auto;
-  margin-bottom: 42px;
-  text-align: center;
+    max-width: 570px;
+    margin: auto;
+    margin-bottom: 42px;
+    text-align: center;
 }
 .remote_page .box2_flex {
-  align-items: flex-start;
-  width: 93%;
-  margin: auto;
-  margin-bottom: 67px;
+    align-items: flex-start;
+    width: 93%;
+    margin: auto;
+    margin-bottom: 67px;
 }
 .remote_page .box2_flex .column {
-  width: 24%;
+    width: 24%;
 }
 .remote_page .box2_flex .in_link {
-  color: #272639;
-  padding-left: 15px;
-  transform: none;
-  font-family: "light";
-  margin-bottom: 10px;
+    color: #272639;
+    padding-left: 15px;
+    transform: none;
+    font-family: "light";
+    margin-bottom: 10px;
+    cursor: default;
 }
 .remote_page .box2_flex .in_link img {
-  opacity: 1;
-  top: 5px;
-  transform: none;
-  width: 4px;
+    opacity: 1;
+    top: 5px;
+    transform: none;
+    width: 4px;
 }
 .remote_page .check_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px 60px;
-  margin-bottom: 125px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 60px;
+    margin-bottom: 125px;
 }
 .remote_page .form_sec {
-  padding: 260px 0;
-  background-position: center !important;
-  background-size: cover !important;
+    padding: 260px 0;
+    background-position: center !important;
+    background-size: cover !important;
 }
 .remote_page .form_sec .form {
-  margin: auto;
-  text-align: center;
+    margin: auto;
+    text-align: center;
 }
 
 @media screen and (max-width: 1500px) {
-  .remote_page .showcase .wrapper {
-    width: 95%;
-  }
-  .remote_page .box2_flex {
-    width: 100%;
-  }
+    .remote_page .showcase .wrapper {
+        width: 95%;
+    }
+    .remote_page .box2_flex {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 1440px) {
-  .box_one .text35 {
-    margin-bottom: 15px !important;
-    font-size: 25px;
-  }
-  .box_two .text35 {
-    font-size: 25px;
-  }
+    .box_one .text35 {
+        margin-bottom: 15px !important;
+        font-size: 25px;
+    }
+    .box_two .text35 {
+        font-size: 25px;
+    }
 }
 @media screen and (max-width: 1200px) {
-  .checked_box {
-    padding: 0 15px;
-    padding-left: 23px;
-    font-size: 15px;
-  }
-  .remote_page .check_grid {
-    grid-gap: 37px;
-  }
+    .checked_box {
+        padding: 0 15px;
+        padding-left: 23px;
+        font-size: 15px;
+    }
+    .remote_page .check_grid {
+        grid-gap: 37px;
+    }
 }
 @media screen and (max-width: 1100px) {
-  .remote_page .first_boxes {
-    display: block;
-    text-align: center;
-  }
-  .box_one {
-    display: inline-block;
-    width: 48%;
-    margin-bottom: 20px;
-  }
-  .box_two {
-    height: 238px;
-  }
-  .box_two img {
-    width: 35%;
-  }
-  .remote_page .form_sec {
-    padding: 100px 0;
-  }
+    .remote_page .first_boxes {
+        display: block;
+        text-align: center;
+    }
+    .box_one {
+        display: inline-block;
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .box_two {
+        height: 238px;
+    }
+    .box_two img {
+        width: 35%;
+    }
+    .remote_page .form_sec {
+        padding: 100px 0;
+    }
 }
 @media screen and (max-width: 1000px) {
-  .remote_page .box2_flex {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-  .remote_page .box2_flex .column {
-    width: 100%;
-  }
-  .remote_page .check_grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .remote_page .box2_flex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .remote_page .box2_flex .column {
+        width: 100%;
+    }
+    .remote_page .check_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media screen and (max-width: 840px) {
-  .box_one {
-    height: auto;
-    width: 80%;
-    padding-bottom: 30px;
-  }
-  .box_two .text35 {
-    font-size: 20px;
-  }
+    .box_one {
+        height: auto;
+        width: 80%;
+        padding-bottom: 30px;
+    }
+    .box_two .text35 {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 700px) {
-  .remote_page .box2_flex {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .remote_page .showcase {
-    padding: 160px 0;
-  }
+    .remote_page .box2_flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .remote_page .showcase {
+        padding: 160px 0;
+    }
 }
 @media screen and (max-width: 640px) {
-  .remote_page .check_grid {
-    grid-template-columns: 1fr;
-  }
-  .checked_box {
-    width: 90%;
-    margin: auto;
-  }
+    .remote_page .check_grid {
+        grid-template-columns: 1fr;
+    }
+    .checked_box {
+        width: 90%;
+        margin: auto;
+    }
 }
 @media screen and (max-width: 500px) {
-  .remote_page .box2_flex {
-    grid-template-columns: 1fr;
-  }
-  .remote_page .form_sec {
-    padding: 40px 0;
-  }
+    .remote_page .box2_flex {
+        grid-template-columns: 1fr;
+    }
+    .remote_page .form_sec {
+        padding: 40px 0;
+    }
 }
