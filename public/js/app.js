@@ -4208,7 +4208,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var ShowNews = function ShowNews(_ref) {
   var data = _ref.data;
-  var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_12__.default)('Some Meta Title', 'keyword', 'description');
+  var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_12__.default)(data.blog.meta_title, data.blog.meta_keyword, data.blog.meta_description);
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
       _useState2 = _slicedToArray(_useState, 2),
@@ -6981,6 +6981,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_Layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../Layouts/Layout */ "./resources/js/Layouts/Layout.js");
 /* harmony import */ var react_moment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-moment */ "./node_modules/react-moment/dist/index.js");
 /* harmony import */ var react_moment__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_moment__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _Meta_Meta__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Meta/Meta */ "./resources/js/Pages/Meta/Meta.js");
+/* harmony import */ var react_document_meta__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-document-meta */ "./node_modules/react-document-meta/dist/index.js");
+
+
 
 
 
@@ -6992,8 +6996,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var ShowNews = function ShowNews(_ref) {
   var data = _ref.data;
+  var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_8__.default)(data.news.meta_title, data.news.meta_keyword, data.news.meta_description);
   var news = data.news;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_6__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_document_meta__WEBPACK_IMPORTED_MODULE_9__.default, meta, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_6__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "news_blog_show news wrapper"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Text35__WEBPACK_IMPORTED_MODULE_1__.default, {
     text: news.title
@@ -7037,7 +7042,7 @@ var ShowNews = function ShowNews(_ref) {
     titlePrev: data.previousNews.title,
     paraPrev: data.previousNews.description,
     hrefPrev: '/news-details/' + data.previousNews.id
-  }) : ""));
+  }) : "")));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ShowNews);
@@ -7968,7 +7973,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var ShowVacancy = function ShowVacancy(_ref) {
   var data = _ref.data;
-  var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_10__.default)('Some Meta Title', 'keyword', 'description');
+  var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_10__.default)(data.vacancy.meta_title, data.vacancy.meta_keyword, data.vacancy.meta_description);
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState2 = _slicedToArray(_useState, 2),
