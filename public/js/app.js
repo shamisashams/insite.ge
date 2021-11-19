@@ -6545,7 +6545,6 @@ __webpack_require__.r(__webpack_exports__);
   return {
     title: title,
     meta: {
-      charset: 'utf-8',
       name: {
         keywords: keyword,
         description: description
