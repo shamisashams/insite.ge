@@ -14,7 +14,7 @@ import Meta from "../../Meta/Meta";
 import DocumentMeta from 'react-document-meta';
 
 const ShowNews = ({data}) => {
-    const meta = Meta('Some Meta Title', 'keyword', 'description');
+    const meta = Meta(data.blog.meta_title, data.blog.meta_keyword, data.blog.meta_description);
     const [currentImg, setCurrentImg] = useState(0);
     const imgLength = DataImg.length;
 

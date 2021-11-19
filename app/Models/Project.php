@@ -28,18 +28,14 @@ class Project extends Model
                 'hasParam' => true,
                 'scopeMethod' => 'id'
             ],
-            'key' => [
+            'totalPrice' => [
                 'hasParam' => true,
-                'scopeMethod' => 'key'
+                'scopeMethod' => 'totalPrice'
             ],
-            'title_1' => [
+            'time' => [
                 'hasParam' => true,
-                'scopeMethod' => 'title1Translation'
+                'scopeMethod' => 'time'
             ],
-            'title_2' => [
-                'hasParam' => true,
-                'scopeMethod' => 'title2Translation'
-            ]
         ];
     }
 

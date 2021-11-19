@@ -61,6 +61,18 @@
                             <td>{!!$blog->content ?? ''!!}</td>
                         </tr>
                         <tr>
+                            <td>@lang('admin.meta_title'):</td>
+                            <td>{!!$blog->meta_title ?? ''!!}</td>
+                        </tr>
+                        <tr>
+                            <td>@lang('admin.meta_description'):</td>
+                            <td>{!!$blog->meta_description ?? ''!!}</td>
+                        </tr>
+                        <tr>
+                            <td>@lang('admin.meta_keyword'):</td>
+                            <td>{!!$blog->meta_keyword ?? ''!!}</td>
+                        </tr>
+                        <tr>
                             <td>@lang('admin.created_at')</td>
                             <td>{{\Carbon\Carbon::parse($blog->created_at)}}</td>
                         </tr>

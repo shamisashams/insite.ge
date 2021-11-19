@@ -25,6 +25,7 @@
                                         <th>@lang('admin.id')</th>
                                         <th>@lang('admin.total_price')</th>
                                         <th>@lang('admin.time')</th>
+                                        <th>@lang('admin.created_at')</th>
                                         <th>@lang('admin.actions')</th>
                                     </tr>
                                     </thead>
@@ -45,6 +46,7 @@
                                                    class="validate {{$errors->has('time') ? '' : 'valid'}}">
                                         </th>
                                         <th></th>
+                                        <th></th>
                                     </tr>
                                     <tbody>
                                     @if($projects)
@@ -57,6 +59,9 @@
                                                 </td>
                                                 <td>
                                                     {{$project->time}}
+                                                </td>
+                                                <td>
+                                                    {{$project->created_at}}
                                                 </td>
                                                 <td>
                                                     <a href="{{route('project.show',$project->id)}}">

@@ -3,8 +3,6 @@
 {{-- page title --}}
 @section('title', $news->title)
 
-
-
 @section('content')
     <!-- users view start -->
     <div class="card-panel">
@@ -63,6 +61,18 @@
                         <tr>
                             <td>@lang('admin.location'):</td>
                             <td>{{$news->location ?? ''}}</td>
+                        </tr>
+                        <tr>
+                            <td>@lang('admin.meta_title'):</td>
+                            <td>{!!$news->meta_title ?? ''!!}</td>
+                        </tr>
+                        <tr>
+                            <td>@lang('admin.meta_description'):</td>
+                            <td>{!!$news->meta_description ?? ''!!}</td>
+                        </tr>
+                        <tr>
+                            <td>@lang('admin.meta_keyword'):</td>
+                            <td>{!!$news->meta_keyword ?? ''!!}</td>
                         </tr>
                         <tr>
                             <td>@lang('admin.created_at')</td>

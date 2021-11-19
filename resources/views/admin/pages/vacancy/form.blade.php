@@ -128,6 +128,39 @@
                             <div class="row">
 
                                 <div class="input-field"></div>
+                                <div class="input-field ">
+                                    {!! Form::text('meta_title',$vacancy->meta_title ?? '',['class' => 'validate '. $errors->has('meta_title') ? '' : 'valid']) !!}
+                                    {!! Form::label('meta_title',__('admin.meta_title')) !!}
+                                    @error('meta_title')
+                                    <small class="errorTxt4">
+                                        <div class="error">
+                                            {{$message}}
+                                        </div>
+                                    </small>
+                                    @enderror
+                                </div>
+                                <div class="input-field ">
+                                    {!! Form::text('meta_description',$vacancy->meta_description ?? '',['class' => 'validate '. $errors->has('meta_description') ? '' : 'valid']) !!}
+                                    {!! Form::label('meta_description',__('admin.meta_description')) !!}
+                                    @error('meta_description')
+                                    <small class="errorTxt4">
+                                        <div class="error">
+                                            {{$message}}
+                                        </div>
+                                    </small>
+                                    @enderror
+                                </div>
+                                <div class="input-field">
+                                    {!! Form::text('meta_keyword',$vacancy->meta_keyword ?? '',['class' => 'validate '. $errors->has('meta_keyword') ? '' : 'valid']) !!}
+                                    {!! Form::label('meta_keyword',__('admin.meta_keyword')) !!}
+                                    @error('meta_keyword')
+                                    <small class="errorTxt4">
+                                        <div class="error">
+                                            {{$message}}
+                                        </div>
+                                    </small>
+                                    @enderror
+                                </div>
 
                                 <div class="col s12 mt-3 mb-3">
                                     <label>

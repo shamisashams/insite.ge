@@ -35,6 +35,9 @@ class Blog extends Model implements Searchable
         'content',
         'category_id',
         'status',
+        'meta_title',
+        'meta_description',
+        'meta_keyword',
     ];
 
 
@@ -52,15 +55,15 @@ class Blog extends Model implements Searchable
             ],
             'title' => [
                 'hasParam' => true,
-                'scopeMethod' => 'titleTranslation'
+                'scopeMethod' => 'title'
             ],
             'description' => [
                 'hasParam' => true,
-                'scopeMethod' => 'descriptionTranslation'
+                'scopeMethod' => 'description'
             ],
             'content' => [
                 'hasParam' => true,
-                'scopeMethod' => 'contentTranslation'
+                'scopeMethod' => 'content'
             ]
         ];
     }

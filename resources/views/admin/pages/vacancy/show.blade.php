@@ -83,6 +83,19 @@
                         </tr>
 
                         <tr>
+                            <td>@lang('admin.meta_title'):</td>
+                            <td>{!!$vacancy->meta_title ?? ''!!}</td>
+                        </tr>
+                        <tr>
+                            <td>@lang('admin.meta_description'):</td>
+                            <td>{!!$vacancy->meta_description ?? ''!!}</td>
+                        </tr>
+                        <tr>
+                            <td>@lang('admin.meta_keyword'):</td>
+                            <td>{!!$vacancy->meta_keyword ?? ''!!}</td>
+                        </tr>
+
+                        <tr>
                             <td>@lang('admin.created_at')</td>
                             <td>{{\Carbon\Carbon::parse($vacancy->created_at)}}</td>
                         </tr>
@@ -97,39 +110,39 @@
         </div>
     </div>
 
-{{--    <div class="section">--}}
-{{--        <div class="section">--}}
-{{--            <div class="masonry-gallery-wrapper">--}}
-{{--                <div class="popup-gallery">--}}
-{{--                    <div class="gallery-sizer"></div>--}}
-{{--                    <div class="row">--}}
-{{--                        @if($blog ?? ''->mainFile)--}}
-{{--                            <div class="col s12 m6 l4 xl2">--}}
-{{--                                <div>--}}
-{{--                                    <a href="{{asset($blog ?? ''->mainFile->path.'/'.$blog ?? ''->mainFile->title)}}"--}}
-{{--                                       target="_blank" title="$file->title">--}}
-{{--                                        <img src="{{asset($blog ?? ''->mainFile->path.'/'.$blog ?? ''->mainFile->title)}}"--}}
-{{--                                             class="responsive-img mb-10" alt="">--}}
-{{--                                    </a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        @endif--}}
-{{--                        @foreach($blog ?? ''->files as $file)--}}
-{{--                            <div class="col s12 m6 l4 xl2">--}}
-{{--                                <div>--}}
-{{--                                    <a href="{{asset($file->path.'/'.$file->title)}}" target="_blank"--}}
-{{--                                       title="$file->title">--}}
-{{--                                        <img src="{{asset($file->path.'/'.$file->title)}}" class="responsive-img mb-10"--}}
-{{--                                             alt="">--}}
-{{--                                    </a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        @endforeach--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+    {{--    <div class="section">--}}
+    {{--        <div class="section">--}}
+    {{--            <div class="masonry-gallery-wrapper">--}}
+    {{--                <div class="popup-gallery">--}}
+    {{--                    <div class="gallery-sizer"></div>--}}
+    {{--                    <div class="row">--}}
+    {{--                        @if($blog ?? ''->mainFile)--}}
+    {{--                            <div class="col s12 m6 l4 xl2">--}}
+    {{--                                <div>--}}
+    {{--                                    <a href="{{asset($blog ?? ''->mainFile->path.'/'.$blog ?? ''->mainFile->title)}}"--}}
+    {{--                                       target="_blank" title="$file->title">--}}
+    {{--                                        <img src="{{asset($blog ?? ''->mainFile->path.'/'.$blog ?? ''->mainFile->title)}}"--}}
+    {{--                                             class="responsive-img mb-10" alt="">--}}
+    {{--                                    </a>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                        @endif--}}
+    {{--                        @foreach($blog ?? ''->files as $file)--}}
+    {{--                            <div class="col s12 m6 l4 xl2">--}}
+    {{--                                <div>--}}
+    {{--                                    <a href="{{asset($file->path.'/'.$file->title)}}" target="_blank"--}}
+    {{--                                       title="$file->title">--}}
+    {{--                                        <img src="{{asset($file->path.'/'.$file->title)}}" class="responsive-img mb-10"--}}
+    {{--                                             alt="">--}}
+    {{--                                    </a>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                        @endforeach--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
+    {{--            </div>--}}
+    {{--        </div>--}}
+    {{--    </div>--}}
 @endsection
 
 

@@ -322,4 +322,26 @@ trait ScopeFilter
     {
         return $query->where('end_time', 'like', '%' . $end_time . '%');
     }
+
+    /**
+     * @param $query
+     * @param $totalPrice
+     *
+     * @return mixed
+     */
+    public function scopeTotalPrice($query, $totalPrice)
+    {
+        return $query->where('total_price', 'like', '%' . $totalPrice . '%');
+    }
+
+    /**
+     * @param $query
+     * @param $time
+     *
+     * @return mixed
+     */
+    public function scopeTime($query, $time)
+    {
+        return $query->where('time', 'like', '%' . $time . '%');
+    }
 }

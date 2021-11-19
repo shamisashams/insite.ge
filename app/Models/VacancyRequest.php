@@ -71,11 +71,11 @@ class VacancyRequest extends Model
             ],
             'vacancy_title' => [
                 'hasParam' => true,
-                'scopeMethod' => 'relationTitleTranslation'
+                'scopeMethod' => 'relationTitle'
             ],
             'content' => [
                 'hasParam' => true,
-                'scopeMethod' => 'contentTranslation'
+                'scopeMethod' => 'content'
             ]
         ];
     }

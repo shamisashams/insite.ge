@@ -30,6 +30,9 @@ class News extends Model
         'location',
         'category_id',
         'status',
+        'meta_title',
+        'meta_description',
+        'meta_keyword',
     ];
 
 
