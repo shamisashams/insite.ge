@@ -39,43 +39,43 @@ const Header = () => {
                     </Link>
                     <div className={showNavbar ? "navbar flex show" : "navbar flex"}>
                         <div className="nav_item">
-                            <Link href='/'>Главная</Link>
+                            <Link href='/'>მთავარი</Link>
                         </div>
                         <div className="nav_item">
-                            Kомпания
+                            კომპანია
                             <div className="dropdown">
-                                <InLink text="о нас" href='/company/about-us'/>
-                                <InLink text="Портфолио" href='/company/projects'/>
+                                <InLink text="ჩვენს შესახებ" href='/company/about-us'/>
+                                <InLink text="პორტფოლიო" href='/company/projects'/>
                                 <InLink text="FAQ" href='/company/faq'/>
                             </div>
                         </div>
                         <div className="nav_item">
-                            Сервисы
+                            სერვისები
                             <div className="dropdown">
-                                <InLink text="Планировка" href='/services/planning'/>
-                                <InLink text="Веб Разработки" href='/services/web-development'/>
-                                <InLink text="UI/UX Дизайн" href='/services/design'/>
-                                <InLink text="Виртуализация" href='/services/virtualization'/>
-                                <InLink text="Удалённая Работа" href='/services/remote-work'/>
-                                <InLink text="Сетевая Безопасность" href='/services/security'/>
-                                <InLink text="Calculator" href='/services/calculator'/>
+                                <InLink text="დაგეგმარება" href='/services/planning'/>
+                                <InLink text="ვებ დეველოპმენტი" href='/services/web-development'/>
+                                <InLink text="UI/UX დეველოპმენტი" href='/services/design'/>
+                                <InLink text="ვირტუალიზაცია" href='/services/virtualization'/>
+                                <InLink text="დისტანციური მუშაობა" href='/services/remote-work'/>
+                                <InLink text="ქსელური უსაფრთხოება" href='/services/security'/>
+                                <InLink text="კალკულატორი" href='/services/calculator'/>
                             </div>
                         </div>
                         <div className="nav_item">
                             <Link href="/cdn">CDN</Link>
                         </div>
                         <div className="nav_item">
-                            Работайте с Нами
+                            ჩვენი კომპანია
                             <div className="dropdown">
-                                <InLink text="Вакансии" href="/vacancies"/>
-                                <InLink text="Новости и События" href="/news"/>
+                                <InLink text="ვაკანსიები" href="/vacancies"/>
+                                <InLink text="სიახლეები" href="/news"/>
                             </div>
                         </div>
                         <div className="nav_item">
-                            <Link href="/blogs">Блог</Link>
+                            <Link href="/blogs">ბლოგი</Link>
                         </div>
                         <div className="nav_item">
-                            <Link href="/contact">Контакт</Link>
+                            <Link href="/contact">კონტაქტი</Link>
                         </div>
                         <Button1/>
                     </div>

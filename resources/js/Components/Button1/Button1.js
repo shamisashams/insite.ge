@@ -6,7 +6,7 @@ const Button1 = () => {
   return (
     <Link href="/solutions">
       <button className="dev_btn">
-        <span>Девелопмент</span>
+        <span>დეველოპმენტი</span>
       </button>
     </Link>
   );

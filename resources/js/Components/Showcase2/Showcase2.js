@@ -10,7 +10,7 @@ const Showcase2 = (props) => {
       <p>{props.para1}</p>
       <p>{props.para2}</p>
       <p>{props.para3}</p>
-      <Button2 text="Бесплатная консультация" large />
+      <Button2 text="უფასო კონსულტაცია" large />
     </div>
   );
 };

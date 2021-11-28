@@ -76,7 +76,7 @@ const Technology = () => {
                         <div className="space"></div>
                     </div>
                     <div className="bottom">
-                        <div className="category">Virtualization</div>
+                        <div className="category">ვირტუალიზაცია</div>
                         <div className="fadein">
                             <img
                                 className="arrow"

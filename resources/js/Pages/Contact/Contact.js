@@ -8,7 +8,7 @@ import DocumentMeta from 'react-document-meta';
 import Meta from "../Meta/Meta";
 
 const Contact = () => {
-    const meta = Meta('Some Meta Title', 'keyword', 'description');
+    const meta = Meta('Insite - კონტაქტი', 'keyword', 'description');
 
     return (
         <DocumentMeta {...meta}>
@@ -20,48 +20,48 @@ const Contact = () => {
                     >
                         <div className="wrapper">
                             <Showcase2
-                                title="Контакт"
-                                para1="У вас есть вопросы? "
-                                para2="Мы всегда рады вам помочь."
+                                title="კონტაქტი"
+                                para1="შეკითხვები გაქვთ?"
+                                para2="ჩვენ ყოველთვის მზად ვართ დაგეხმაროთ."
                             />
                             <div className="offices flex">
                                 <div className="each_office">
-                                    <div className="title op06">MosCOW OFFICE</div>
+                                    <div className="title op06">მოსკოვის ოფისი</div>
                                     <div className="flex">
                                         <div className=" info flex">
                                             <img src="images/icons/contact/1.svg" alt=""/>
                                             <div>
-                                                1604 Virginia Street. <br/>
-                                                Moscow, Russia
+                                            Г. Москва, Пресненская наб., <br/>
+                                            6, стр. 2 ЦАО
                                             </div>
                                         </div>
                                         <div className=" info flex">
                                             <img src="images/icons/contact/2.svg" alt=""/>
-                                            <div>0322 2 13 22 33</div>
+                                            <div>+79684683745</div>
                                         </div>
                                         <div className=" info flex">
                                             <img src="images/icons/contact/3.svg" alt=""/>
-                                            <div>hello@insite.com</div>
+                                            <div>hello@insite.dev</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="each_office">
-                                    <div className="title op06">Tbilisi OFFICE</div>
+                                    <div className="title op06">თბილისის ოფისი</div>
                                     <div className="flex">
                                         <div className=" info flex">
                                             <img src="images/icons/contact/1.svg" alt=""/>
                                             <div>
-                                                1604 Virginia Street. <br/>
-                                                Tbilisi, Georgia
+                                            ჟიული შარტავას ქ. 40, <br/>
+                                            თბილისი
                                             </div>
                                         </div>
                                         <div className=" info flex">
                                             <img src="images/icons/contact/2.svg" alt=""/>
-                                            <div>0322 2 13 22 33</div>
+                                            <div>(+995 32) 2-11-10-19</div>
                                         </div>
                                         <div className=" info flex">
                                             <img src="images/icons/contact/3.svg" alt=""/>
-                                            <div>hello@insite.com</div>
+                                            <div>hello@insite.international</div>
                                         </div>
                                     </div>
                                 </div>
@@ -70,18 +70,18 @@ const Contact = () => {
                     </div>
                     <div className="main wrapper flex">
                         <Form
-                            title="Оставьте нам записку"
-                            para="Вы можете позвонить, написать или записаться для визита в один из наших офисов."
+                            title="დაგვიტოვეთ შეტყობინება"
+                            para="გთხოვთ დატოვოთ თქვენი საკონტაქტო ინფორმაცია და ჩვენ დაგიკავშირდებით თქვენთვის მოსახერხებელი მეთოდით. ჩვენი გუნდი ყოველთვის მზადაა დაგეხმაროთ!"
                         />
                         <div className="flex maps">
                             <div>
-                                <h6>Find us in Moscow</h6>
+                                <h6>გვიპოვეთ მოსკოვში</h6>
                                 <div className="map">
                                     <Map/>
                                 </div>
                             </div>
                             <div>
-                                <h6>Find us in Tbilisi</h6>
+                                <h6>გვიპოვეთ თბილისში</h6>
                                 <div className="map">
                                     <Map/>
                                 </div>

@@ -8,7 +8,7 @@ const ServiceObject = (props) => {
             <img src={`images/icons/services/${props.imgNum}.svg`} alt=""/>
             <div className="title">{props.title}</div>
             <div className="para">{props.para}</div>
-            <Button2 href={props.href} text="Learn more" large/>
+            <Button2 href={props.href} text="მეტი" large/>
         </div>
     );
 };

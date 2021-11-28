@@ -22,16 +22,16 @@ const Footer = () => {
                             <div className="flex">
                                 <img src="/images/icons/footer/1.svg" alt="" />
                                 <p>
-                                    1604 Virginia Street. <br /> Moscow, Russia
+                                    Г. Москва, Пресненская наб., <br /> 6, стр. 2 ЦАО
                                 </p>
                             </div>
                             <div className="flex">
                                 <img src="/images/icons/footer/2.svg" alt="" />
-                                <p>0322 2 13 22 33</p>
+                                <p>+79684683745</p>
                             </div>
                             <div className="flex">
                                 <img src="/images/icons/footer/3.svg" alt="" />
-                                <p>hello@insite.com</p>
+                                <p>hello@insite.dev</p>
                             </div>
                         </div>
                         <div>
@@ -41,78 +41,77 @@ const Footer = () => {
                             <div className="flex">
                                 <img src="/images/icons/footer/1.svg" alt="" />
                                 <p>
-                                    1604 Virginia Street. <br /> Tbilisi,
-                                    Georgia
+                                    ჟიული შარტავას ქ. 40, <br /> თბილისი
                                 </p>
                             </div>
                             <div className="flex">
                                 <img src="/images/icons/footer/2.svg" alt="" />
-                                <p>0322 2 13 22 33</p>
+                                <p>(+995 32) 2-11-10-19</p>
                             </div>
                             <div className="flex">
                                 <img src="/images/icons/footer/3.svg" alt="" />
-                                <p>hello@insite.com</p>
+                                <p>hello@insite.international</p>
                             </div>
                         </div>
                     </div>
                     <div className="flex links">
                         <div className="column">
                             <Link href="/">
-                                <div className="title">Главная</div>
+                                <div className="title">მთავარი</div>
                             </Link>
                         </div>
                         <div className="column">
                             <Link href="/">
-                                <div className="title">Kомпания</div>
+                                <div className="title">კომპანია</div>
                             </Link>
-                            <InLink href="/company/about-us" text="о нас" />
-                            <InLink href="/company/projects" text="Портфолио" />
+                            <InLink href="/company/about-us" text="ჩვენს შესახებ" />
+                            <InLink href="/company/projects" text="პორტფოლიო" />
                             <InLink href="/company/faq" text="FAQ" />
                         </div>
                         <div className="column" style={{ margin: 0 }}>
                             <Link href="/">
-                                <div className="title">Сервисы</div>
+                                <div className="title">სერვისები</div>
                             </Link>
                             <InLink
                                 href="/services/planning"
-                                text="Планировка"
+                                text="დაგეგმარება"
                             />
                             <InLink
                                 href="/services/web-development"
-                                text="Веб Разработки"
+                                text="ვებ დეველოპმენტი"
                             />
                             <InLink
                                 href="/services/design"
-                                text="UI/UX Дизайн"
+                                text="UI/UX დეველოპმენტი"
                             />
                             <InLink
                                 href="/services/virtualization"
-                                text="Виртуализация"
+                                text="ვირტუალიზაცია"
                             />
                             <InLink
                                 href="/services/remote-work"
-                                text="Удалённая Работа"
+                                text="დისტანციური მუშაობა"
                             />
                             <InLink
                                 href="/services/security"
-                                text="Сетевая Безопасность"
+                                text="ქსელური უსაფრთხოება"
                             />
                         </div>
                         <div className="column">
                             <Link href="/">
-                                <div className="title">Работайте с Нами</div>
+                                <div className="title">ჩვენი კომპანია</div>
                             </Link>
-                            <InLink href="/vacancies" text="Вакансии" />
-                            <InLink href="/news" text="Новости и События" />
+                            <InLink href="/vacancies" text="ვაკანსიები" />
+                            <InLink href="/news" text="სიახლეები" />
                         </div>
                         <div className="column">
                             <Link href="/blogs">
-                                <div className="title">Блог</div>
+                                <div className="title">ბლოგი</div>
                             </Link>
                         </div>
                         <div className="column">
                             <Link href="/contact">
-                                <div className="title">Контакт</div>
+                                <div className="title">კონტაქტი</div>
                             </Link>
                         </div>
                         <Button1 />

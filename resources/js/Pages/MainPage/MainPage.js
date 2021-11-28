@@ -14,7 +14,7 @@ import DocumentMeta from 'react-document-meta';
 import Meta from "../Meta/Meta";
 
 const MainPage = ({blogs}) => {
-    const meta = Meta('Some Meta Title', 'keyword', 'description');
+    const meta = Meta('Insite - მთავარი გვერდი', 'keyword', 'description');
     return (
         <DocumentMeta {...meta}>
             <Layout>
@@ -24,7 +24,9 @@ const MainPage = ({blogs}) => {
                         style={{
                             background: "url(images/hero/bg.png)",
                             backgroundPosition: "center",
-                        }}
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                                                }}
                     >
                         <HeroSlider/>
                     </div>
@@ -33,47 +35,47 @@ const MainPage = ({blogs}) => {
                         style={{background: "url(images/home/services/bg.png)"}}
                     >
                         <div className="wrapper">
-                            <InLink text="подробнее"/>
+                            {/* <InLink text="подробнее"/> */}
                             <Title1
-                                head="Сервисы"
-                                para="Ознакомитесь с нашим широким спектром сервисов. Мы предоставляем полный спектр услуг в рамках каждого сервиса."
+                                head="სერვისები"
+                                para="გაეცანით ჩვენი მომსახურების ფართო სპექტრი. ჩვენ გთავაზობთ მომსახურების სრულ სპექტრს თითოეული სერვისის ფარგლებში."
                             />
                             <div className="service_boxes">
                                 <ServiceObject
                                     href="/services/planning"
                                     imgNum="1"
-                                    title="Планировка"
-                                    para="Планировка рабочего процесса, сетевой архитектуры и систем безопасности."
+                                    title="დაგეგმარება"
+                                    para="სამუშაო პროცესის, ქსელის არქიტექტურა და უსაფრთხოების სისტემების დაგეგმვა."
                                 />
                                 <ServiceObject
                                     href="/services/web-development"
                                     imgNum="2"
-                                    title="Веб Разработки"
-                                    para="Создание, модификация и поддержка веб аппликаций любой сложности."
+                                    title="ვებ დეველოპმენტი"
+                                    para="ნებისმიერი სირთულის ვებ აპლიკაციების შექმნა, მოდიფიკაცია და მხარდაჭერა."
                                 />
                                 <ServiceObject
                                     href="/services/design"
                                     imgNum="3"
-                                    title="UI/UX Дизайн"
-                                    para="Предел наших возможностей только ваша фантазия. Мы воплотим в жизнь ваше видение."
+                                    title="UI/UX დეველოპმენტი"
+                                    para="ჩვენი შესაძლებლობების ზღვარი მხოლოდ თქვენი ფანტაზიაა. ჩვენ გადმოვიტანთ რეალობაში თქვენს ნებისმიერ ფანტაზიას."
                                 />
                                 <ServiceObject
                                     href="/services/virtualization"
                                     imgNum="4"
-                                    title="Виртуализация"
-                                    para="Мы поможем вам виртуализировать рабочую среду в целях повышения эффективности, безопасности и оптимизации ресурсов."
+                                    title="ვირტუალიზაცია"
+                                    para="მოახდინეთ თქვენი სამუშაო სივრცის ვირტუალიზაცია ეფექტურობის, უსაფრთხოებისა და რესურსების ოპტიმიზაციისთვის."
                                 />
                                 <ServiceObject
                                     href="/services/remote-work"
                                     imgNum="5"
-                                    title="Удалённая Работа"
-                                    para="Идите в ногу современным тенденциям, а мы обеспечим безопасность и быстродействие."
+                                    title="დისტანციური მუშაობა"
+                                    para="ჩვენ დაგეხმარებით თქვენი თანამშრომლების დისტანციურ სამუშაოზე გადაყვანაში."
                                 />
                                 <ServiceObject
                                     href="/services/security"
                                     imgNum="6"
-                                    title="Сетевая Безопасность"
-                                    para="Обезопасьте вашу рабочую среду от целевых и случайных атак. Обезопасьте самую уязвимую часть вашей компании."
+                                    title="ქსელური უსაფრთხოება"
+                                    para="დაიცავით თქვენი სამუშაო გარემო მიზანმიმართული და შემთხვევითი თავდასხმებისგან. დაიცავით თქვენი კომპანიის ყველაზე სუსტი ნაწილი."
                                 />
                             </div>
                         </div>
@@ -86,24 +88,24 @@ const MainPage = ({blogs}) => {
                         }}
                     >
                         <div className="wrapper">
-                            <InLink text="подробнее"/>
-                            <Title1 head="Технологии"/>
+                            {/* <InLink text="подробнее"/> */}
+                            <Title1 head="ტექნოლოგიები"/>
                         </div>
                         <Technology/>
                     </div>
                     <div className="work_with_us">
                         <div className="wrapper">
-                            <InLink text="подробнее"/>
-                            <Title1 head="Работайте с Нами"/>
+                            {/* <InLink text="подробнее"/> */}
+                            <Title1 head="იმუშავე ჩვენთან"/>
                         </div>
                         <WorkWithUs/>
                     </div>
                     <div className="blogs_section">
                         <div className="wrapper">
-                            <InLink href="/blog" text="подробнее"/>
+                            <InLink href="/blog" text="მეტი"/>
                             <Title1
-                                head="Блог"
-                                para="Наши технические эксперты поделятся своими знаниями и дадут советы по разным техническим вопросам. Будь с нами и не пропусти того что может тебе однажды помочь в решение проблемы :)"
+                                head="ბლოგი"
+                                para="აქ შეგიძლიათ წაიკითხოთ ჩვენი ტექნიკური ექსპერტები მოსაზრებები და მიიღოთ რჩევები სხვადასხვა ტექნიკურ საკითხებზე. იყავით ჩვენთან და არ გამოტოვოთ ის, რაც შეიძლება ერთ დღეს დაგეხმაროთ პრობლემის გადაჭრაში :)"
                             />
                             <div className="flex blog_flex">
                                 {
@@ -125,10 +127,9 @@ const MainPage = ({blogs}) => {
                     </div>
                     <div className="flex bottom main_page wrapper">
                         <div>
-                            <Text35 text="Оставьте нам записку"/>
+                            <Text35 text="დაგვიტოვეთ შეტყობინება"/>
                             <p className="op06">
-                                Хотите с нами пообщается? Пожалуйста, оставьте свой контактные данные и мы с вами
-                                свяжемся по удобному вами методу. Наша команда всегда рада вам помочь!
+                                შეკითხვები გაქვთ? გთხოვთ დატოვოთ თქვენი საკონტაქტო ინფორმაცია და ჩვენ დაგიკავშირდებით თქვენთვის მოსახერხებელი მეთოდით. ჩვენი გუნდი ყოველთვის მზადაა დაგეხმაროთ!
                             </p>
                         </div>
                         <Form title=""/>
