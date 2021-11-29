@@ -22,7 +22,8 @@ const Footer = () => {
                             <div className="flex">
                                 <img src="/images/icons/footer/1.svg" alt="" />
                                 <p>
-                                    Г. Москва, Пресненская наб., <br /> 6, стр. 2 ЦАО
+                                    Г. Москва, Пресненская наб., <br /> 6, стр.
+                                    2 ЦАО
                                 </p>
                             </div>
                             <div className="flex">
@@ -64,7 +65,10 @@ const Footer = () => {
                             <Link href="/">
                                 <div className="title">კომპანია</div>
                             </Link>
-                            <InLink href="/company/about-us" text="ჩვენს შესახებ" />
+                            <InLink
+                                href="/company/about-us"
+                                text="ჩვენს შესახებ"
+                            />
                             <InLink href="/company/projects" text="პორტფოლიო" />
                             <InLink href="/company/faq" text="FAQ" />
                         </div>
@@ -125,13 +129,13 @@ const Footer = () => {
                             <img src="/images/flags/ge.png" alt="" />
                         </div>
                         <div className="dropup">
-                            <a href="#">
+                            <a href="https://insite.international/">
                                 <div className=" lang flex">
                                     <span>English</span>
                                     <img src="/images/flags/en.png" alt="" />
                                 </div>
                             </a>
-                            <a href="#">
+                            <a href="https://insite.dev/">
                                 <div className="lang flex">
                                     <span>Russian</span>
                                     <img src="/images/flags/ru.png" alt="" />

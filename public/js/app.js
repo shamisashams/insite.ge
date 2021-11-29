@@ -3090,14 +3090,14 @@ var Footer = function Footer() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "dropup"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "#"
+    href: "https://insite.international/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: " lang flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "English"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/images/flags/en.png",
     alt: ""
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "#"
+    href: "https://insite.dev/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "lang flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Russian"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
@@ -6038,6 +6038,7 @@ var HeroSlider = function HeroSlider() {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
       className: "square"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, obj.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Button2_Button2__WEBPACK_IMPORTED_MODULE_3__.default, {
+      href: obj.btnLink,
       text: obj.btn,
       large: true
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
@@ -6091,15 +6092,18 @@ __webpack_require__.r(__webpack_exports__);
 var sliderData = [{
   id: (0,uuid__WEBPACK_IMPORTED_MODULE_0__.v4)(),
   title: "ჩვენ ვქმნით მომავალს! აღმოაჩინე თანამედროვე ტექნოლოგიები.",
-  btn: "მეტი"
+  btn: "მეტი",
+  btnLink: "/services/web-development"
 }, {
   id: (0,uuid__WEBPACK_IMPORTED_MODULE_0__.v4)(),
   title: "ჩვენი სამუშაო ხელოვნებაა.",
-  btn: "მეტი"
+  btn: "მეტი",
+  btnLink: "/services/design"
 }, {
   id: (0,uuid__WEBPACK_IMPORTED_MODULE_0__.v4)(),
   title: "გაამარტივეთ და გააიაფეთ თქვენი სამუშაო.",
-  btn: "მეტი"
+  btn: "მეტი",
+  btnLink: "/services/remote-work"
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (sliderData);
 
@@ -8443,11 +8447,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var WebDevelopment = function WebDevelopment() {
-<<<<<<< HEAD
-  var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_7__.default)("Insite - Веб Разработки", "создание веб аппликации, React JS, React native, HTML/CSS, NODE.js, .NET Core, LARAVEL, PHP, Native JS, разработчик React JS, разработчик React native, разработчик HTML/CSS, разработчик NODE.js, разработчик .NET Core, разработчик LARAVEL, разработчик PHP, разработчик Native JS", "Здесь вы можете ознакомится с технологиями, с которыми работает наша компания. Мы поможем осуществить ваш проект в лучшем варианте его исполнения.");
-=======
   var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_7__.default)("Insite - ვებ დეველოპმენტი", "создание веб аппликации, React JS, React native, HTML/CSS, NODE.js, .NET Core, LARAVEL, PHP, Native JS, разработчик React JS, разработчик React native, разработчик HTML/CSS, разработчик NODE.js, разработчик .NET Core, разработчик LARAVEL, разработчик PHP, разработчик Native JS", "Здесь вы можете ознакомится с технологиями, с которыми работает наша компания. Мы поможем осуществить ваш проект в лучшем варианте его исполнения.");
->>>>>>> 106dc5915bf547ddb2c4ceba515e46389751466e
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_document_meta__WEBPACK_IMPORTED_MODULE_8__.default, meta, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_6__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "development_page"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -8939,13 +8939,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Assets_Font_geo_BebasNeue_Regular_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Assets/Font-geo/BebasNeue-Regular.ttf */ "./resources/js/Assets/Font-geo/BebasNeue-Regular.ttf");
+/* harmony import */ var _Assets_Font_geo_ARCHYEDT_BOLD_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Assets/Font-geo/ARCHYEDT-BOLD.ttf */ "./resources/js/Assets/Font-geo/ARCHYEDT-BOLD.ttf");
 // Imports
 
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_Assets_Font_geo_BebasNeue_Regular_ttf__WEBPACK_IMPORTED_MODULE_2__.default);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_Assets_Font_geo_ARCHYEDT_BOLD_ttf__WEBPACK_IMPORTED_MODULE_2__.default);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\r\n    font-family: \"extra-bold\";\r\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n}\r\n@font-face {\r\n    font-family: \"bold\";\r\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n}\r\n@font-face {\r\n    font-family: \"medium\";\r\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n}\r\n@font-face {\r\n    font-family: \"book\";\r\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n}\r\n@font-face {\r\n    font-family: \"light\";\r\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n}\r\n@font-face {\r\n    font-family: \"gilroy-extra\";\r\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n}\r\n*,\r\n*::after,\r\n*::before {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: \"medium\";\r\n    scroll-behavior: smooth;\r\n}\r\n*::after,\r\n*::before {\r\n    position: absolute;\r\n    content: \"\";\r\n}\r\n/* width */\r\n::-webkit-scrollbar {\r\n    width: 7px;\r\n}\r\n\r\n/* Track */\r\n::-webkit-scrollbar-track {\r\n    background: #272639;\r\n}\r\n\r\n/* Handle */\r\n::-webkit-scrollbar-thumb {\r\n    background: #e81748b6;\r\n}\r\n::-webkit-scrollbar-thumb:hover {\r\n    background: #e81748;\r\n}\r\n\r\nhtml {\r\n    box-sizing: border-box;\r\n}\r\nbody {\r\n    font-family: \"medium\";\r\n    font-weight: 400;\r\n    line-height: 1.3;\r\n    color: #272639;\r\n    background: #fff;\r\n    overflow-x: hidden;\r\n    scroll-behavior: smooth;\r\n    font-size: 16px;\r\n}\r\np {\r\n    font-weight: 100;\r\n    font-family: \"book\";\r\n    text-align: justify;\r\n}\r\nh1 {\r\n    font-weight: 600;\r\n}\r\nul {\r\n    list-style: none;\r\n}\r\na {\r\n    text-decoration: none;\r\n    color: inherit;\r\n}\r\ninput,\r\ntextarea,\r\nbutton {\r\n    outline: none;\r\n    border: none;\r\n    background: none;\r\n}\r\nbutton {\r\n    cursor: pointer;\r\n    border: none;\r\n    background: none;\r\n}\r\nselect {\r\n    border: none;\r\n    outline: none;\r\n}\r\nimg {\r\n    height: auto;\r\n    max-width: 100%;\r\n    -webkit-user-drag: none;\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\r\n}\r\n.wrapper {\r\n    width: 1500px;\r\n    height: 100%;\r\n    margin: auto;\r\n    position: relative;\r\n}\r\n.flex {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n}\r\n.flex.center {\r\n    justify-content: center;\r\n}\r\n.op06 {\r\n    opacity: 0.6;\r\n}\r\n.font70 {\r\n    font-size: 70px;\r\n    font-family: \"bold\";\r\n}\r\n.map iframe {\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n.img img {\r\n    width: 100%;\r\n    height: 100%;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n}\r\n\r\n/*===============Responsiveness=================*/\r\n@media screen and (max-width: 1550px) {\r\n    .wrapper {\r\n        width: 95%;\r\n    }\r\n}\r\n", ""]);
 // Exports
@@ -9938,10 +9938,10 @@ module.exports = deepmerge_1;
 
 /***/ }),
 
-/***/ "./resources/js/Assets/Font-geo/BebasNeue-Regular.ttf":
-/*!************************************************************!*\
-  !*** ./resources/js/Assets/Font-geo/BebasNeue-Regular.ttf ***!
-  \************************************************************/
+/***/ "./resources/js/Assets/Font-geo/ARCHYEDT-BOLD.ttf":
+/*!********************************************************!*\
+  !*** ./resources/js/Assets/Font-geo/ARCHYEDT-BOLD.ttf ***!
+  \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -9949,7 +9949,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/fonts/BebasNeue-Regular.ttf?9aa03f9d52866893add50e8b4912ae52");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/fonts/ARCHYEDT-BOLD.ttf?92e47a7ff05bddc6633dde212b4d7d4b");
 
 /***/ }),
 
