@@ -63,18 +63,18 @@ const Form = ({title, para}) => {
             <Text35 text={title}/>
             <p className="op06">{para}</p>
             <div className="inputs flex">
-                <input id="name" type="text" required placeholder="Имя" value={values.name} onChange={handleChange}/>
+                <input id="name" type="text" required placeholder="სახელი" value={values.name} onChange={handleChange}/>
                 {/*{errors.name && <div className="error-block">{errors.name}</div>}*/}
                 <input id="mail" type="email" required placeholder="E-mail" value={values.mail}
                        onChange={handleChange}/>
                 {/*{errors.mail && <div className="error-block">{errors.mail}</div>}*/}
             </div>
-            <textarea id="message" required placeholder="сообщение" onChange={handleChange}
+            <textarea id="message" required placeholder="ტექსტი" onChange={handleChange}
                       value={values.message}></textarea>
             {/*{errors.message && <div className="error-block">{errors.message}</div>}*/}
 
             <button disabled={buttonDisabled} className="form_btn">
-                <span>Submit</span>
+                <span>გაგზავნა</span>
             </button>
         </form>
     );

@@ -14,7 +14,7 @@ const Projects = () => {
         <DocumentMeta {...meta}>
             <Layout>
                 <div className="projects_page wrapper">
-                    <div className="title main">Наши Последние Проекты</div>
+                    <div className="title main">ჩვენი პორტფოლიო</div>
                     <div className="grid">
                         <ProjectBox
                             title="Glass Service"
