@@ -3,16 +3,16 @@ import Button2 from "../Button2/Button2";
 import "./Showcase2.css";
 
 const Showcase2 = (props) => {
-  return (
-    <div className="showcase2">
-      <div className="title">{props.title}</div>
-      <div className="sub">{props.subtitle}</div>
-      <p>{props.para1}</p>
-      <p>{props.para2}</p>
-      <p>{props.para3}</p>
-      <Button2 text="უფასო კონსულტაცია" large />
-    </div>
-  );
+    return (
+        <div className="showcase2">
+            <div className="title">{props.title}</div>
+            <div className="sub">{props.subtitle}</div>
+            <p>{props.para1}</p>
+            <p>{props.para2}</p>
+            <p>{props.para3}</p>
+            <Button2 text="უფასო კონსულტაცია" large href={props.href} />
+        </div>
+    );
 };
 
 export default Showcase2;
