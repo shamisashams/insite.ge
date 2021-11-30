@@ -26,7 +26,7 @@ export const CostQues = ({ques, addCm}) => {
         <div className="flex cost_question">
             <p className=" op06">{ques}</p>
             <button onClick={addCm} className="add">
-                + Add comment
+                + დაამატეთ კომენტარი
             </button>
         </div>
     );
@@ -38,7 +38,7 @@ export const CommentField = (props) => {
             <div className="flex">
                 <div>
                     <img src="/images/calculator/cm.svg" alt=""/>
-                    <span>Comment</span>
+                    <span>კომენტარი</span>
                 </div>
                 <div className="btns">
                     <button data-feature={props.featureId} onClick={props.cancelCM} className="cancel">
@@ -55,7 +55,7 @@ export const CommentField = (props) => {
                 onChange={props.change}
                 data-feature={props.featureId}
                 readOnly={props.readOnly}
-                placeholder="Type here"
+                placeholder="ტექსტი"
             ></textarea>
         </div>
     );
