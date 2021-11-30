@@ -1,6 +1,9 @@
 .blog_item {
     max-width: 483px;
     width: 33%;
+    height: 584px;
+    padding-bottom: 50px;
+    position: relative;
 }
 .blog_item .img {
     width: 100%;
@@ -39,6 +42,11 @@
 .blog_item .text35 {
     margin-bottom: 20px;
     transition: 0.5s;
+}
+.blog_item .main_btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .blog_item p {
     margin-bottom: 20px;
