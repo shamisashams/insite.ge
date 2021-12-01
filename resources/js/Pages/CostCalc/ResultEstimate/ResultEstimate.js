@@ -93,9 +93,13 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
             <Layout>
                 <>
                     <div
-                        className="result_page wrapper"
+                        className="result_page "
                         style={{background: "url(/images/calculator/bg.png)"}}
                     >
+                        <div className="wrapper">
+
+                        
+                        
                         <Title1
 
                             head="თქვენი კალკულაციის შედეგი"
@@ -154,6 +158,7 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
                                  text="PDF-ის გადმოწერა"/>
 
                         <Link to="/">ვებ საიტზე დაბრუნება</Link>
+                    </div>
                     </div>
                 </>
             </Layout>

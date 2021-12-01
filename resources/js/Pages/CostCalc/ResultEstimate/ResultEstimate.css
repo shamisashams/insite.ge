@@ -1,9 +1,13 @@
 .result_page {
+    width: 100%;
+}
+.result_page .wrapper {
     width: 900px !important;
     padding-top: 160px;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
+    padding-bottom: 50px;
 }
 .result_page .title1 .head {
     margin-bottom: 18px;
@@ -69,7 +73,7 @@
     max-width: 600px;
 }
 .result_page .btm_btns {
-    margin: 50px 0;
+    margin-top: 50px ;
 }
 .result_page .btm_btns .main_btn {
     margin-left: 15px;
