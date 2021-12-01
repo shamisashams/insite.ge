@@ -4805,33 +4805,33 @@ var CostSteps = function CostSteps(_ref) {
 
 
   var _handler = function handler(e, startPrice) {
-    var featureId = e.target.getAttribute('data-feature');
+    var featureId = e.target.getAttribute("data-feature");
     var answerId = e.target.id;
 
     if (e.target.checked) {
       if (checkboxItems[featureId]) {
-        checkboxItems[featureId]['answers'].push({
-          "id": answerId,
-          'price': startPrice
+        checkboxItems[featureId]["answers"].push({
+          id: answerId,
+          price: startPrice
         });
       } else {
         checkboxItems[featureId] = {
-          'answers': [{
-            "id": answerId,
-            'price': startPrice
+          answers: [{
+            id: answerId,
+            price: startPrice
           }],
-          'comment': ""
+          comment: ""
         };
       }
 
       totalPrice += startPrice;
     } else {
-      var index = checkboxItems[featureId]['answers'].findIndex(function (item) {
+      var index = checkboxItems[featureId]["answers"].findIndex(function (item) {
         return item.id === answerId;
       });
-      checkboxItems[featureId]['answers'].splice(index, 1);
+      checkboxItems[featureId]["answers"].splice(index, 1);
 
-      if (checkboxItems[featureId]['answers'].length === 0 && !checkboxItems[featureId]['comment']) {
+      if (checkboxItems[featureId]["answers"].length === 0 && !checkboxItems[featureId]["comment"]) {
         delete checkboxItems[featureId];
       }
 
@@ -4858,8 +4858,8 @@ var CostSteps = function CostSteps(_ref) {
       setCurrentValue = _useState8[1];
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var checkboxItems = _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_4__.Inertia.restore('checkboxItems');
-    var total = _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_4__.Inertia.restore('totalPrice');
+    var checkboxItems = _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_4__.Inertia.restore("checkboxItems");
+    var total = _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_4__.Inertia.restore("totalPrice");
     var data;
 
     if (checkboxItems && total) {
@@ -4875,10 +4875,10 @@ var CostSteps = function CostSteps(_ref) {
       var scrollHeight = _textareaRef.current[id].scrollHeight;
       _textareaRef.current[id].style.height = scrollHeight + "px";
 
-      if (data && data[id] && data[id]['comment']) {
+      if (data && data[id] && data[id]["comment"]) {
         commentSection[id] = true;
         confirmComment[id] = true;
-        _textareaRef.current[id].value = data[id]['comment'];
+        _textareaRef.current[id].value = data[id]["comment"];
       } else {
         commentSection[id] = false;
         confirmComment[id] = false;
@@ -4902,16 +4902,16 @@ var CostSteps = function CostSteps(_ref) {
       setConfirmComment = _useState10[1];
 
   var toggleDisabled = function toggleDisabled(e) {
-    var featureId = e.target.getAttribute('data-feature');
+    var featureId = e.target.getAttribute("data-feature");
     confirmComment[featureId] = !confirmComment[featureId];
     setConfirmComment(_objectSpread({}, confirmComment));
 
     if (checkboxItems[featureId]) {
-      checkboxItems[featureId]['comment'] = _textareaRef.current[featureId].value;
+      checkboxItems[featureId]["comment"] = _textareaRef.current[featureId].value;
     } else {
       checkboxItems[featureId] = {
-        'answers': [],
-        'comment': _textareaRef.current[featureId].value
+        answers: [],
+        comment: _textareaRef.current[featureId].value
       };
     }
 
@@ -4919,7 +4919,7 @@ var CostSteps = function CostSteps(_ref) {
   };
 
   var cancelComment = function cancelComment(e) {
-    var featureId = e.target.getAttribute('data-feature');
+    var featureId = e.target.getAttribute("data-feature");
     commentSection[featureId] = false;
     setCommentSection(_objectSpread({}, commentSection));
     _textareaRef.current[featureId].value = "";
@@ -4927,9 +4927,9 @@ var CostSteps = function CostSteps(_ref) {
     setConfirmComment(_objectSpread({}, confirmComment));
 
     if (checkboxItems[featureId]) {
-      checkboxItems[featureId]['comment'] = "";
+      checkboxItems[featureId]["comment"] = "";
 
-      if (checkboxItems[featureId]['answers'].length === 0) {
+      if (checkboxItems[featureId]["answers"].length === 0) {
         delete checkboxItems[featureId];
       }
     }
@@ -4956,31 +4956,31 @@ var CostSteps = function CostSteps(_ref) {
   };
 
   var style = window.innerWidth <= 800 ? {
-    top: '100px',
-    left: step === 1 ? "-2vw" : '-' + (step * 100 - 98) + 'vw',
+    top: "100px",
+    left: step === 1 ? "-2vw" : "-" + (step * 100 - 98) + "vw",
     justifyContent: "unset"
   } : window.innerWidth > 800 ? {
-    top: step === 1 ? "-7vh" : '-' + (step * 100 - 100) + "vh"
+    top: step === 1 ? "-7vh" : "-" + (step * 100 - 100) + "vh"
   } : {};
 
   if (stepRef) {
     window.onresize = function () {
       if (window.innerWidth > 800) {
-        stepRef.current.style.top = step === 1 ? "-7vh" : '-' + (step * 100 - 100) + "vh";
+        stepRef.current.style.top = step === 1 ? "-7vh" : "-" + (step * 100 - 100) + "vh";
         stepRef.current.style.left = "";
       } else {
         // stepRef.current.style
         // stepRef.current.style.width = (features.length + 1) * 100 + 'vw';
-        stepRef.current.style.top = '100px';
+        stepRef.current.style.top = "100px";
         stepRef.current.style.justifyContent = "unset";
-        stepRef.current.style.left = step === 1 ? "-2vw" : '-' + (step * 100 - 98) + 'vw';
+        stepRef.current.style.left = step === 1 ? "-2vw" : "-" + (step * 100 - 98) + "vw";
       }
     };
   }
 
   var saveState = function saveState() {
-    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_4__.Inertia.remember(checkboxItems, 'checkboxItems');
-    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_4__.Inertia.remember(totalPrice, 'totalPrice');
+    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_4__.Inertia.remember(checkboxItems, "checkboxItems");
+    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_4__.Inertia.remember(totalPrice, "totalPrice");
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -5016,7 +5016,7 @@ var CostSteps = function CostSteps(_ref) {
         return showComment(feature.id);
       },
       ques: feature.question
-    }), feature.answer.map(function (item, index) {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", null, feature.answer.map(function (item, index) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostBox__WEBPACK_IMPORTED_MODULE_2__.CostOption, {
         key: index,
         featureId: feature.id,
@@ -5027,7 +5027,7 @@ var CostSteps = function CostSteps(_ref) {
         id: item.id,
         option: item.title
       });
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostBox__WEBPACK_IMPORTED_MODULE_2__.CommentField, {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostBox__WEBPACK_IMPORTED_MODULE_2__.CommentField, {
       cmFieldClass: commentSection[feature.id] ? "comment_field" : "comment_field hidden",
       cancelCM: function cancelCM(e) {
         return cancelComment(e);
@@ -5052,7 +5052,7 @@ var CostSteps = function CostSteps(_ref) {
       text: "Back",
       click: back
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__.Link, {
-      href: '/services/results?data=' + encodeURI(JSON.stringify(checkboxItems)) + "&totalPrice=" + totalPrice
+      href: "/services/results?data=" + encodeURI(JSON.stringify(checkboxItems)) + "&totalPrice=" + totalPrice
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostBox__WEBPACK_IMPORTED_MODULE_2__.CostBtn, {
       click: saveState,
       text: "FINISH"
@@ -9093,7 +9093,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".cost_steps {\r\n    position: absolute;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n    /* width: 744px; */\r\n    width: 489px;\r\n    margin: auto;\r\n    height: auto;\r\n    transition: 0.7s;\r\n}\r\n/* steps */\r\n/*.cost_steps.step_1 {*/\r\n/*    top: -7vh;*/\r\n/*}*/\r\n/*.cost_steps.step_2 {*/\r\n/*    top: -100vh;*/\r\n/*}*/\r\n/*.cost_steps.step_3 {*/\r\n/*    top: -200vh;*/\r\n/*}*/\r\n/*.cost_steps.step_4 {*/\r\n/*    top: -300vh;*/\r\n/*}*/\r\n/*.cost_steps.step_5 {*/\r\n/*    top: -400vh;*/\r\n/*}*/\r\n/*.cost_steps.step_6 {*/\r\n/*    top: -500vh;*/\r\n/*}*/\r\n/*.cost_steps.step_7 {*/\r\n/*    top: -600vh;*/\r\n/*}*/\r\n/*.cost_steps.step_8 {*/\r\n/*    top: -700vh;*/\r\n/*}*/\r\n\r\n.cost_steps .each_step {\r\n    height: 100vh;\r\n    width: 100%;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    flex-direction: column;\r\n}\r\n.cost_steps .title1 {\r\n    margin-bottom: 50px;\r\n}\r\n.cost_steps .title1 .head::after {\r\n    display: none;\r\n}\r\n.cost_steps .title1 .head {\r\n    margin-bottom: 20px;\r\n    white-space: nowrap;\r\n}\r\n.cost_title {\r\n    margin-bottom: 22px;\r\n    font-size: 25px;\r\n    text-align: center;\r\n    text-transform: uppercase;\r\n    font-family: \"bold\";\r\n    opacity: 0.4;\r\n}\r\n.cost_box {\r\n    width: 489px;\r\n    height: auto;\r\n    background-color: #fff;\r\n    box-shadow: 0 3px 15px #2b2c371f;\r\n    padding: 23px;\r\n    padding-bottom: 30px;\r\n    text-align: center;\r\n}\r\n.each_step:first-child img {\r\n    margin-top: 20px;\r\n}\r\n.cost_box h5 {\r\n    margin: 20px 0;\r\n    font-size: 25px;\r\n    font-family: \"bold\";\r\n}\r\n.cost_question {\r\n    font-size: 16px;\r\n    margin-bottom: 18px;\r\n    font-family: \"book\";\r\n    align-items: flex-start;\r\n    line-height: 20px;\r\n}\r\n.cost_question .add {\r\n    line-height: 20px;\r\n    white-space: nowrap;\r\n    margin-left: 10px;\r\n    color: #e9215093;\r\n    transition: 0.5s;\r\n}\r\n.cost_question .add:hover {\r\n    color: #e9214f;\r\n}\r\n.cost_box .option {\r\n    display: flex;\r\n    align-items: center;\r\n    width: 267px;\r\n    height: 60px;\r\n    padding: 0 17px;\r\n    font-size: 16px;\r\n    font-family: \"bold\";\r\n    margin: auto;\r\n    margin-bottom: 10px;\r\n    text-align: left;\r\n    background: #f3f3f3;\r\n    transition: 0.5s;\r\n    cursor: pointer;\r\n}\r\n.cost_box input[type=\"checkbox\"] {\r\n    display: none;\r\n}\r\n.cost_box input[type=\"checkbox\"]:checked + .option {\r\n    background-color: #e9214f;\r\n    color: #fff;\r\n}\r\n.cost_box .main_btn {\r\n    margin: 0 5px;\r\n    margin-top: 12px;\r\n    height: 52px;\r\n    font-size: 15px;\r\n    text-transform: uppercase;\r\n}\r\n.cost_box .flex .main_btn {\r\n    width: 50%;\r\n}\r\n.cost_box .flex a {\r\n    width: 50%;\r\n}\r\n.cost_box .flex a .main_btn {\r\n    width: 100%;\r\n}\r\n\r\n/* comment field */\r\n.comment_field.hidden {\r\n    display: none;\r\n}\r\n.comment_field span {\r\n    color: #e9214f;\r\n    margin-left: 5px;\r\n}\r\n.comment_field .btns button {\r\n    margin-left: 15px;\r\n}\r\n.comment_field .btns .cancel {\r\n    opacity: 0.6;\r\n}\r\n.comment_field textarea {\r\n    width: 100%;\r\n    height: auto;\r\n    padding: 10px;\r\n    font-family: Lato, Arial, Helvetica Neue, Helvetica, sans-serif;\r\n    font-size: 13px;\r\n    box-sizing: border-box;\r\n    resize: none;\r\n    overflow: hidden;\r\n    border: none;\r\n    border-bottom: 1px solid #e9214f;\r\n    caret-color: #e9214f;\r\n    color: #5a6f79;\r\n    letter-spacing: 0;\r\n    min-height: 35px !important;\r\n}\r\n.comment_field textarea.disabled {\r\n    border-bottom: none;\r\n}\r\n\r\n/* max-height */\r\n@media screen and (max-height: 850px) {\r\n    .cost_steps form {\r\n        display: grid;\r\n        grid-template-columns: repeat(2, 1fr);\r\n        grid-gap: 10px;\r\n        margin-bottom: 15px;\r\n    }\r\n    .cost_steps form .option {\r\n        width: 100%;\r\n        margin-bottom: 0;\r\n    }\r\n    .cost_box .option {\r\n        display: flex;\r\n        align-items: center;\r\n        width: 267px;\r\n        height: 60px;\r\n        padding: 0 13px;\r\n        font-size: 14px;\r\n    }\r\n    .cost_steps.step_1 {\r\n        top: 0vh;\r\n    }\r\n}\r\n@media screen and (max-width: 1200px) {\r\n    .cost_steps {\r\n        left: auto;\r\n        transform: none;\r\n        right: 0;\r\n    }\r\n    .cost_steps .title1 {\r\n        margin-bottom: 20px;\r\n    }\r\n    .cost_steps .title1 .head {\r\n        font-size: 23px;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 800px) {\r\n    .cost_steps {\r\n        display: flex;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        width: 800vw;\r\n    }\r\n    .cost_steps .each_step {\r\n        width: 100vw;\r\n    }\r\n    /* steps */\r\n    /*.cost_steps.step_1 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -2vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_2 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -102vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_3 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -202vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_4 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -302vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_5 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -402vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_6 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -502vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_7 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -602vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_8 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -702vw;*/\r\n    /*}*/\r\n}\r\n@media screen and (max-width: 600px) {\r\n    .cost_box {\r\n        width: 90%;\r\n    }\r\n    .cost_steps .title1 .head {\r\n        white-space: normal;\r\n        font-size: 20px;\r\n    }\r\n    .cost_steps .title1 p {\r\n        font-size: 14px;\r\n    }\r\n    .cost_box h5 {\r\n        margin: 5px 0;\r\n        font-size: 22px;\r\n    }\r\n    .cost_box img {\r\n        margin-top: 6px;\r\n    }\r\n    .cost_title {\r\n        margin-bottom: 12px;\r\n        font-size: 21px;\r\n    }\r\n}\r\n@media screen and (max-width: 450px) {\r\n    .cost_box .option {\r\n        padding: 0px 10px;\r\n        font-size: 12px;\r\n    }\r\n    .cost_question {\r\n        font-size: 14px;\r\n        margin-bottom: 23px;\r\n    }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".cost_steps {\r\n    position: absolute;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n    /* width: 744px; */\r\n    width: 489px;\r\n    margin: auto;\r\n    height: auto;\r\n    transition: 0.7s;\r\n}\r\n/* steps */\r\n/*.cost_steps.step_1 {*/\r\n/*    top: -7vh;*/\r\n/*}*/\r\n/*.cost_steps.step_2 {*/\r\n/*    top: -100vh;*/\r\n/*}*/\r\n/*.cost_steps.step_3 {*/\r\n/*    top: -200vh;*/\r\n/*}*/\r\n/*.cost_steps.step_4 {*/\r\n/*    top: -300vh;*/\r\n/*}*/\r\n/*.cost_steps.step_5 {*/\r\n/*    top: -400vh;*/\r\n/*}*/\r\n/*.cost_steps.step_6 {*/\r\n/*    top: -500vh;*/\r\n/*}*/\r\n/*.cost_steps.step_7 {*/\r\n/*    top: -600vh;*/\r\n/*}*/\r\n/*.cost_steps.step_8 {*/\r\n/*    top: -700vh;*/\r\n/*}*/\r\n\r\n.cost_steps .each_step {\r\n    height: 100vh;\r\n    width: 100%;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    flex-direction: column;\r\n}\r\n.cost_steps .title1 {\r\n    margin-bottom: 50px;\r\n}\r\n.cost_steps .title1 .head::after {\r\n    display: none;\r\n}\r\n.cost_steps .title1 .head {\r\n    margin-bottom: 20px;\r\n    white-space: nowrap;\r\n}\r\n.cost_title {\r\n    margin-bottom: 22px;\r\n    font-size: 25px;\r\n    text-align: center;\r\n    text-transform: uppercase;\r\n    font-family: \"bold\";\r\n    opacity: 0.4;\r\n}\r\n.cost_box {\r\n    width: 489px;\r\n    height: auto;\r\n    background-color: #fff;\r\n    box-shadow: 0 3px 15px #2b2c371f;\r\n    padding: 23px;\r\n    padding-bottom: 30px;\r\n    text-align: center;\r\n}\r\n.each_step:first-child img {\r\n    margin-top: 20px;\r\n}\r\n.cost_box h5 {\r\n    margin: 20px 0;\r\n    font-size: 25px;\r\n    font-family: \"bold\";\r\n}\r\n.cost_question {\r\n    font-size: 16px;\r\n    margin-bottom: 18px;\r\n    font-family: \"book\";\r\n    align-items: flex-start;\r\n    line-height: 20px;\r\n}\r\n.cost_question .add {\r\n    line-height: 20px;\r\n    white-space: nowrap;\r\n    margin-left: 10px;\r\n    color: #e9215093;\r\n    transition: 0.5s;\r\n}\r\n.cost_question .add:hover {\r\n    color: #e9214f;\r\n}\r\n.cost_box .option {\r\n    display: flex;\r\n    align-items: center;\r\n    width: 267px;\r\n    height: 60px;\r\n    padding: 0 17px;\r\n    font-size: 16px;\r\n    font-family: \"bold\";\r\n    margin: auto;\r\n    margin-bottom: 10px;\r\n    text-align: left;\r\n    background: #f3f3f3;\r\n    transition: 0.5s;\r\n    cursor: pointer;\r\n}\r\n.cost_box input[type=\"checkbox\"] {\r\n    display: none;\r\n}\r\n.cost_box input[type=\"checkbox\"]:checked + .option {\r\n    background-color: #e9214f;\r\n    color: #fff;\r\n}\r\n.cost_box .main_btn {\r\n    margin: 0 5px;\r\n    margin-top: 12px;\r\n    height: 52px;\r\n    font-size: 15px;\r\n    text-transform: uppercase;\r\n}\r\n.cost_box .flex .main_btn {\r\n    width: 50%;\r\n}\r\n.cost_box .flex a {\r\n    width: 50%;\r\n}\r\n.cost_box .flex a .main_btn {\r\n    width: 100%;\r\n}\r\n\r\n/* comment field */\r\n.comment_field.hidden {\r\n    display: none;\r\n}\r\n.comment_field span {\r\n    color: #e9214f;\r\n    margin-left: 5px;\r\n}\r\n.comment_field .btns button {\r\n    margin-left: 15px;\r\n}\r\n.comment_field .btns .cancel {\r\n    opacity: 0.6;\r\n}\r\n.comment_field textarea {\r\n    width: 100%;\r\n    height: auto;\r\n    padding: 10px;\r\n    font-family: Lato, Arial, Helvetica Neue, Helvetica, sans-serif;\r\n    font-size: 13px;\r\n    box-sizing: border-box;\r\n    resize: none;\r\n    overflow: hidden;\r\n    border: none;\r\n    border-bottom: 1px solid #e9214f;\r\n    caret-color: #e9214f;\r\n    color: #5a6f79;\r\n    letter-spacing: 0;\r\n    min-height: 35px !important;\r\n}\r\n.comment_field textarea.disabled {\r\n    border-bottom: none;\r\n}\r\n\r\n/* max-height */\r\n@media screen and (max-height: 850px) {\r\n    .cost_steps form {\r\n        display: grid;\r\n        grid-template-columns: repeat(2, 1fr);\r\n        grid-gap: 10px;\r\n        margin-bottom: 15px;\r\n    }\r\n    .cost_steps form .option {\r\n        width: 100%;\r\n        margin-bottom: 0;\r\n    }\r\n    .cost_box .option {\r\n        display: flex;\r\n        align-items: center;\r\n        width: 267px;\r\n        height: 60px;\r\n        padding: 0 13px;\r\n        font-size: 14px;\r\n    }\r\n    .cost_steps.step_1 {\r\n        top: 0vh !important;\r\n    }\r\n    .cost_steps .title1 .head {\r\n        margin-bottom: 2px;\r\n        font-size: 30px;\r\n    }\r\n}\r\n@media screen and (max-height: 700px) {\r\n    .cost_steps .title1 {\r\n        margin-bottom: 15px;\r\n    }\r\n    .cost_title {\r\n        margin-bottom: 8px;\r\n        font-size: 21px;\r\n    }\r\n    .cost_box {\r\n        padding: 12px;\r\n        padding-bottom: 21px;\r\n    }\r\n}\r\n@media screen and (max-width: 1200px) {\r\n    .cost_steps {\r\n        left: auto;\r\n        transform: none;\r\n        right: 0;\r\n    }\r\n    .cost_steps .title1 {\r\n        margin-bottom: 20px;\r\n    }\r\n    .cost_steps .title1 .head {\r\n        font-size: 23px;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 800px) {\r\n    .cost_steps {\r\n        display: flex;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        width: 800vw;\r\n    }\r\n    .cost_steps .each_step {\r\n        width: 100vw;\r\n    }\r\n    /* steps */\r\n    /*.cost_steps.step_1 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -2vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_2 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -102vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_3 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -202vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_4 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -302vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_5 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -402vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_6 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -502vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_7 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -602vw;*/\r\n    /*}*/\r\n    /*.cost_steps.step_8 {*/\r\n    /*    top: 100px;*/\r\n    /*    left: -702vw;*/\r\n    /*}*/\r\n}\r\n@media screen and (max-width: 600px) {\r\n    .cost_box {\r\n        width: 90%;\r\n    }\r\n    .cost_steps .title1 .head {\r\n        white-space: normal;\r\n        font-size: 20px;\r\n    }\r\n    .cost_steps .title1 p {\r\n        font-size: 14px;\r\n    }\r\n    .cost_box h5 {\r\n        margin: 5px 0;\r\n        font-size: 22px;\r\n    }\r\n    .cost_box img {\r\n        margin-top: 6px;\r\n    }\r\n    .cost_title {\r\n        margin-bottom: 12px;\r\n        font-size: 21px;\r\n    }\r\n}\r\n@media screen and (max-width: 450px) {\r\n    .cost_box .option {\r\n        padding: 0px 10px;\r\n        font-size: 12px;\r\n    }\r\n    .cost_question {\r\n        font-size: 14px;\r\n        margin-bottom: 23px;\r\n    }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -9645,7 +9645,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".virtualization_page .showcase {\r\n  width: 100%;\r\n  height: 100vh;\r\n  color: #fff;\r\n  background-position: center !important;\r\n  background-size: cover !important;\r\n}\r\n.virtualization_page .showcase .main_btn {\r\n  background: #fff;\r\n}\r\n.virtualization_page .showcase .main_btn .stationary {\r\n  color: #272639;\r\n}\r\n.virtualization_page .showcase .wrapper {\r\n  justify-content: flex-start;\r\n}\r\n.virtualization_page .showcase .sub {\r\n  max-width: 530px;\r\n  text-align: justify;\r\n}\r\n\r\n.virtualization_page .impact_sec {\r\n  margin-top: -150px;\r\n  margin-bottom: 70px;\r\n}\r\n.virtualization_page .impact_sec .grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(6, 1fr);\r\n  grid-gap: 16px;\r\n}\r\n.virtualization_page .impact_sec .text35 {\r\n  text-transform: uppercase;\r\n  color: #fff;\r\n  font-size: 30px;\r\n  max-width: 580px;\r\n  margin-bottom: 20px;\r\n}\r\n.virtualization_page .portfolio_sec {\r\n  text-align: center;\r\n  width: 1350px;\r\n  padding-bottom: 130px;\r\n}\r\n.virtualization_page .portfolio_sec h3 {\r\n  font-size: 18px;\r\n  text-transform: uppercase;\r\n  color: #25126b;\r\n  margin-top: 50px;\r\n  margin-bottom: 30px;\r\n}\r\n.virtualization_page .portfolio_sec .form {\r\n  margin: auto;\r\n  margin-top: 90px;\r\n}\r\n\r\n@media screen and (max-width: 1400px) {\r\n  .virtualization_page .impact_sec .grid {\r\n    display: block;\r\n    text-align: center;\r\n  }\r\n  .virtualization_page .impact_box {\r\n    display: inline-block;\r\n    max-width: 260px;\r\n    margin: 8px;\r\n  }\r\n  .virtualization_page .portfolio_sec {\r\n    width: 95%;\r\n  }\r\n}\r\n@media screen and (max-width: 1100px) {\r\n  .virtualization_page .showcase2 .sub {\r\n    opacity: 1;\r\n    font-size: 15px;\r\n  }\r\n}\r\n@media screen and (max-width: 900px) {\r\n  .portbox {\r\n    padding: 26px 21px;\r\n  }\r\n}\r\n@media screen and (max-width: 600px) {\r\n  .portbox .icon {\r\n    margin-right: 15px;\r\n  }\r\n  .portbox .head {\r\n    font-size: 16px;\r\n    font-family: \"bold\";\r\n    margin-bottom: 8px;\r\n  }\r\n  .portbox .op06 {\r\n    font-size: 14px;\r\n  }\r\n}\r\n@media screen and (max-width: 450px) {\r\n  .portbox {\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n  }\r\n  .portbox .icon {\r\n    margin-right: 0;\r\n    margin-bottom: 15px;\r\n  }\r\n  .portbox .div {\r\n    max-width: none !important;\r\n  }\r\n}\r\n\r\n/* height */\r\n@media screen and (max-height: 750px) {\r\n  .virtualization_page .impact_sec {\r\n    margin-top: -75px;\r\n    text-align: center;\r\n  }\r\n  .virtualization_page .impact_sec .text35 {\r\n    margin: auto;\r\n    font-size: 22px;\r\n    max-width: 440px;\r\n    margin-bottom: 25px;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".virtualization_page .showcase {\r\n    width: 100%;\r\n    height: 100vh;\r\n    color: #fff;\r\n    background-position: center !important;\r\n    background-size: cover !important;\r\n}\r\n.virtualization_page .showcase .main_btn {\r\n    background: #fff;\r\n}\r\n.virtualization_page .showcase .main_btn .stationary {\r\n    color: #272639;\r\n}\r\n.virtualization_page .showcase .wrapper {\r\n    justify-content: flex-start;\r\n}\r\n.virtualization_page .showcase .sub {\r\n    max-width: 530px;\r\n    text-align: justify;\r\n}\r\n\r\n.virtualization_page .impact_sec {\r\n    margin-top: -150px;\r\n    margin-bottom: 70px;\r\n}\r\n.virtualization_page .impact_sec .grid {\r\n    display: grid;\r\n    grid-template-columns: repeat(6, 1fr);\r\n    grid-gap: 16px;\r\n}\r\n.virtualization_page .impact_sec .text35 {\r\n    text-transform: uppercase;\r\n    color: #fff;\r\n    font-size: 30px;\r\n    max-width: 580px;\r\n    margin-bottom: 20px;\r\n}\r\n.virtualization_page .portfolio_sec {\r\n    text-align: center;\r\n    width: 1350px;\r\n    padding-bottom: 130px;\r\n}\r\n.virtualization_page .portfolio_sec h3 {\r\n    font-size: 18px;\r\n    text-transform: uppercase;\r\n    color: #25126b;\r\n    margin-top: 50px;\r\n    margin-bottom: 30px;\r\n}\r\n.virtualization_page .portfolio_sec .form {\r\n    margin: auto;\r\n    margin-top: 90px;\r\n}\r\n\r\n@media screen and (max-width: 1400px) {\r\n    .virtualization_page .impact_sec .grid {\r\n        display: block;\r\n        text-align: center;\r\n    }\r\n    .virtualization_page .impact_box {\r\n        display: inline-block;\r\n        max-width: 260px;\r\n        margin: 8px;\r\n    }\r\n    .virtualization_page .portfolio_sec {\r\n        width: 95%;\r\n    }\r\n}\r\n@media screen and (max-width: 1100px) {\r\n    .virtualization_page .showcase2 .sub {\r\n        opacity: 1;\r\n        font-size: 15px;\r\n    }\r\n    .virtualization_page .showcase::after {\r\n        width: 100%;\r\n        height: 100%;\r\n        left: 0;\r\n        top: 0;\r\n        background-color: rgba(0, 0, 128, 0.479);\r\n    }\r\n    .virtualization_page .showcase2 {\r\n        z-index: 10;\r\n    }\r\n}\r\n@media screen and (max-width: 900px) {\r\n    .portbox {\r\n        padding: 26px 21px;\r\n    }\r\n}\r\n@media screen and (max-width: 600px) {\r\n    .portbox .icon {\r\n        margin-right: 15px;\r\n    }\r\n    .portbox .head {\r\n        font-size: 16px;\r\n        font-family: \"bold\";\r\n        margin-bottom: 8px;\r\n    }\r\n    .portbox .op06 {\r\n        font-size: 14px;\r\n    }\r\n    .virtualization_page .showcase2 .title {\r\n        font-size: 40px;\r\n    }\r\n    .virtualization_page .impact_sec .text35 {\r\n        font-size: 20px;\r\n    }\r\n}\r\n@media screen and (max-width: 450px) {\r\n    .portbox {\r\n        flex-direction: column;\r\n        align-items: flex-start;\r\n    }\r\n    .portbox .icon {\r\n        margin-right: 0;\r\n        margin-bottom: 15px;\r\n    }\r\n    .portbox .div {\r\n        max-width: none !important;\r\n    }\r\n}\r\n\r\n/* height */\r\n@media screen and (max-height: 750px) {\r\n    .virtualization_page .impact_sec {\r\n        margin-top: -75px;\r\n        text-align: center;\r\n    }\r\n    .virtualization_page .impact_sec .text35 {\r\n        margin: auto;\r\n        font-size: 22px;\r\n        max-width: 440px;\r\n        margin-bottom: 25px;\r\n    }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

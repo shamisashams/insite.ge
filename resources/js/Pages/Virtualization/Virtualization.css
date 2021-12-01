@@ -1,119 +1,135 @@
 .virtualization_page .showcase {
-  width: 100%;
-  height: 100vh;
-  color: #fff;
-  background-position: center !important;
-  background-size: cover !important;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-position: center !important;
+    background-size: cover !important;
 }
 .virtualization_page .showcase .main_btn {
-  background: #fff;
+    background: #fff;
 }
 .virtualization_page .showcase .main_btn .stationary {
-  color: #272639;
+    color: #272639;
 }
 .virtualization_page .showcase .wrapper {
-  justify-content: flex-start;
+    justify-content: flex-start;
 }
 .virtualization_page .showcase .sub {
-  max-width: 530px;
-  text-align: justify;
+    max-width: 530px;
+    text-align: justify;
 }
 
 .virtualization_page .impact_sec {
-  margin-top: -150px;
-  margin-bottom: 70px;
+    margin-top: -150px;
+    margin-bottom: 70px;
 }
 .virtualization_page .impact_sec .grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 16px;
 }
 .virtualization_page .impact_sec .text35 {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 30px;
-  max-width: 580px;
-  margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    max-width: 580px;
+    margin-bottom: 20px;
 }
 .virtualization_page .portfolio_sec {
-  text-align: center;
-  width: 1350px;
-  padding-bottom: 130px;
+    text-align: center;
+    width: 1350px;
+    padding-bottom: 130px;
 }
 .virtualization_page .portfolio_sec h3 {
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #25126b;
-  margin-top: 50px;
-  margin-bottom: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #25126b;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 .virtualization_page .portfolio_sec .form {
-  margin: auto;
-  margin-top: 90px;
+    margin: auto;
+    margin-top: 90px;
 }
 
 @media screen and (max-width: 1400px) {
-  .virtualization_page .impact_sec .grid {
-    display: block;
-    text-align: center;
-  }
-  .virtualization_page .impact_box {
-    display: inline-block;
-    max-width: 260px;
-    margin: 8px;
-  }
-  .virtualization_page .portfolio_sec {
-    width: 95%;
-  }
+    .virtualization_page .impact_sec .grid {
+        display: block;
+        text-align: center;
+    }
+    .virtualization_page .impact_box {
+        display: inline-block;
+        max-width: 260px;
+        margin: 8px;
+    }
+    .virtualization_page .portfolio_sec {
+        width: 95%;
+    }
 }
 @media screen and (max-width: 1100px) {
-  .virtualization_page .showcase2 .sub {
-    opacity: 1;
-    font-size: 15px;
-  }
+    .virtualization_page .showcase2 .sub {
+        opacity: 1;
+        font-size: 15px;
+    }
+    .virtualization_page .showcase::after {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 128, 0.479);
+    }
+    .virtualization_page .showcase2 {
+        z-index: 10;
+    }
 }
 @media screen and (max-width: 900px) {
-  .portbox {
-    padding: 26px 21px;
-  }
+    .portbox {
+        padding: 26px 21px;
+    }
 }
 @media screen and (max-width: 600px) {
-  .portbox .icon {
-    margin-right: 15px;
-  }
-  .portbox .head {
-    font-size: 16px;
-    font-family: "bold";
-    margin-bottom: 8px;
-  }
-  .portbox .op06 {
-    font-size: 14px;
-  }
+    .portbox .icon {
+        margin-right: 15px;
+    }
+    .portbox .head {
+        font-size: 16px;
+        font-family: "bold";
+        margin-bottom: 8px;
+    }
+    .portbox .op06 {
+        font-size: 14px;
+    }
+    .virtualization_page .showcase2 .title {
+        font-size: 40px;
+    }
+    .virtualization_page .impact_sec .text35 {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 450px) {
-  .portbox {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .portbox .icon {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-  .portbox .div {
-    max-width: none !important;
-  }
+    .portbox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .portbox .icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .portbox .div {
+        max-width: none !important;
+    }
 }
 
 /* height */
 @media screen and (max-height: 750px) {
-  .virtualization_page .impact_sec {
-    margin-top: -75px;
-    text-align: center;
-  }
-  .virtualization_page .impact_sec .text35 {
-    margin: auto;
-    font-size: 22px;
-    max-width: 440px;
-    margin-bottom: 25px;
-  }
+    .virtualization_page .impact_sec {
+        margin-top: -75px;
+        text-align: center;
+    }
+    .virtualization_page .impact_sec .text35 {
+        margin: auto;
+        font-size: 22px;
+        max-width: 440px;
+        margin-bottom: 25px;
+    }
 }

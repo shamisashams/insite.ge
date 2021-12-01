@@ -188,7 +188,24 @@
         font-size: 14px;
     }
     .cost_steps.step_1 {
-        top: 0vh;
+        top: 0vh !important;
+    }
+    .cost_steps .title1 .head {
+        margin-bottom: 2px;
+        font-size: 30px;
+    }
+}
+@media screen and (max-height: 700px) {
+    .cost_steps .title1 {
+        margin-bottom: 15px;
+    }
+    .cost_title {
+        margin-bottom: 8px;
+        font-size: 21px;
+    }
+    .cost_box {
+        padding: 12px;
+        padding-bottom: 21px;
     }
 }
 @media screen and (max-width: 1200px) {
