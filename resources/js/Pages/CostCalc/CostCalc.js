@@ -44,7 +44,7 @@ const CostCalc = ({features, state, lastPrice}) => {
                                     onClick={() => setCostStep(1)}
                                     className={costStep === 1 ? "active" : ""}
                                 >
-                                    Platform
+                                    პლატფორმა
                                 </button>
                                 {
                                     features.map((feature, index) => (

@@ -4584,7 +4584,7 @@ var CostCalc = function CostCalc(_ref) {
       return setCostStep(1);
     },
     className: costStep === 1 ? "active" : ""
-  }, "Platform"), features.map(function (feature, index) {
+  }, "\u10DE\u10DA\u10D0\u10E2\u10E4\u10DD\u10E0\u10DB\u10D0"), features.map(function (feature, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
       key: index,
       onClick: function onClick() {
@@ -5298,7 +5298,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
             style: {
               textAlign: 'center'
             }
-          }, "Your order was successfully send")
+          }, "\u10D7\u10E5\u10D5\u10D4\u10DC\u10D8 \u10DB\u10DD\u10D7\u10EE\u10DD\u10D5\u10DC\u10D0 \u10D2\u10D0\u10D2\u10D6\u10D0\u10D5\u10DC\u10D8\u10DA\u10D8\u10D0")
         });
         setRequest(!request);
         name = "";
@@ -5320,8 +5320,8 @@ var ResultEstimate = function ResultEstimate(_ref) {
       background: "url(/images/calculator/bg.png)"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Title1__WEBPACK_IMPORTED_MODULE_2__.default, {
-    head: "APP COST CALCULATOR",
-    para: "Please make sure this information is correct before submitting your request."
+    head: "\u10D7\u10E5\u10D5\u10D4\u10DC\u10D8 \u10D9\u10D0\u10DA\u10D9\u10E3\u10DA\u10D0\u10EA\u10D8\u10D8\u10E1 \u10E8\u10D4\u10D3\u10D4\u10D2\u10D8",
+    para: "\u10D2\u10D7\u10EE\u10DD\u10D5\u10D7 \u10D2\u10D0\u10D8\u10D7\u10D5\u10D0\u10DA\u10D8\u10E1\u10EC\u10D8\u10DC\u10DD\u10D7 \u10E0\u10DD\u10DB \u10D4\u10E1 \u10D9\u10D0\u10DA\u10D9\u10E3\u10DA\u10D0\u10EA\u10D8\u10D0 \u10D0\u10E0\u10D8\u10E1 \u10DB\u10D8\u10D0\u10EE\u10DA\u10DD\u10D4\u10D1\u10D8\u10D7. \u10E4\u10D0\u10E1\u10D8 \u10D3\u10D0 \u10D3\u10E0\u10DD \u10E8\u10D4\u10D8\u10EB\u10DA\u10D4\u10D1\u10D0 \u10E8\u10D4\u10D8\u10EA\u10D5\u10D0\u10DA\u10DD\u10E1 \u10D7\u10E5\u10D5\u10D4\u10DC\u10D8 \u10DB\u10DD\u10D7\u10EE\u10DD\u10D5\u10DC\u10D4\u10D1\u10D8\u10D3\u10D0\u10DC \u10D2\u10D0\u10DB\u10DD\u10DB\u10D3\u10D8\u10DC\u10D0\u10E0\u10D4."
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "tables"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostTable__WEBPACK_IMPORTED_MODULE_4__.default, {
@@ -5343,7 +5343,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
     id: "send-request",
     className: "op06"
-  }, "Download PDF")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "PDF-\u10E1 \u10D2\u10D0\u10D3\u10DB\u10DD\u10EC\u10D4\u10E0\u10D0")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Button2_Button2__WEBPACK_IMPORTED_MODULE_1__.default, {
     large: true,
@@ -5353,7 +5353,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
     disabled: disableSendRequestButton,
     id: "send-request",
     large: true,
-    text: "SEND REQUESTS",
+    text: "\u10DB\u10DD\u10D7\u10EE\u10DD\u10D5\u10DC\u10D8\u10E1 \u10D2\u10D0\u10D2\u10D6\u10D0\u10D5\u10DC\u10D0",
     click: function click(e) {
       return toggleRequest(e);
     }
@@ -5374,14 +5374,14 @@ var ResultEstimate = function ResultEstimate(_ref) {
     alt: ""
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "title"
-  }, "Thank you for your patience!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Give us your contact information, and we'll send you a copy of order"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+  }, "\u10DB\u10D0\u10D3\u10DA\u10DD\u10D1\u10D0\u10E1 \u10D2\u10D8\u10EE\u10D3\u10D8\u10D7 \u10DB\u10DD\u10D7\u10DB\u10D8\u10DC\u10D4\u10D1\u10D8\u10E1\u10D7\u10D5\u10D8\u10E1."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u10D2\u10D7\u10EE\u10DD\u10D5\u10D7 \u10E8\u10D4\u10D0\u10D5\u10E1\u10DD\u10D7 \u10D7\u10E5\u10D5\u10D4\u10DC\u10D8 \u10E1\u10D0\u10D9\u10DD\u10DC\u10E2\u10D0\u10E5\u10E2\u10DD \u10D8\u10DC\u10E4\u10DD\u10E0\u10DB\u10D0\u10EA\u10D8\u10D0 \u10D3\u10D0 \u10E9\u10D5\u10D4\u10DC \u10DB\u10D0\u10DA\u10D4 \u10D3\u10D0\u10D2\u10D8\u10D9\u10D0\u10D5\u10E8\u10D8\u10E0\u10D3\u10D4\u10D1\u10D8\u10D7."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     required: true,
     value: name,
     onChange: function onChange(e) {
       return setName(event.target.value);
     },
     type: "text",
-    placeholder: "Name"
+    placeholder: "\u10E1\u10D0\u10EE\u10D4\u10DA\u10D8"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     style: {
       width: "100%",
@@ -5409,7 +5409,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
       return setPhone(event.target.value);
     },
     type: "tel",
-    placeholder: "Phone number"
+    placeholder: "\u10E2\u10D4\u10DA\u10D4\u10E4\u10DD\u10DC\u10D8\u10E1 \u10DC\u10DD\u10DB\u10D4\u10E0\u10D8"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     hidden: true,
     ref: idRef,
@@ -5437,10 +5437,10 @@ var ResultEstimate = function ResultEstimate(_ref) {
       return downloadPdf();
     },
     large: true,
-    text: "DOWNLOAD PDF"
+    text: "PDF-\u10D8\u10E1 \u10D2\u10D0\u10D3\u10DB\u10DD\u10EC\u10D4\u10E0\u10D0"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_8__.Link, {
     to: "/"
-  }, "Back to website")))));
+  }, "\u10D5\u10D4\u10D1 \u10E1\u10D0\u10D8\u10E2\u10D6\u10D4 \u10D3\u10D0\u10D1\u10E0\u10E3\u10DC\u10D4\u10D1\u10D0")))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ResultEstimate);
