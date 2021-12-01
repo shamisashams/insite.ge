@@ -220,8 +220,8 @@
             @foreach($feature['answer'] as $answer)
                 <tr>
                     <td>{{$answer['title']}}</td>
-                    <td><span style="font-size: 16px">₾</span>{{$answer['start_price']}} - <span
-                            style="font-size: 16px">₾</span>{{$answer['end_price']}}</td>
+                    <td><span style="font-size: 16px">GEL</span>{{$answer['start_price']}} - <span
+                            style="font-size: 16px">GEL</span>{{$answer['end_price']}}</td>
                     <td>{{$answer['start_time']}} - {{$answer['end_time']}}</td>
                 </tr>
             @endforeach
@@ -242,9 +242,9 @@
                 <th>მიახლოებითი დრო</th>
             </tr>
             <tr>
-                <td><span style="font-size: 16px">₾</span>{{$totalStartPrice}} - <span
-                        style="font-size: 16px">₾</span>{{$totalEndPrice}}</td>
-                <td>{{$totalTime}}hrs</td>
+                <td><span style="font-size: 16px">GEL</span>{{$totalStartPrice}} - <span
+                        style="font-size: 16px">GEL</span>{{$totalEndPrice}}</td>
+                <td>{{$totalTime}}სთ</td>
             </tr>
         </table>
     </div>
@@ -474,8 +474,8 @@
             @foreach($feature['answer'] as $answer)
                 <tr>
                     <td>{{$answer['title']}}</td>
-                    <td><span style="font-size: 16px">₾</span>{{$answer['start_price']}} - <span
-                            style="font-size: 16px">₾</span>{{$answer['end_price']}}</td>
+                    <td><span style="font-size: 16px">GEL</span>{{$answer['start_price']}} - <span
+                            style="font-size: 16px">GEL</span>{{$answer['end_price']}}</td>
                     <td>{{$answer['start_time']}} - {{$answer['end_time']}}</td>
                 </tr>
             @endforeach
@@ -496,8 +496,8 @@
                 <th>მიახლოებითი დრო</th>
             </tr>
             <tr>
-                <td><span style="font-size: 16px">₾</span>{{$totalStartPrice}} - <span
-                        style="font-size: 16px">₾</span>{{$totalEndPrice}}</td>
+                <td><span style="font-size: 16px">GEL</span>{{$totalStartPrice}} - <span
+                        style="font-size: 16px">GEL</span>{{$totalEndPrice}}</td>
                 <td>{{$totalTime}}სთ</td>
             </tr>
         </table>
