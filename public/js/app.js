@@ -5347,7 +5347,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
     className: "flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Button2_Button2__WEBPACK_IMPORTED_MODULE_1__.default, {
     large: true,
-    text: "MAKE CHANGES",
+    text: "ცვლილებების შეტანა",
     href: '/services/calculator?state=' + encodeURI(requestData) + "&totalPrice=" + totalPrice
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostSteps_CostBox__WEBPACK_IMPORTED_MODULE_3__.CostBtn, {
     disabled: disableSendRequestButton,
