@@ -5016,7 +5016,7 @@ var CostSteps = function CostSteps(_ref) {
         return showComment(feature.id);
       },
       ques: feature.question
-    }), feature.answer.map(function (item, index) {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", null, feature.answer.map(function (item, index) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostBox__WEBPACK_IMPORTED_MODULE_2__.CostOption, {
         key: index,
         featureId: feature.id,
@@ -5027,7 +5027,7 @@ var CostSteps = function CostSteps(_ref) {
         id: item.id,
         option: item.title
       });
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostBox__WEBPACK_IMPORTED_MODULE_2__.CommentField, {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostBox__WEBPACK_IMPORTED_MODULE_2__.CommentField, {
       cmFieldClass: commentSection[feature.id] ? "comment_field" : "comment_field hidden",
       cancelCM: function cancelCM(e) {
         return cancelComment(e);

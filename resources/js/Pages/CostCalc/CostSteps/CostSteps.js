@@ -197,7 +197,7 @@ const CostSteps = ({step, click, back, features, parentCallback, state, price}) 
                         <div className="cost_box">
                             <CostQues addCm={() => showComment(feature.id)}
                                       ques={feature.question}/>
-                            {/*<form>*/}
+                            <form>
                             {
                                 feature.answer.map((item, index) => (
                                     <CostOption key={index} featureId={feature.id}
@@ -206,7 +206,7 @@ const CostSteps = ({step, click, back, features, parentCallback, state, price}) 
                                                 option={item.title}/>
                                 ))
                             }
-                            {/*</form>*/}
+                            </form>
 
                             <CommentField
                                 cmFieldClass={
