@@ -5039,8 +5039,8 @@ var CostSteps = function CostSteps(_ref) {
         return addComment(e);
       },
       featureId: feature.id,
-      btnValue1: confirmComment[feature.id] ? "Delete" : "Cancel",
-      btnValue2: confirmComment[feature.id] ? "Edit" : "Confirm",
+      btnValue1: confirmComment[feature.id] ? "წაშლა" : "უარყოფა",
+      btnValue2: confirmComment[feature.id] ? "შეცვლა" : "დამატება",
       textareaClass: confirmComment[feature.id] ? "disabled" : "",
       readOnly: confirmComment[feature.id],
       confirmCM: function confirmCM(e) {
@@ -5347,7 +5347,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
     className: "flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Button2_Button2__WEBPACK_IMPORTED_MODULE_1__.default, {
     large: true,
-    text: "MAKE CHANGES",
+    text: "\u10EA\u10D5\u10DA\u10D8\u10DA\u10D4\u10D1\u10D0",
     href: '/services/calculator?state=' + encodeURI(requestData) + "&totalPrice=" + totalPrice
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostSteps_CostBox__WEBPACK_IMPORTED_MODULE_3__.CostBtn, {
     disabled: disableSendRequestButton,

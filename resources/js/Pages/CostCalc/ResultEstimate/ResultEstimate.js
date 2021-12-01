@@ -112,7 +112,7 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
                                 <span id="send-request" className="op06">PDF-ს გადმოწერა</span>
                             </button>
                             <div className="flex">
-                                <Button2 large text="MAKE CHANGES"
+                                <Button2 large text="ცვლილება"
                                          href={'/services/calculator?state=' + encodeURI(requestData) + "&totalPrice=" + totalPrice}/>
                                 <CostBtn disabled={disableSendRequestButton} id="send-request" large
                                          text="მოთხოვნის გაგზავნა"

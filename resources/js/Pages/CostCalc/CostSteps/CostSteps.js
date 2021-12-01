@@ -218,8 +218,8 @@ const CostSteps = ({step, click, back, features, parentCallback, state, price}) 
                                 }}
                                 change={(e) => addComment(e)}
                                 featureId={feature.id}
-                                btnValue1={confirmComment[feature.id] ? "Delete" : "Cancel"}
-                                btnValue2={confirmComment[feature.id] ? "Edit" : "Confirm"}
+                                btnValue1={confirmComment[feature.id] ? "წაშლა" : "უარყოფა"}
+                                btnValue2={confirmComment[feature.id] ? "შეცვლა" : "დამატება"}
                                 textareaClass={confirmComment[feature.id] ? "disabled" : ""}
                                 readOnly={confirmComment[feature.id]}
                                 confirmCM={(e) => toggleDisabled(e)}
