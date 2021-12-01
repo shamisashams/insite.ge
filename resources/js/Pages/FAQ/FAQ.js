@@ -7,7 +7,7 @@ import Meta from "../Meta/Meta";
 import DocumentMeta from 'react-document-meta';
 
 const FAQ = () => {
-    const meta = Meta('Insite - ხშირად დასმული კითხვები', 'keyword', 'description');
+    const meta = Meta('Insite - ხშირად დასმული კითხვები', 'კომპანიის შესახებ, საიტების შექმნა, საიტის შექმნა, საიტის შეცვლა, საიტის გადატანა', 'აქ შეგიძლიათ ნახოთ ხშირად დასმული შეკითხვები');
     const [revealAnswer, setRevealAnswer] = useState(1);
     const openQuestion = (index) => {
         setRevealAnswer(index);

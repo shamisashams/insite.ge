@@ -15,12 +15,12 @@ const VacBox = (props) => {
                 <div className="btns">
                     <button className="button">{props.time} </button>
                     <Link href={'/show-vacancy/' + props.id}>
-                        <button className="button apply">Apply</button>
+                        <button className="button apply">ნახვა</button>
                     </Link>
                 </div>
             </div>
             <div className="bottom flex">
-                <div className="bold">Salary: {props.salary}</div>
+                <div className="bold">ანაზღაურება: {props.salary}</div>
                 <div className="bold">
                     <img src="/images/icons/vacancy/1.svg" alt=""/> {props.location}
                 </div>

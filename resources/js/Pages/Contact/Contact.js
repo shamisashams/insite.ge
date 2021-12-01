@@ -8,7 +8,7 @@ import DocumentMeta from 'react-document-meta';
 import Meta from "../Meta/Meta";
 
 const Contact = () => {
-    const meta = Meta('Insite - კონტაქტი', 'keyword', 'description');
+    const meta = Meta('Insite - კონტაქტი', 'კომპანიის შესახებ, საიტების შექმნა, საიტის შექმნა, საიტის შეცვლა, საიტის გადატანა', 'დაგვიკავშირდით თუ რაიმე შეკითხვები გაქვთ');
 
     return (
         <DocumentMeta {...meta}>
@@ -31,8 +31,8 @@ const Contact = () => {
                                         <div className=" info flex">
                                             <img src="images/icons/contact/1.svg" alt=""/>
                                             <div>
-                                            Г. Москва, Пресненская наб., <br/>
-                                            6, стр. 2 ЦАО
+                                            პრესნენსკაიას სანაპირო N6, <br/>
+                                            მოსკოვი, რუსეთი
                                             </div>
                                         </div>
                                         <div className=" info flex">

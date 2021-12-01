@@ -47,13 +47,13 @@ const ShowVacancy = ({data}) => {
 
                         </div>
                         <div className="details">
-                            <VacDetails imgNum="2" text1="Field" text2={vacancy.field}/>
-                            <VacDetails imgNum="3" text1="experience" text2={vacancy.experience}/>
-                            <VacDetails imgNum="4" text1="Location" text2={vacancy.location}/>
-                            <VacDetails imgNum="5" text1="Commitment" text2={vacancy.commitment}/>
-                            <VacDetails imgNum="6" text1="Salary" text2={vacancy.salary}/>
+                            <VacDetails imgNum="2" text1="სფერო" text2={vacancy.field}/>
+                            <VacDetails imgNum="3" text1="გამოცდილება" text2={vacancy.experience}/>
+                            <VacDetails imgNum="4" text1="მდებარეობა" text2={vacancy.location}/>
+                            <VacDetails imgNum="5" text1="განაკვეთი" text2={vacancy.commitment}/>
+                            <VacDetails imgNum="6" text1="ანაზღაურება" text2={vacancy.salary}/>
                             <button className="button apply" onClick={() => toggleAppForm()}>
-                                Apply Now
+                                რეზიუმეს გაგზავნა
                             </button>
                             <button onClick={copyToClipboard} className="button">
                                 <img ref={share} src="/images/icons/vacancy/7.svg" alt=""/> Share
