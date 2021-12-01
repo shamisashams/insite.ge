@@ -12,6 +12,7 @@
   font-size: 18px;
   font-family: "light";
   opacity: 0.6;
+  max-width: 600px;
 }
 .showcase2 .main_btn {
   margin-top: 40px;
@@ -26,4 +27,7 @@
   .showcase2 p {
     font-size: 14px;
   }
+  .showcase2 .title {
+    font-size: 50px;
+}
 }

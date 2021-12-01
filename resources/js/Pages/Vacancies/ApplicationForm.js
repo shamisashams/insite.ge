@@ -39,19 +39,19 @@ const ApplicationForm = ({fClass, closeBtn, id}) => {
         <div className={fClass}>
             <div className="title">Apply For The Job</div>
             <form onSubmit={handleSubmit} className="input_fields">
-                <label>Full Name*</label>
+                <label>სახელი და გვარი*</label>
                 <input id="fullname" type="text" value={values.fullname} onChange={handleChange}/>
                 {errors.fullname && <div className="error-block">{errors.fullname}</div>}
                 <label>Email*</label>
                 <input id="email" type="text" value={values.email} onChange={handleChange}/>
                 {errors.email && <div className="error-block">{errors.email}</div>}
-                <label>Phone*</label>
+                <label>ტელეფონი*</label>
                 <input id="phone" type="text" value={values.phone} onChange={handleChange}/>
                 {errors.phone && <div className="error-block">{errors.phone}</div>}
-                <label>Portfolio Link</label>
+                <label>თქვენი პორტფოლიო</label>
                 <input id="portfolio_link" type="text" value={values.portfolio_link} onChange={handleChange}/>
                 {errors.portfolio_link && <div className="error-block">{errors.portfolio_link}</div>}
-                <label>Resume*</label>
+                <label>CV*</label>
                 <div className="input">
                     <input type="file" id="file"
                            onChange={handleChange}/>
@@ -59,7 +59,7 @@ const ApplicationForm = ({fClass, closeBtn, id}) => {
                         <img src="/images/icons/vacancy/8.svg" alt=""/>
                     </button>
                 </div>
-                <input type="submit" value="Submit Application"/>
+                <input type="submit" value="გაგზავნა"/>
             </form>
             <button className="close" onClick={closeBtn}>
                 <img src="/images/icons/vacancy/close.svg" alt=""/>

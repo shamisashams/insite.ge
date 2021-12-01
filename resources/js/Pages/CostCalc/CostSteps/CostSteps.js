@@ -197,15 +197,14 @@ const CostSteps = ({
         <div ref={stepRef} style={style} className={`cost_steps step_${step}`}>
             <div className="each_step">
                 <Title1
-                    head="How much could your project cost?"
-                    para="Easily calculate the costs of your project with just a few clicks.
-            For a precise calculation, only include necessary features"
+                    head="გამოთვალეთ თქვენი პროექტის მიახლოებითი ღირებულება"
+                    para="ჩვენი მარტივი კალკულატორი დაგეხმარებათ გამოთვალოთ თქვენი პროექტის მოსალოდნელი ღირებულება. აქ თქვენ იპოვით ყველაზე პოპულარულ და მოთხოვნად ფუნქციონალს. თუ თქვენ ვერ იპოვეთ თქვენთვის საჭირო პარამეტრი ჩამონათვალში, გთხოვთ დატოვოთ კომენტარი შესაბამის სვეტში."
                 />
-                <CostTitle text="Platform" />
+                <CostTitle text="პლატფორმა" />
                 <div className="cost_box">
                     <img src="/images/calculator/1.png" alt="" />
-                    <h5>Web Services</h5>
-                    <CostBtn click={click} text="GET STARTED" large />
+                    <h5>ვებ სერვისები</h5>
+                    <CostBtn click={click} text="დაწყება" large />
                 </div>
             </div>
             {features.map((feature, index) => (
@@ -244,10 +243,12 @@ const CostSteps = ({
                             change={(e) => addComment(e)}
                             featureId={feature.id}
                             btnValue1={
-                                confirmComment[feature.id] ? "Delete" : "Cancel"
+                                confirmComment[feature.id] ? "წაშლა" : "უარყოფა"
                             }
                             btnValue2={
-                                confirmComment[feature.id] ? "Edit" : "Confirm"
+                                confirmComment[feature.id]
+                                    ? "შეცვლა"
+                                    : "დამატება"
                             }
                             textareaClass={
                                 confirmComment[feature.id] ? "disabled" : ""
@@ -259,7 +260,7 @@ const CostSteps = ({
                         <div className="flex">
                             {index == features.length - 1 ? (
                                 <React.Fragment>
-                                    <CostBtn text="Back" click={back} />
+                                    <CostBtn text="უკან" click={back} />
                                     <Link
                                         href={
                                             "/services/results?data=" +
@@ -272,14 +273,14 @@ const CostSteps = ({
                                     >
                                         <CostBtn
                                             click={saveState}
-                                            text="FINISH"
+                                            text="დასრულება"
                                         />
                                     </Link>
                                 </React.Fragment>
                             ) : (
                                 <React.Fragment>
-                                    <CostBtn text="Back" click={back} />
-                                    <CostBtn click={click} text="PROCEED" />
+                                    <CostBtn text="უკან" click={back} />
+                                    <CostBtn click={click} text="გაგრძელება" />
                                 </React.Fragment>
                             )}
                         </div>

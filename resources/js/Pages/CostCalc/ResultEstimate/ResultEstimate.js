@@ -13,7 +13,7 @@ import Meta from "../../Meta/Meta";
 import DocumentMeta from 'react-document-meta';
 
 const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalEndTime, requestData}) => {
-    const meta = Meta('Some Meta Title', 'keyword', 'description');
+    const meta = Meta('Insite - კალკულატორი', 'საიტის ფასი, საიტის შექმნა, საიტის შექმნის ფასი, ვებ აპლიკაციის ფასი, საიტის კალკულატორი', 'გინდათ სწრაფად გაიგოთ რა დაგიჯდებათ საიტი ან ვებ აპლიკაცია? გამოიყენეთ ჩვენი მარტივი ონლაინ კალკულატორი და მიიღეთ აპლიკაციის შექმნის ღირებულების და დროის მოსალოდნელი ჩარჩო.');
     const {errors, flash} = usePage().props;
     const [request, setRequest] = useState(false);
     let [name, setName] = useState('')
@@ -72,7 +72,7 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
             onSuccess: () => {
                 MySwal.fire({
                     icon: 'success',
-                    title: <p style={{textAlign: 'center'}}>Your order was successfully send</p>,
+                    title: <p style={{textAlign: 'center'}}>თქვენი მოთხოვნა გაგზავნილია</p>,
                 })
                 setRequest(!request);
                 name = "";
@@ -93,13 +93,17 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
             <Layout>
                 <>
                     <div
-                        className="result_page wrapper"
+                        className="result_page "
                         style={{background: "url(/images/calculator/bg.png)"}}
                     >
+                        <div className="wrapper">
+
+                        
+                        
                         <Title1
 
-                            head="APP COST CALCULATOR"
-                            para="Please make sure this information is correct before submitting your request."
+                            head="თქვენი კალკულაციის შედეგი"
+                            para="გთხოვთ გაითვალისწინოთ რომ ეს კალკულაცია არის მიახლოებით. ფასი და დრო შეიძლება შეიცვალოს თქვენი მოთხოვნებიდან გამომდინარე."
                         />
                         <div className="tables">
                             <CostTable features={data} totalPrice={totalPrice} totalStartTime={totalStartTime}
@@ -109,13 +113,13 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
                             <button disabled={disableSendRequestButton} onClick={(e) => toggleRequest(e)}
                                     className="dl_pdf flex center">
                                 <img src="/images/calculator/pdf.svg" alt=""/>
-                                <span id="send-request" className="op06">Download PDF</span>
+                                <span id="send-request" className="op06">PDF-ს გადმოწერა</span>
                             </button>
                             <div className="flex">
-                                <Button2 large text="MAKE CHANGES"
+                                <Button2 large text="ცვლილება"
                                          href={'/services/calculator?state=' + encodeURI(requestData) + "&totalPrice=" + totalPrice}/>
                                 <CostBtn disabled={disableSendRequestButton} id="send-request" large
-                                         text="SEND REQUESTS"
+                                         text="მოთხოვნის გაგზავნა"
                                          click={(e) => toggleRequest(e)}/>
                             </div>
                         </div>
@@ -128,12 +132,10 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
                         <button className="close" onClick={(e) => toggleRequest(e)}>
                             <img src="/images/calculator/close.svg" alt=""/>
                         </button>
-                        <div className="title">Thank you for your patience!</div>
-                        <p>
-                            Give us your contact information, and we'll send you a copy of order
-                        </p>
+                        <div className="title">მადლობას გიხდით მოთმინებისთვის.</div>
+                        <p>გთხოვთ შეავსოთ თქვენი საკონტაქტო ინფორმაცია და ჩვენ მალე დაგიკავშირდებით.</p>
                         <input required value={name} onChange={e => setName(event.target.value)} type="text"
-                               placeholder="Name"/>
+                               placeholder="სახელი"/>
                         <p style={{width: "100%", marginBottom: "auto", color: 'red'}}>{errors.name && errors.name}</p>
                         <input required value={email} onChange={e => setEmail(event.target.value)} type="text"
                                placeholder="E-mail"/>
@@ -143,7 +145,7 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
                             color: 'red'
                         }}>{errors.email && errors.email}</p>
                         <input required value={phone} onChange={e => setPhone(event.target.value)} type="tel"
-                               placeholder="Phone number"/>
+                               placeholder="ტელეფონის ნომერი"/>
                         <input hidden ref={idRef} readOnly value={flash.id ?? ""}/>
                         <p style={{
                             width: "100%",
@@ -151,11 +153,12 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
                             color: 'red'
                         }}>{errors.phone && errors.phone}</p>
                         <CostBtn disabled={buttonDisabled} id="send-email" click={(e) => sendEmail(e)} large
-                                 text="GET A COPY"/>
+                                 text="გამომიგზავნეთ"/>
                         <CostBtn style={{marginTop: "0px"}} click={(e) => downloadPdf()} large
-                                 text="DOWNLOAD PDF"/>
+                                 text="PDF-ის გადმოწერა"/>
 
-                        <Link to="/">Back to website</Link>
+                        <Link to="/">ვებ საიტზე დაბრუნება</Link>
+                    </div>
                     </div>
                 </>
             </Layout>

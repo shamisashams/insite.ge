@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Insite's Result Table</title>
+    <title>Insite-ის კალკულაცია</title>
     <style>
         /* general */
         @font-face {
@@ -528,11 +528,9 @@
 <body>
 <div class="result_page wrapper">
     <div class="title1">
-        <div class="head">APP COST CALCULATOR</div>
-        <p class="op06">
-            Please make sure this information is correct before submitting your
-            request.
-        </p>
+        <div class="head">ღირებულების კალკულაცია</div>
+        <p class="op06">გთხოვთ გაითვალისწინოთ რომ ეს კალკულაცია არის მიახლოებით. ფასი და დრო შეიძლება
+შეიცვალოს თქვენი მოთხოვნებიდან გამომდინარე.</p>
     </div>
     <div class="tables">
         <table class="cost_table">
@@ -552,7 +550,7 @@
                 <tr class="comment">
                     <td>
                         <div class="flex cm">
-                            <span>Comment</span>
+                            <span>კომენტარი</span>
                         </div>
                         {{$feature['comment']}}
                     </td>
@@ -566,16 +564,13 @@
         </table>
         <table class="result_table">
             <tr>
-                <th>Rough estimate</th>
-                <th>Total cost</th>
-                <th>Time</th>
+                <th>მიახლოებითი ღიერებულება</th>
+                <th>ფასი</th>
+                <th>დრო</th>
             </tr>
             <tr>
-                <td>
-                    Please, do not forget, that additional features might increase
-                    general scope of work, and proet, that additional features might
-                    increase general scope of work, and project estimation.
-                </td>
+                <td>გთხოვთ გაითვალისწინოთ რომ ეს კალკულაცია არის მიახლოებით. ფასი და დრო შეიძლება
+შეიცვალოს თქვენი მოთხოვნებიდან გამომდინარე.</td>
                 <td class="total_cost">${{$features['totalPrice']}}</td>
                 <td class="total_time">{{$features['totalStartTime']}}-{{$features['totalEndTime']}}hrs</td>
             </tr>

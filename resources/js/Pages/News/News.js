@@ -12,7 +12,7 @@ import DocumentMeta from 'react-document-meta';
 import Meta from "../Meta/Meta";
 
 const News = ({news}) => {
-    const meta = Meta('Some Meta Title', 'keyword', 'description');
+    const meta = Meta('Insite - სიახლეები', 'სიახლეები, ახალი ამბები, ტექნობლოგი, ტექნოლოგიის სიახლეები', 'გაეცანით ტექნოლოგიების სამყაროში არსებულ სიახლეებს მარტივად და სწრაფად.');
 
     const {locale} = usePage().props;
 
@@ -24,8 +24,8 @@ const News = ({news}) => {
                         bgSrc="url(/images/sc-bgs/news-bg.png)"
                         color="#fff"
                         fontFamily="bold"
-                        head="Новости И События"
-                        para="Have A Project? Feel Free To Call, Send Us An Email Or Complete The Enquiry Form."
+                        head="სიახლეები და მოვლენები"
+                        para="გაეცანით ტექნოლოგიების სამყაროში არსებულ სიახლეებს მარტივად და სწრაფად.	"
                         imgSrc="/images/news/sc.png"
                     />
                     <div className="wrapper flex news_page_content">
@@ -46,10 +46,10 @@ const News = ({news}) => {
                                 news.data.data.length ?
                                     <Pagination links={news.data.links}/> : ""
                             }
-                            <Form title="Оставьте нам записку"/>
+                            <Form title="დაგვიტოვეთ შეტყობინება"/>
                         </div>
                         <div className="recents">
-                            <Text35 text="Recent News & Events"/>
+                            <Text35 text="ჩვენი ბლოგი"/>
                             {
                                 news.blogs.map((item, index) => (
                                     <RecentEvents

@@ -8,7 +8,7 @@ import Meta from "../Meta/Meta";
 import DocumentMeta from 'react-document-meta';
 
 const CostCalc = ({features, state, lastPrice}) => {
-    const meta = Meta('Some Meta Title', 'keyword', 'description');
+    const meta = Meta('Insite - კალკულატორი', 'საიტის ფასი, საიტის შექმნა, საიტის შექმნის ფასი, ვებ აპლიკაციის ფასი, საიტის კალკულატორი', 'გინდათ სწრაფად გაიგოთ რა დაგიჯდებათ საიტი ან ვებ აპლიკაცია? გამოიყენეთ ჩვენი მარტივი ონლაინ კალკულატორი და მიიღეთ აპლიკაციის შექმნის ღირებულების და დროის მოსალოდნელი ჩარჩო.');
 
     const [costStep, setCostStep] = useState(1);
     const nextStep = () => {
@@ -44,7 +44,7 @@ const CostCalc = ({features, state, lastPrice}) => {
                                     onClick={() => setCostStep(1)}
                                     className={costStep === 1 ? "active" : ""}
                                 >
-                                    Platform
+                                    პლატფორმა
                                 </button>
                                 {
                                     features.map((feature, index) => (
@@ -70,27 +70,27 @@ const CostCalc = ({features, state, lastPrice}) => {
                             />
                             <div className="result">
                                 <strong>
-                                    $ <span id="cost_amount">{totalPrice}</span>
+                                    ₾ <span id="cost_amount">{totalPrice}</span>
                                 </strong>
                                 <div style={{opacity: costStep === 1 ? 0 : 1, transition: ".7s"}}>
-                                    <p>Chose one or more functionalities for your product</p>
+                                    <p>აირჩიეთ ერთი ან მეტი ფუნქცია თქვენი პროდუქტისთვის</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="common_questions wrapper">
-                        <FaqTitle text="Common questions"/>
+                        <FaqTitle text="ხშირად დასმული შეკითხვები"/>
                         <CommonQuestions
-                            question="Plaid quinoa chillwave, brunch retro drinking vinegar butcher irony?"
-                            answer="Plaid quinoa chillwave, brunch retro drinking vinegar butcher irony. Fixie cronut sriracha selfies. Fingerstache DIY mumblecore yuccie literally. Thundercats narwhal biodiesel, kogi XOXO sriracha kombucha butcher food truck meditation chartreuse waistcoat etsy schlitz. cronut sriracha selfies. Fingerstache DIY mumblecore yuccie literally."
+                            question="როგორ გამოვთვალოთ აპლიკაციის შექმნის ღირებულება?"
+                            answer="ვებ აპლიკაციის კალკულატორები ზოგავს კლიენტებს დროს და არის თქვენი ონლაინ ფინანსური მრჩეველი. მსგავსი კალკულატორი მარტივი გზა აპლიკაციის დაახლოებით ღირებულების და საანგარიშებლად, ელ-ფოსტის გაგზავნის, პასუხების მოლოდინის ან გუგლში ძიების მცდელობის გარეშე. ღირებულების კალკულატორი არის შესანიშნავი შესაძლებლობა ნებისმიერ დროს სწრაფად და დამოუკიდებლად შეაფასოთ თქვენი ჩაფიქრებული პროექტის მოსალოდნელი ღირებულების ჩარჩო და შექმნის მოსალოდნელი ხანგრძლივობა."
                         />
                         <CommonQuestions
-                            question="Plaid quinoa chillwave, brunch retro drinking vinegar butcher irony?"
-                            answer="Plaid quinoa chillwave, brunch retro drinking vinegar butcher irony. Fixie cronut sriracha selfies. Fingerstache DIY mumblecore yuccie literally. Thundercats narwhal biodiesel, kogi XOXO sriracha kombucha butcher food truck meditation chartreuse waistcoat etsy schlitz. cronut sriracha selfies. Fingerstache DIY mumblecore yuccie literally."
+                            question="როგორ მუშაობს ეს კალკულატორი?"
+                            answer="ღირებულების კალკულატორი არის ინსტრუმენტი ვებ აპლიკაციის მოსალოდნელი ღირებულების და დროის სწრაფ გამოსათვლელად."
                         />
                         <CommonQuestions
-                            question="Plaid quinoa chillwave, brunch retro drinking vinegar butcher irony?"
-                            answer="Plaid quinoa chillwave, brunch retro drinking vinegar butcher irony. Fixie cronut sriracha selfies. Fingerstache DIY mumblecore yuccie literally. Thundercats narwhal biodiesel, kogi XOXO sriracha kombucha butcher food truck meditation chartreuse waistcoat etsy schlitz. cronut sriracha selfies. Fingerstache DIY mumblecore yuccie literally."
+                            question="რა ვქნა, თუ მე მაქვს სპეციალური მოთხოვნები, მაგრამ ისინი არ არის ჩამონათვალში?"
+                            answer="ასეთი შემთხვევებისთვის გვაქვს კომენტარების განყოფილება, როცა კონკრეტულ კითხვაზე პასუხობთ, დააჭირეთ ღილაკს 'კომენტარი', შეავსეთ გახსნილი ველი, და თქვენი კომენტარი დაემატება კონკრეტულ განყოფილებას. გთხოვთ გაითვალისწინოთ, რომ კომენტარის არ ითვლება საბოლოო თანხაში. ყველა დანამატი გამოითვლება ცალკე."
                         />
                     </div>
                 </div>

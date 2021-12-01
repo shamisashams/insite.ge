@@ -8,7 +8,7 @@ import DocumentMeta from 'react-document-meta';
 import Meta from "../Meta/Meta";
 
 const AboutUs = () => {
-    const meta = Meta('Insite - კომპანიის შესახებ', 'keyword', 'description');
+    const meta = Meta('Insite - კომპანიის შესახებ', 'კომპანიის შესახებ, საიტების შექმნა, საიტის შექმნა, საიტის შეცვლა, საიტის გადატანა', 'გაიგეთ მეტი ჩვენი კომპანიის ისტორიის და გუნდის შესახებ.');
     return (
         <DocumentMeta {...meta}>
             <Layout>

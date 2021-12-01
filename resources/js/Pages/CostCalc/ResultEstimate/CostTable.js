@@ -30,7 +30,7 @@ const CostTable = ({features, totalPrice, totalStartTime, totalEndTime}) => {
                                 <td>
                                     <div className="flex cm">
                                         <img src="/images/calculator/cm.svg" alt=""/>
-                                        <span>Comment</span>
+                                        <span>კომენტარი</span>
                                     </div>
                                     {feature.comment}
                                 </td>
@@ -51,17 +51,13 @@ const CostTable = ({features, totalPrice, totalStartTime, totalEndTime}) => {
             <table className="result_table">
                 <tbody>
                 <tr>
-                    <th>Rough estimate</th>
-                    <th>Total cost</th>
-                    <th>Time</th>
+                    <th>მიახლოებითი შედეგი</th>
+                    <th>ფასი</th>
+                    <th>დრო</th>
                 </tr>
                 <tr>
-                    <td>
-                        Please, do not forget, that additional features might increase
-                        general scope of work, and proet, that additional features might
-                        increase general scope of work, and project estimation.
-                    </td>
-                    <td className="total_cost">${totalPrice}</td>
+                    <td>გთხოვთ გაითვალისწინოთ რომ ეს კალკულაცია არის მიახლოებით. ფასი და დრო შეიძლება შეიცვალოს თქვენი მოთხოვნებიდან გამომდინარე..</td>
+                    <td className="total_cost">₾{totalPrice}</td>
                     <td className="total_time">{totalStartTime}-{totalEndTime} hrs</td>
                 </tr>
                 </tbody>

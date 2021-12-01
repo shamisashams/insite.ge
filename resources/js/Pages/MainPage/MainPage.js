@@ -14,7 +14,7 @@ import DocumentMeta from 'react-document-meta';
 import Meta from "../Meta/Meta";
 
 const MainPage = ({blogs}) => {
-    const meta = Meta('Insite - მთავარი გვერდი', 'keyword', 'description');
+    const meta = Meta('Insite - მთავარი გვერდი', 'ვებ დეველოპმენტი, საიტის შექმნა, ვებ ტექნოლოგიები, ვებსაიტის დაწერა, React JS, React native, HTML/CSS, NODE.js, .NET Core, LARAVEL, PHP, Native JS, Laravel დეველოპერი, Laravel დეველოპერი ვაკანსია, react.js, react.js ვაკანსია, node.js, node.js ვაკანსია, php, php ვაკანსია, Cloudflare, route 53, amazon dns, cloudflare dns, cloudflare დაწყობა, route 53 დაწყობა, cloudflare კონფიგურაცია, route 53 კონფიგურაცია, საიტის ფასი, საიტის შექმნა, საიტის შექმნის ფასი, ვებ აპლიკაციის ფასი, საიტის კალკულატორი, თანამშრომლების გადაყვანა დისტანციურ მუშაობაზე, დისტანციური მუშაობა, გადასვლა რემოუთად, რემოუთად მუშაობა', 'კომპანია Insite International გთავაზობთ ვებ საიტების და ვებ აპლიკაციების შემქნის სერვისებს. გაეცანით ჩვენი კომპანიის სერვისებს და მიიღეთ ყველაზე მაღალკვალიფიციური სერვისის საქართველოში.');
     return (
         <DocumentMeta {...meta}>
             <Layout>

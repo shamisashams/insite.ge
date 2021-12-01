@@ -22,8 +22,7 @@ const Footer = () => {
                             <div className="flex">
                                 <img src="/images/icons/footer/1.svg" alt="" />
                                 <p>
-                                    Г. Москва, Пресненская наб., <br /> 6, стр.
-                                    2 ЦАО
+                                პრესნენსკაიას სანაპირო N6, <br /> მოსკოვი, რუსეთი
                                 </p>
                             </div>
                             <div className="flex">

@@ -10,7 +10,7 @@ import DocumentMeta from 'react-document-meta';
 
 
 const Blogs = ({blogs}) => {
-    const meta = Meta('Some Meta Title', 'keyword', 'description');
+    const meta = Meta('Insite - ბლოგიe', 'ბლოგი, ტექნობლოგი, ბლოგი ტექნოლოგიებზე, ტექნიკური დახმარება', 'გაეცანით ჩვენი ექსპერტების მოსაზრებებს კომპანიის ბლოგში.');
     const mainWrapper = useRef(null);
     const executeScroll = () => {
         mainWrapper.current.scrollIntoView();
@@ -46,7 +46,7 @@ const Blogs = ({blogs}) => {
                                     />
                                 </g>
                             </svg>
-                            <p>Scroll down for more</p>
+                            <p>ჩამოსქროლე მეტის სანახავად</p>
                         </div>
                         {
                             blogs.data.data.map((item, index) => (

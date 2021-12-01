@@ -4,7 +4,7 @@
  *
  * Date-Time: 11.08.21
  * Time: 11:03
- * @author Vito Makhatadze <vitomakhatadze@gmail.com>
+ * @author Insite International<vitomakhatadze@gmail.com>
  */
 
 namespace App\Http\Middleware;

@@ -8,7 +8,7 @@ import Meta from "../Meta/Meta";
 import DocumentMeta from "react-document-meta";
 
 const Planning = () => {
-    const meta = Meta("Insite - დაგეგმარება", "keyword", "description");
+    const meta = Meta("Insite - დაგეგმარება", "საიტის დაგეგმარება, საიტების შექმნა, საიტის შექმნა, საიტის შეცვლა, საიტის გადატანა", "დაგეგმეთ თქვენი მომავალი პროექტი ჭკვიანურად");
 
     return (
         <DocumentMeta {...meta}>

@@ -11,7 +11,7 @@ import DocumentMeta from 'react-document-meta';
 import Meta from "../Meta/Meta";
 
 const Vacancies = ({vacancies}) => {
-    const meta = Meta('Some Meta Title', 'keyword', 'description');
+    const meta = Meta('Insite - ვაკანსიები', 'Laravel დეველოპერი, Laravel დეველოპერი ვაკანსია, react.js, react.js ვაკანსია, node.js, node.js ვაკანსია, php, php ვაკანსია', 'თუ თქვენ ეძებთ პერსპექტიულ სამუშაოს ერთ-ერთ ყველაზე სწრაფად მზარდ კომპანიაში, მაშინ გამოგვიგზავნეთ თქვენი CV თქვენთვის მისაღებ ვაკნსიაზე.');
 
     const {locale, flash} = usePage().props;
     const MySwal = withReactContent(Swal)
@@ -29,8 +29,8 @@ const Vacancies = ({vacancies}) => {
                         bgSrc="url(/images/sc-bgs/vacancy-bg.png)"
                         color="#fff"
                         fontFamily="bold"
-                        head="Вакансии"
-                        para="Have A Project? Feel Free To Call, Send Us An Email Or Complete The Enquiry Fmor."
+                        head="ვაკანსიები"
+                        para="თუ თქვენ ეძებთ პერსპექტიულ სამუშაოს ერთ-ერთ ყველაზე სწრაფად მზარდ კომპანიაში, მაშინ გამოგვიგზავნეთ თქვენი CV თქვენთვის მისაღებ ვაკნსიაზე."
                     />
 
                     <div className="wrapper vacancy_list">
