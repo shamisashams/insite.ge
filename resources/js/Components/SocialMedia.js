@@ -3,7 +3,7 @@ import React from "react";
 const SocialMedia = () => {
   return (
     <div className="sm">
-      <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+      <a href="https://www.facebook.com/insite.ge" target="_blank" rel="noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="9.59"
@@ -18,7 +18,7 @@ const SocialMedia = () => {
           />
         </svg>
       </a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+      <a href="https://instagram.com/insite.international" target="_blank" rel="noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18.602"
@@ -33,7 +33,7 @@ const SocialMedia = () => {
           />
         </svg>
       </a>
-      <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+      <a href="https://www.linkedin.com/company/insite-%E2%80%A2-international/mycompany/" target="_blank" rel="noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18.602"

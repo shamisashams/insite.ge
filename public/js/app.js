@@ -3696,7 +3696,7 @@ var SocialMedia = function SocialMedia() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "sm"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/insite.ge",
     target: "_blank",
     rel: "noreferrer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", {
@@ -3710,7 +3710,7 @@ var SocialMedia = function SocialMedia() {
     d: "M10.571,10.072l.5-3.241H7.959v-2.1A1.62,1.62,0,0,1,9.786,2.978H11.2V.219A17.238,17.238,0,0,0,8.69,0C6.13,0,4.456,1.552,4.456,4.362v2.47H1.609v3.241H4.456v7.834h3.5V10.072Z",
     transform: "translate(-1.609)"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "https://www.instagram.com/",
+    href: "https://instagram.com/insite.international",
     target: "_blank",
     rel: "noreferrer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", {
@@ -3724,7 +3724,7 @@ var SocialMedia = function SocialMedia() {
     d: "M9.3,6.768a4.768,4.768,0,1,0,4.768,4.768A4.761,4.761,0,0,0,9.3,6.768Zm0,7.868a3.1,3.1,0,1,1,3.1-3.1,3.106,3.106,0,0,1-3.1,3.1Zm6.075-8.063a1.112,1.112,0,1,1-1.112-1.112A1.11,1.11,0,0,1,15.373,6.573ZM18.531,7.7a5.5,5.5,0,0,0-1.5-3.9,5.54,5.54,0,0,0-3.9-1.5c-1.535-.087-6.138-.087-7.673,0a5.532,5.532,0,0,0-3.9,1.5A5.522,5.522,0,0,0,.06,7.7c-.087,1.535-.087,6.138,0,7.673a5.5,5.5,0,0,0,1.5,3.9,5.547,5.547,0,0,0,3.9,1.5c1.535.087,6.138.087,7.673,0a5.5,5.5,0,0,0,3.9-1.5,5.54,5.54,0,0,0,1.5-3.9c.087-1.535.087-6.133,0-7.669Zm-1.984,9.316a3.138,3.138,0,0,1-1.768,1.768c-1.224.486-4.129.373-5.482.373s-4.262.108-5.482-.373a3.138,3.138,0,0,1-1.768-1.768c-.486-1.224-.373-4.129-.373-5.482s-.108-4.262.373-5.482A3.138,3.138,0,0,1,3.816,4.287C5.04,3.8,7.945,3.913,9.3,3.913s4.262-.108,5.482.373a3.138,3.138,0,0,1,1.768,1.768c.486,1.224.373,4.129.373,5.482S17.033,15.8,16.547,17.018Z",
     transform: "translate(0.005 -2.238)"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "https://www.youtube.com/",
+    href: "https://www.linkedin.com/company/insite-%E2%80%A2-international/mycompany/",
     target: "_blank",
     rel: "noreferrer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", {
