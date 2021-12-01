@@ -149,7 +149,7 @@ const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalE
                             color: 'red'
                         }}>{errors.phone && errors.phone}</p>
                         <CostBtn disabled={buttonDisabled} id="send-email" click={(e) => sendEmail(e)} large
-                                 text="GET A COPY"/>
+                                 text="გამომიგზავნეთ"/>
                         <CostBtn style={{marginTop: "0px"}} click={(e) => downloadPdf()} large
                                  text="PDF-ის გადმოწერა"/>
 

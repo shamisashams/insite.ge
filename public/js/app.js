@@ -5428,7 +5428,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
       return sendEmail(e);
     },
     large: true,
-    text: "GET A COPY"
+    text: "\u10D2\u10D0\u10DB\u10DD\u10DB\u10D8\u10D2\u10D6\u10D0\u10D5\u10DC\u10D4\u10D7"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostSteps_CostBox__WEBPACK_IMPORTED_MODULE_3__.CostBtn, {
     style: {
       marginTop: "0px"

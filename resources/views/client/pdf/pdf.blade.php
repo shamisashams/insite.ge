@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PDF Table</title>
+    <title>PDF</title>
     <style>
         /* general */
         @font-face {
@@ -210,18 +210,18 @@
 <img class="bg" src="img/main.svg" alt="">
 <div class="wrapper">
     <div class="head">
-        <h3>PROJECT DESCRIPTION</h3>
+        <h3>თქვენი პროექტის შეფასება</h3>
         <h6>{{\Carbon\Carbon::now()}}</h6>
     </div>
-    <div class="overview">OVERVIEW</div>
+    <div class="overview">აღწერა</div>
     @foreach($features as $feature)
         <div class="title">{{$loop->index+1}}. {{$feature['title']}}</div>
         <table>
             @foreach($feature['answer'] as $answer)
                 <tr>
                     <td>{{$answer['title']}}</td>
-                    <td><span style="font-size: 16px">$</span>{{$answer['start_price']}} - <span
-                            style="font-size: 16px">$</span>{{$answer['end_price']}}</td>
+                    <td><span style="font-size: 16px">₾</span>{{$answer['start_price']}} - <span
+                            style="font-size: 16px">₾</span>{{$answer['end_price']}}</td>
                     <td>{{$answer['start_time']}} - {{$answer['end_time']}}</td>
                 </tr>
             @endforeach
@@ -229,7 +229,7 @@
         <div class="cm_box">
             <div class="flex">
                 <img src="img/i.png" alt="">
-                <span>Your comment:</span>
+                <span>თქვენი კომენტარი:</span>
             </div>
             <p>{{$feature['comment']}} </p>
         </div>
@@ -238,18 +238,17 @@
     <div class="estimate">
         <table>
             <tr>
-                <th>Rough estimate amount</th>
-                <th>Rough estimate time</th>
+                <th>მიახლოებითი ღიერებულება</th>
+                <th>მიახლოებითი დრო</th>
             </tr>
             <tr>
-                <td><span style="font-size: 16px">$</span>{{$totalStartPrice}} - <span
-                        style="font-size: 16px">$</span>{{$totalEndPrice}}</td>
+                <td><span style="font-size: 16px">₾</span>{{$totalStartPrice}} - <span
+                        style="font-size: 16px">₾</span>{{$totalEndPrice}}</td>
                 <td>{{$totalTime}}hrs</td>
             </tr>
         </table>
     </div>
-    <i><b>Please, do not forget, that additional features might increase general scope of work, and project
-            estimation.</b></i>
+    <i><b>გთხოვთ გაითვალისწინოთ რომ ეს კალკულაცია არის მიახლოებით. ფასი და დრო შეიძლება შეიცვალოს თქვენი მოთხოვნებიდან გამომდინარე.</b></i>
 </div>
 </body>
 </html>
@@ -259,7 +258,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PDF Table</title>
+    <title>PDF</title>
     <style>
         /* general */
         @font-face {
@@ -465,18 +464,18 @@
 <img class="bg" src="img/main.svg" alt="">
 <div class="wrapper">
     <div class="head">
-        <h3>PROJECT DESCRIPTION</h3>
+        <h3>პროექტის აღწერა</h3>
         <h6>{{\Carbon\Carbon::now()}}</h6>
     </div>
-    <div class="overview">OVERVIEW</div>
+    <div class="overview">აღწერა</div>
     @foreach($features as $feature)
         <div class="title">{{$loop->index+1}}. {{$feature['title']}}</div>
         <table>
             @foreach($feature['answer'] as $answer)
                 <tr>
                     <td>{{$answer['title']}}</td>
-                    <td><span style="font-size: 16px">$</span>{{$answer['start_price']}} - <span
-                            style="font-size: 16px">$</span>{{$answer['end_price']}}</td>
+                    <td><span style="font-size: 16px">₾</span>{{$answer['start_price']}} - <span
+                            style="font-size: 16px">₾</span>{{$answer['end_price']}}</td>
                     <td>{{$answer['start_time']}} - {{$answer['end_time']}}</td>
                 </tr>
             @endforeach
@@ -484,7 +483,7 @@
         <div class="cm_box">
             <div class="flex">
                 <img src="img/i.png" alt="">
-                <span>Your comment:</span>
+                <span>თქვენი კომენტარი</span>
             </div>
             <p>{{$feature['comment']}} </p>
         </div>
@@ -493,18 +492,17 @@
     <div class="estimate">
         <table>
             <tr>
-                <th>Rough estimate amount</th>
-                <th>Rough estimate time</th>
+                <th>მიახლოებითი ღიერებულება</th>
+                <th>მიახლოებითი დრო</th>
             </tr>
             <tr>
-                <td><span style="font-size: 16px">$</span>{{$totalStartPrice}} - <span
-                        style="font-size: 16px">$</span>{{$totalEndPrice}}</td>
-                <td>{{$totalTime}}hrs</td>
+                <td><span style="font-size: 16px">₾</span>{{$totalStartPrice}} - <span
+                        style="font-size: 16px">₾</span>{{$totalEndPrice}}</td>
+                <td>{{$totalTime}}სთ</td>
             </tr>
         </table>
     </div>
-    <i><b>Please, do not forget, that additional features might increase general scope of work, and project
-            estimation.</b></i>
+    <i><b>გთხოვთ გაითვალისწინოთ რომ ეს კალკულაცია არის მიახლოებით. ფასი და დრო შეიძლება შეიცვალოს თქვენი მოთხოვნებიდან გამომდინარე.</b></i>
 </div>
 </body>
 </html>
