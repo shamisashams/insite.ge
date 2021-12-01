@@ -4,7 +4,7 @@
  *
  * Date-Time: 07.06.21
  * Time: 13:02
- * @author Vito Makhatadze <vitomaxatadze@gmail.com>
+ * @author Insite International<hello@insite.ge>
  */
 
 namespace App\Console\Commands;

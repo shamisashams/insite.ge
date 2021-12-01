@@ -4,7 +4,7 @@
  *
  * Date-Time: 19.05.21
  * Time: 10:54
- * @author Vito Makhatadze <vitomaxatadze@gmail.com>
+ * @author Insite International<hello@insite.ge>
  */
 
 namespace App\Repositories\Eloquent;

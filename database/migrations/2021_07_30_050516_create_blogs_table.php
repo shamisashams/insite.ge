@@ -4,7 +4,7 @@
  *
  * Date-Time: 08.07.21
  * Time: 09:18
- * @author Vito Makhatadze <vitomaxatadze@gmail.com>
+ * @author Insite International<hello@insite.ge>
  */
 
 use Illuminate\Database\Migrations\Migration;

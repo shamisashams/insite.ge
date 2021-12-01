@@ -5,7 +5,7 @@
  * User:
  * Date-Time: 21.12.20
  * Time: 13:49
- * @author Vito Makhatadze <vitomaxatadze@gmail.com>
+ * @author Insite International <hello@insite.ge>
  */
 
 namespace App\Mail;
@@ -42,6 +42,6 @@ class OrderEmail extends Mailable
      */
     public function build()
     {
-        return $this->from($this->mailTo, $this->name)->subject('Order was successfully created')->view('client.email.order', ['features' => $this->data]);
+        return $this->from($this->mailTo, $this->name)->subject('თქვენი მოთხოვნა მიღებულია')->view('client.email.order', ['features' => $this->data]);
     }
 }

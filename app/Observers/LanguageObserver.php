@@ -4,7 +4,7 @@
  *
  * Date-Time: 29.07.21
  * Time: 16:57
- * @author Vito Makhatadze <vitomaxatadze@gmail.com>
+ * @author Insite International<hello@insite.ge>
  */
 namespace App\Observers;
 
