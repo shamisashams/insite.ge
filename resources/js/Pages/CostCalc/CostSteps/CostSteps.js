@@ -233,7 +233,7 @@ const CostSteps = ({step, click, back, features, parentCallback, state, price}) 
                                             <CostBtn text="უკან" click={back}/>
                                             <Link
                                                 href={'/services/results?data=' + encodeURI(JSON.stringify(checkboxItems)) + "&totalPrice=" + totalPrice}>
-                                                <CostBtn click={saveState} text="FINISH"/>
+                                                <CostBtn click={saveState} text="დასრულება"/>
                                             </Link>
                                         </React.Fragment>
                                         :

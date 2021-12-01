@@ -4606,7 +4606,7 @@ var CostCalc = function CostCalc(_ref) {
     parentCallback: handleCallback
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "result"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("strong", null, "$ ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("strong", null, "\u20BE ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
     id: "cost_amount"
   }, totalPrice)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     style: {
@@ -5055,7 +5055,7 @@ var CostSteps = function CostSteps(_ref) {
       href: '/services/results?data=' + encodeURI(JSON.stringify(checkboxItems)) + "&totalPrice=" + totalPrice
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostBox__WEBPACK_IMPORTED_MODULE_2__.CostBtn, {
       click: saveState,
-      text: "FINISH"
+      text: "\u10D3\u10D0\u10E1\u10E0\u10E3\u10DA\u10D4\u10D1\u10D0"
     }))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostBox__WEBPACK_IMPORTED_MODULE_2__.CostBtn, {
       text: "\u10E3\u10D9\u10D0\u10DC",
       click: back
@@ -5125,14 +5125,14 @@ var CostTable = function CostTable(_ref) {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
       src: "/images/calculator/cm.svg",
       alt: ""
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Comment")), feature.comment)), index < features.length - 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "\u10D9\u10DD\u10DB\u10D4\u10DC\u10E2\u10D0\u10E0\u10D8")), feature.comment)), index < features.length - 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", {
       className: "border"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null)));
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("table", {
     className: "result_table"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "მიახლოებითი შედეგი"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "ფასი"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "დრო")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, "გთხოვთ გაითვალისწინოთ რომ ეს კალკულაცია არის მიახლოებით. ფასი და დრო შეიძლება შეიცვალოს თქვენი მოთხოვნებიდან გამომდინარე.."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u10DB\u10D8\u10D0\u10EE\u10DA\u10DD\u10D4\u10D1\u10D8\u10D7\u10D8 \u10E8\u10D4\u10D3\u10D4\u10D2\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u10E4\u10D0\u10E1\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u10D3\u10E0\u10DD")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, "\u10D2\u10D7\u10EE\u10DD\u10D5\u10D7 \u10D2\u10D0\u10D8\u10D7\u10D5\u10D0\u10DA\u10D8\u10E1\u10EC\u10D8\u10DC\u10DD\u10D7 \u10E0\u10DD\u10DB \u10D4\u10E1 \u10D9\u10D0\u10DA\u10D9\u10E3\u10DA\u10D0\u10EA\u10D8\u10D0 \u10D0\u10E0\u10D8\u10E1 \u10DB\u10D8\u10D0\u10EE\u10DA\u10DD\u10D4\u10D1\u10D8\u10D7. \u10E4\u10D0\u10E1\u10D8 \u10D3\u10D0 \u10D3\u10E0\u10DD \u10E8\u10D4\u10D8\u10EB\u10DA\u10D4\u10D1\u10D0 \u10E8\u10D4\u10D8\u10EA\u10D5\u10D0\u10DA\u10DD\u10E1 \u10D7\u10E5\u10D5\u10D4\u10DC\u10D8 \u10DB\u10DD\u10D7\u10EE\u10DD\u10D5\u10DC\u10D4\u10D1\u10D8\u10D3\u10D0\u10DC \u10D2\u10D0\u10DB\u10DD\u10DB\u10D3\u10D8\u10DC\u10D0\u10E0\u10D4.."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", {
     className: "total_cost"
-  }, "$", totalPrice), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", {
+  }, "\u20BE", totalPrice), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", {
     className: "total_time"
   }, totalStartTime, "-", totalEndTime, " hrs")))));
 };
@@ -5202,7 +5202,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
       totalStartTime = _ref.totalStartTime,
       totalEndTime = _ref.totalEndTime,
       requestData = _ref.requestData;
-  var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_11__.default)('Some Meta Title', 'keyword', 'description');
+  var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_11__.default)('Insite - კალკულატორი', 'საიტის ფასი, საიტის შექმნა, საიტის შექმნის ფასი, ვებ აპლიკაციის ფასი, საიტის კალკულატორი', 'გინდათ სწრაფად გაიგოთ რა დაგიჯდებათ საიტი ან ვებ აპლიკაცია? გამოიყენეთ ჩვენი მარტივი ონლაინ კალკულატორი და მიიღეთ აპლიკაციის შექმნის ღირებულების და დროის მოსალოდნელი ჩარჩო.');
   var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_8__.usePage)().props,
       errors = _usePage$props.errors,
       flash = _usePage$props.flash;
@@ -5347,7 +5347,7 @@ var ResultEstimate = function ResultEstimate(_ref) {
     className: "flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Button2_Button2__WEBPACK_IMPORTED_MODULE_1__.default, {
     large: true,
-    text: "ცვლილებების შეტანა",
+    text: "MAKE CHANGES",
     href: '/services/calculator?state=' + encodeURI(requestData) + "&totalPrice=" + totalPrice
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CostSteps_CostBox__WEBPACK_IMPORTED_MODULE_3__.CostBtn, {
     disabled: disableSendRequestButton,

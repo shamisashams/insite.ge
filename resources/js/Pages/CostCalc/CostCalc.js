@@ -70,7 +70,7 @@ const CostCalc = ({features, state, lastPrice}) => {
                             />
                             <div className="result">
                                 <strong>
-                                    $ <span id="cost_amount">{totalPrice}</span>
+                                    ₾ <span id="cost_amount">{totalPrice}</span>
                                 </strong>
                                 <div style={{opacity: costStep === 1 ? 0 : 1, transition: ".7s"}}>
                                     <p>აირჩიეთ ერთი ან მეტი ფუნქცია თქვენი პროდუქტისთვის</p>

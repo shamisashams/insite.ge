@@ -13,7 +13,7 @@ import Meta from "../../Meta/Meta";
 import DocumentMeta from 'react-document-meta';
 
 const ResultEstimate = ({data, totalPrice, totalEndPrice, totalStartTime, totalEndTime, requestData}) => {
-    const meta = Meta('Some Meta Title', 'keyword', 'description');
+    const meta = Meta('Insite - კალკულატორი', 'საიტის ფასი, საიტის შექმნა, საიტის შექმნის ფასი, ვებ აპლიკაციის ფასი, საიტის კალკულატორი', 'გინდათ სწრაფად გაიგოთ რა დაგიჯდებათ საიტი ან ვებ აპლიკაცია? გამოიყენეთ ჩვენი მარტივი ონლაინ კალკულატორი და მიიღეთ აპლიკაციის შექმნის ღირებულების და დროის მოსალოდნელი ჩარჩო.');
     const {errors, flash} = usePage().props;
     const [request, setRequest] = useState(false);
     let [name, setName] = useState('')
