@@ -7197,7 +7197,7 @@ var Projects = function Projects() {
   }, "\u10E9\u10D5\u10D4\u10DC\u10D8 \u10DE\u10DD\u10E0\u10E2\u10E4\u10DD\u10DA\u10D8\u10DD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "grid"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
-    title: "Glass Service",
+    title: "Insite International",
     imgNum: "9",
     link: "http://glassservice.ge/ge",
     target: "_blank"
