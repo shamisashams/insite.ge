@@ -17,7 +17,7 @@ const Projects = () => {
                     <div className="title main">ჩვენი პორტფოლიო</div>
                     <div className="grid">
                         <ProjectBox
-                            title="Glass Service"
+                            title="Insite International"
                             imgNum="9"
                             link="http://glassservice.ge/ge" target="_blank"
                         />

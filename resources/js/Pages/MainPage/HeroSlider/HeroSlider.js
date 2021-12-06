@@ -1,28 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SlideBtns from "../../../Components/SlideBtns";
 import sliderData from "./SliderData";
 import Button2 from "../../../Components/Button2/Button2";
 import "./HeroSlider.css";
 import SocialMedia from "../../../Components/SocialMedia";
+// import { use } from "browser-sync";
 
 export const HeroSlider = () => {
     const [slideIndex, setSlideIndex] = useState(1);
 
-    const nextSlide = () => {
-        if (slideIndex !== sliderData.length) {
-            setSlideIndex(slideIndex + 1);
-        } else if (slideIndex === sliderData.length) {
+    useEffect(() => {
+        const lastIndex = sliderData.length;
+        if (slideIndex < 1) {
+            setSlideIndex(lastIndex);
+        }
+        if (slideIndex > lastIndex) {
             setSlideIndex(1);
         }
-    };
+    }, [slideIndex, sliderData]);
 
-    const prevSlide = () => {
-        if (slideIndex !== 1) {
-            setSlideIndex(slideIndex - 1);
-        } else if (slideIndex === 1) {
-            setSlideIndex(sliderData.length);
-        }
-    };
+    useEffect(() => {
+        let autoSlide = setInterval(() => {
+            setSlideIndex(slideIndex + 1);
+        }, 5000);
+        return () => {
+            clearInterval(autoSlide);
+        };
+    }, [slideIndex]);
 
     const moveDot = (index) => {
         setSlideIndex(index);
@@ -58,8 +62,14 @@ export const HeroSlider = () => {
                 );
             })}
 
-            <SlideBtns moveSlide={prevSlide} direction={"prev"} />
-            <SlideBtns moveSlide={nextSlide} direction={"next"} />
+            <SlideBtns
+                moveSlide={() => setSlideIndex(slideIndex - 1)}
+                direction={"prev"}
+            />
+            <SlideBtns
+                moveSlide={() => setSlideIndex(slideIndex + 1)}
+                direction={"next"}
+            />
 
             <div className="dot_container">
                 {Array.from({ length: 3 }).map((item, index) => {
