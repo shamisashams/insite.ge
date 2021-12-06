@@ -1,6 +1,6 @@
 import React from "react";
 import Button1 from "../Button1/Button1";
-import Map from "../Map";
+import { MapRus, MapGeo } from "../Map";
 import InLink from "../InLink";
 import SocialMedia from "../SocialMedia";
 import { Link } from "@inertiajs/inertia-react";
@@ -17,12 +17,13 @@ const Footer = () => {
                     <div className="flex locations">
                         <div>
                             <div className="map">
-                                <Map />
+                                <MapRus />
                             </div>
                             <div className="flex">
                                 <img src="/images/icons/footer/1.svg" alt="" />
                                 <p>
-                                პრესნენსკაიას სანაპირო N6, <br /> მოსკოვი, რუსეთი
+                                    პრესნენსკაიას სანაპირო N6, <br /> მოსკოვი,
+                                    რუსეთი
                                 </p>
                             </div>
                             <div className="flex">
@@ -36,7 +37,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <div className="map">
-                                <Map />
+                                <MapGeo />
                             </div>
                             <div className="flex">
                                 <img src="/images/icons/footer/1.svg" alt="" />
