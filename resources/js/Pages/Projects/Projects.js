@@ -117,7 +117,7 @@ const Projects = () => {
                             link="https://derufa.ge/ge" target="_blank"
                         />
                     </div>
-                    <Form title="Оставьте нам записку"/>
+                    <Form title="დაგვიტოვეთ შეტყობინება"/>
                 </div>
             </Layout>
         </DocumentMeta>
