@@ -2972,7 +2972,7 @@ var Footer = function Footer() {
     className: "flex locations"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "map"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Map__WEBPACK_IMPORTED_MODULE_2__.default, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Map__WEBPACK_IMPORTED_MODULE_2__.MapRus, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/images/icons/footer/1.svg",
@@ -2989,7 +2989,7 @@ var Footer = function Footer() {
     alt: ""
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "hello@insite.dev"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "map"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Map__WEBPACK_IMPORTED_MODULE_2__.default, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Map__WEBPACK_IMPORTED_MODULE_2__.MapGeo, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/images/icons/footer/1.svg",
@@ -3454,14 +3454,14 @@ var InLink = function InLink(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "MapRus": () => (/* binding */ MapRus),
+/* harmony export */   "MapGeo": () => (/* binding */ MapGeo)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-
-var Map = function Map() {
+var MapRus = function MapRus() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", {
-    src: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11909.044506590086!2d44.7621418!3d41.7364602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1632736146136!5m2!1sen!2sge",
+    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.598228303478!2d37.53818021593034!3d55.74810948055209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bdcf5c58c73%3A0x6d14c6130e7d0b31!2zUHJlc25lbnNrYXlhIE5hYmVyZXpobmF5YSwgNiDRgdGC0YDQvtC10L3QuNC1IDIsIE1vc2t2YSwgUnVzc2lhLCAxMjMxMTI!5e0!3m2!1sen!2sge!4v1638795792710!5m2!1sen!2sge",
     style: {
       border: "0"
     },
@@ -3470,8 +3470,17 @@ var Map = function Map() {
     title: "iframe-map"
   });
 };
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Map);
+var MapGeo = function MapGeo() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", {
+    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.5461439191117!2d44.76741831543646!3d41.730311479234196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472e79d397513%3A0xa743c3c5de72322d!2s40%20Zhiuli%20Shartava%20St%2C%20T'bilisi!5e0!3m2!1sen!2sge!4v1638795722636!5m2!1sen!2sge",
+    style: {
+      border: "0"
+    },
+    allowFullScreen: "",
+    loading: "lazy",
+    title: "iframe-map"
+  });
+};
 
 /***/ }),
 
@@ -4415,7 +4424,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Contact = function Contact() {
-  var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_7__.default)('Insite - კონტაქტი', 'კომპანიის შესახებ, საიტების შექმნა, საიტის შექმნა, საიტის შეცვლა, საიტის გადატანა', 'დაგვიკავშირდით თუ რაიმე შეკითხვები გაქვთ');
+  var meta = (0,_Meta_Meta__WEBPACK_IMPORTED_MODULE_7__.default)("Insite - კონტაქტი", "კომპანიის შესახებ, საიტების შექმნა, საიტის შექმნა, საიტის შეცვლა, საიტის გადატანა", "დაგვიკავშირდით თუ რაიმე შეკითხვები გაქვთ");
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_document_meta__WEBPACK_IMPORTED_MODULE_6__.default, meta, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layouts_Layout__WEBPACK_IMPORTED_MODULE_5__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "contact_page"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -4442,7 +4451,7 @@ var Contact = function Contact() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "images/icons/contact/1.svg",
     alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "\u10DE\u10E0\u10D4\u10E1\u10DC\u10D4\u10DC\u10E1\u10D9\u10D0\u10D8\u10D0\u10E1 \u10E1\u10D0\u10DC\u10D0\u10DE\u10D8\u10E0\u10DD N6, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "\u10DB\u10DD\u10E1\u10D9\u10DD\u10D5\u10D8, \u10E0\u10E3\u10E1\u10D4\u10D7\u10D8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "\u10DE\u10E0\u10D4\u10E1\u10DC\u10D4\u10DC\u10E1\u10D9\u10D0\u10D8\u10D0\u10E1 \u10E1\u10D0\u10DC\u10D0\u10DE\u10D8\u10E0\u10DD N6,", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "\u10DB\u10DD\u10E1\u10D9\u10DD\u10D5\u10D8, \u10E0\u10E3\u10E1\u10D4\u10D7\u10D8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: " info flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "images/icons/contact/2.svg",
@@ -4482,9 +4491,9 @@ var Contact = function Contact() {
     className: "flex maps"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h6", null, "\u10D2\u10D5\u10D8\u10DE\u10DD\u10D5\u10D4\u10D7 \u10DB\u10DD\u10E1\u10D9\u10DD\u10D5\u10E8\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "map"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Map__WEBPACK_IMPORTED_MODULE_3__.default, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h6", null, "\u10D2\u10D5\u10D8\u10DE\u10DD\u10D5\u10D4\u10D7 \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10E8\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Map__WEBPACK_IMPORTED_MODULE_3__.MapRus, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h6", null, "\u10D2\u10D5\u10D8\u10DE\u10DD\u10D5\u10D4\u10D7 \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10E8\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "map"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Map__WEBPACK_IMPORTED_MODULE_3__.default, null))))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Map__WEBPACK_IMPORTED_MODULE_3__.MapGeo, null))))))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);
@@ -5130,11 +5139,11 @@ var CostTable = function CostTable(_ref) {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null)));
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("table", {
     className: "result_table"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u10DB\u10D8\u10D0\u10EE\u10DA\u10DD\u10D4\u10D1\u10D8\u10D7\u10D8 \u10E8\u10D4\u10D3\u10D4\u10D2\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u10E4\u10D0\u10E1\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u10D3\u10E0\u10DD")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, "\u10D2\u10D7\u10EE\u10DD\u10D5\u10D7 \u10D2\u10D0\u10D8\u10D7\u10D5\u10D0\u10DA\u10D8\u10E1\u10EC\u10D8\u10DC\u10DD\u10D7 \u10E0\u10DD\u10DB \u10D4\u10E1 \u10D9\u10D0\u10DA\u10D9\u10E3\u10DA\u10D0\u10EA\u10D8\u10D0 \u10D0\u10E0\u10D8\u10E1 \u10DB\u10D8\u10D0\u10EE\u10DA\u10DD\u10D4\u10D1\u10D8\u10D7. \u10E4\u10D0\u10E1\u10D8 \u10D3\u10D0 \u10D3\u10E0\u10DD \u10E8\u10D4\u10D8\u10EB\u10DA\u10D4\u10D1\u10D0 \u10E8\u10D4\u10D8\u10EA\u10D5\u10D0\u10DA\u10DD\u10E1 \u10D7\u10E5\u10D5\u10D4\u10DC\u10D8 \u10DB\u10DD\u10D7\u10EE\u10DD\u10D5\u10DC\u10D4\u10D1\u10D8\u10D3\u10D0\u10DC \u10D2\u10D0\u10DB\u10DD\u10DB\u10D3\u10D8\u10DC\u10D0\u10E0\u10D4.."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u10DB\u10D8\u10D0\u10EE\u10DA\u10DD\u10D4\u10D1\u10D8\u10D7\u10D8 \u10E8\u10D4\u10D3\u10D4\u10D2\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u10E4\u10D0\u10E1\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u10D3\u10E0\u10DD")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, "\u10D2\u10D7\u10EE\u10DD\u10D5\u10D7 \u10D2\u10D0\u10D8\u10D7\u10D5\u10D0\u10DA\u10D8\u10E1\u10EC\u10D8\u10DC\u10DD\u10D7 \u10E0\u10DD\u10DB \u10D4\u10E1 \u10D9\u10D0\u10DA\u10D9\u10E3\u10DA\u10D0\u10EA\u10D8\u10D0 \u10D0\u10E0\u10D8\u10E1 \u10DB\u10D8\u10D0\u10EE\u10DA\u10DD\u10D4\u10D1\u10D8\u10D7. \u10E4\u10D0\u10E1\u10D8 \u10D3\u10D0 \u10D3\u10E0\u10DD \u10E8\u10D4\u10D8\u10EB\u10DA\u10D4\u10D1\u10D0 \u10E8\u10D4\u10D8\u10EA\u10D5\u10D0\u10DA\u10DD\u10E1 \u10D7\u10E5\u10D5\u10D4\u10DC\u10D8 \u10DB\u10DD\u10D7\u10EE\u10DD\u10D5\u10DC\u10D4\u10D1\u10D8\u10D3\u10D0\u10DC \u10D2\u10D0\u10DB\u10DD\u10DB\u10D3\u10D8\u10DC\u10D0\u10E0\u10D4."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", {
     className: "total_cost"
   }, "\u20BE", totalPrice), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", {
     className: "total_time"
-  }, totalStartTime, "-", totalEndTime, " hrs")))));
+  }, totalStartTime, "-", totalEndTime, " სთ")))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CostTable);
@@ -6003,6 +6012,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+ // import { use } from "browser-sync";
 
 var HeroSlider = function HeroSlider() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(1),
@@ -6010,21 +6020,25 @@ var HeroSlider = function HeroSlider() {
       slideIndex = _useState2[0],
       setSlideIndex = _useState2[1];
 
-  var nextSlide = function nextSlide() {
-    if (slideIndex !== _SliderData__WEBPACK_IMPORTED_MODULE_2__.default.length) {
-      setSlideIndex(slideIndex + 1);
-    } else if (slideIndex === _SliderData__WEBPACK_IMPORTED_MODULE_2__.default.length) {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var lastIndex = _SliderData__WEBPACK_IMPORTED_MODULE_2__.default.length;
+
+    if (slideIndex < 1) {
+      setSlideIndex(lastIndex);
+    }
+
+    if (slideIndex > lastIndex) {
       setSlideIndex(1);
     }
-  };
-
-  var prevSlide = function prevSlide() {
-    if (slideIndex !== 1) {
-      setSlideIndex(slideIndex - 1);
-    } else if (slideIndex === 1) {
-      setSlideIndex(_SliderData__WEBPACK_IMPORTED_MODULE_2__.default.length);
-    }
-  };
+  }, [slideIndex, _SliderData__WEBPACK_IMPORTED_MODULE_2__.default]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var autoSlide = setInterval(function () {
+      setSlideIndex(slideIndex + 1);
+    }, 5000);
+    return function () {
+      clearInterval(autoSlide);
+    };
+  }, [slideIndex]);
 
   var moveDot = function moveDot(index) {
     setSlideIndex(index);
@@ -6050,10 +6064,14 @@ var HeroSlider = function HeroSlider() {
       className: "hero_img"
     }));
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_SlideBtns__WEBPACK_IMPORTED_MODULE_1__.default, {
-    moveSlide: prevSlide,
+    moveSlide: function moveSlide() {
+      return setSlideIndex(slideIndex - 1);
+    },
     direction: "prev"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_SlideBtns__WEBPACK_IMPORTED_MODULE_1__.default, {
-    moveSlide: nextSlide,
+    moveSlide: function moveSlide() {
+      return setSlideIndex(slideIndex + 1);
+    },
     direction: "next"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "dot_container"
@@ -7297,7 +7315,7 @@ var Projects = function Projects() {
     link: "https://derufa.ge/ge",
     target: "_blank"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Form_Form__WEBPACK_IMPORTED_MODULE_1__.default, {
-    title: "\u041E\u0441\u0442\u0430\u0432\u044C\u0442\u0435 \u043D\u0430\u043C \u0437\u0430\u043F\u0438\u0441\u043A\u0443"
+    title: "\u10D3\u10D0\u10D2\u10D5\u10D8\u10E2\u10DD\u10D5\u10D4\u10D7 \u10E8\u10D4\u10E2\u10E7\u10DD\u10D1\u10D8\u10DC\u10D4\u10D1\u10D0"
   }))));
 };
 

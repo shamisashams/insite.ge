@@ -572,7 +572,7 @@
                 <td>გთხოვთ გაითვალისწინოთ რომ ეს კალკულაცია არის მიახლოებით. ფასი და დრო შეიძლება
 შეიცვალოს თქვენი მოთხოვნებიდან გამომდინარე.</td>
                 <td class="total_cost">${{$features['totalPrice']}}</td>
-                <td class="total_time">{{$features['totalStartTime']}}-{{$features['totalEndTime']}}hrs</td>
+                <td class="total_time">{{$features['totalStartTime']}}-{{$features['totalEndTime']}}სთ</td>
             </tr>
         </table>
     </div>

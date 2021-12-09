@@ -56,9 +56,9 @@ const CostTable = ({features, totalPrice, totalStartTime, totalEndTime}) => {
                     <th>დრო</th>
                 </tr>
                 <tr>
-                    <td>გთხოვთ გაითვალისწინოთ რომ ეს კალკულაცია არის მიახლოებით. ფასი და დრო შეიძლება შეიცვალოს თქვენი მოთხოვნებიდან გამომდინარე..</td>
+                    <td>გთხოვთ გაითვალისწინოთ რომ ეს კალკულაცია არის მიახლოებით. ფასი და დრო შეიძლება შეიცვალოს თქვენი მოთხოვნებიდან გამომდინარე.</td>
                     <td className="total_cost">₾{totalPrice}</td>
-                    <td className="total_time">{totalStartTime}-{totalEndTime} hrs</td>
+                    <td className="total_time">{totalStartTime}-{totalEndTime} სთ</td>
                 </tr>
                 </tbody>
             </table>
