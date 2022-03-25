@@ -2972,23 +2972,6 @@ var Footer = function Footer() {
     className: "flex locations"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "map"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Map__WEBPACK_IMPORTED_MODULE_2__.MapRus, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "/images/icons/footer/1.svg",
-    alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u10DE\u10E0\u10D4\u10E1\u10DC\u10D4\u10DC\u10E1\u10D9\u10D0\u10D8\u10D0\u10E1 \u10E1\u10D0\u10DC\u10D0\u10DE\u10D8\u10E0\u10DD N6, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " \u10DB\u10DD\u10E1\u10D9\u10DD\u10D5\u10D8, \u10E0\u10E3\u10E1\u10D4\u10D7\u10D8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "/images/icons/footer/2.svg",
-    alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "+79684683745")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "/images/icons/footer/3.svg",
-    alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "hello@insite.dev"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "map"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Map__WEBPACK_IMPORTED_MODULE_2__.MapGeo, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
@@ -3095,13 +3078,6 @@ var Footer = function Footer() {
     className: " lang flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "English"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/images/flags/en.png",
-    alt: ""
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "https://insite.dev/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "lang flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Russian"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "/images/flags/ru.png",
     alt: ""
   }))))))));
 };
@@ -4444,27 +4420,6 @@ var Contact = function Contact() {
     className: "each_office"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "title op06"
-  }, "\u10DB\u10DD\u10E1\u10D9\u10DD\u10D5\u10D8\u10E1 \u10DD\u10E4\u10D8\u10E1\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: " info flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "images/icons/contact/1.svg",
-    alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "\u10DE\u10E0\u10D4\u10E1\u10DC\u10D4\u10DC\u10E1\u10D9\u10D0\u10D8\u10D0\u10E1 \u10E1\u10D0\u10DC\u10D0\u10DE\u10D8\u10E0\u10DD N6,", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "\u10DB\u10DD\u10E1\u10D9\u10DD\u10D5\u10D8, \u10E0\u10E3\u10E1\u10D4\u10D7\u10D8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: " info flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "images/icons/contact/2.svg",
-    alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "+79684683745")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: " info flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "images/icons/contact/3.svg",
-    alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "hello@insite.dev")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "each_office"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "title op06"
   }, "\u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10D8\u10E1 \u10DD\u10E4\u10D8\u10E1\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -4489,9 +4444,7 @@ var Contact = function Contact() {
     para: "\u10D2\u10D7\u10EE\u10DD\u10D5\u10D7 \u10D3\u10D0\u10E2\u10DD\u10D5\u10DD\u10D7 \u10D7\u10E5\u10D5\u10D4\u10DC\u10D8 \u10E1\u10D0\u10D9\u10DD\u10DC\u10E2\u10D0\u10E5\u10E2\u10DD \u10D8\u10DC\u10E4\u10DD\u10E0\u10DB\u10D0\u10EA\u10D8\u10D0 \u10D3\u10D0 \u10E9\u10D5\u10D4\u10DC \u10D3\u10D0\u10D2\u10D8\u10D9\u10D0\u10D5\u10E8\u10D8\u10E0\u10D3\u10D4\u10D1\u10D8\u10D7 \u10D7\u10E5\u10D5\u10D4\u10DC\u10D7\u10D5\u10D8\u10E1 \u10DB\u10DD\u10E1\u10D0\u10EE\u10D4\u10E0\u10EE\u10D4\u10D1\u10D4\u10DA\u10D8 \u10DB\u10D4\u10D7\u10DD\u10D3\u10D8\u10D7. \u10E9\u10D5\u10D4\u10DC\u10D8 \u10D2\u10E3\u10DC\u10D3\u10D8 \u10E7\u10DD\u10D5\u10D4\u10DA\u10D7\u10D5\u10D8\u10E1 \u10DB\u10D6\u10D0\u10D3\u10D0\u10D0 \u10D3\u10D0\u10D2\u10D4\u10EE\u10DB\u10D0\u10E0\u10DD\u10D7!"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex maps"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h6", null, "\u10D2\u10D5\u10D8\u10DE\u10DD\u10D5\u10D4\u10D7 \u10DB\u10DD\u10E1\u10D9\u10DD\u10D5\u10E8\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "map"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Map__WEBPACK_IMPORTED_MODULE_3__.MapRus, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h6", null, "\u10D2\u10D5\u10D8\u10DE\u10DD\u10D5\u10D4\u10D7 \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10E8\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h6", null, "\u10D2\u10D5\u10D8\u10DE\u10DD\u10D5\u10D4\u10D7 \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10E8\u10D8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "map"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Map__WEBPACK_IMPORTED_MODULE_3__.MapGeo, null))))))));
 };

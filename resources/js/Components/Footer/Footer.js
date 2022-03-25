@@ -15,7 +15,7 @@ const Footer = () => {
                 </Link>
                 <div className="flex footer_content">
                     <div className="flex locations">
-                        <div>
+                        {/* <div>
                             <div className="map">
                                 <MapRus />
                             </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                                 <img src="/images/icons/footer/3.svg" alt="" />
                                 <p>hello@insite.dev</p>
                             </div>
-                        </div>
+                        </div> */}
                         <div>
                             <div className="map">
                                 <MapGeo />
@@ -135,12 +135,12 @@ const Footer = () => {
                                     <img src="/images/flags/en.png" alt="" />
                                 </div>
                             </a>
-                            <a href="https://insite.dev/">
+                            {/* <a href="https://insite.dev/">
                                 <div className="lang flex">
                                     <span>Russian</span>
                                     <img src="/images/flags/ru.png" alt="" />
                                 </div>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>

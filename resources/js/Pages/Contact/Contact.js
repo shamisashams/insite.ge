@@ -31,7 +31,7 @@ const Contact = () => {
                                 para2="ჩვენ ყოველთვის მზად ვართ დაგეხმაროთ."
                             />
                             <div className="offices flex">
-                                <div className="each_office">
+                                {/* <div className="each_office">
                                     <div className="title op06">
                                         მოსკოვის ოფისი
                                     </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                                             <div>hello@insite.dev</div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="each_office">
                                     <div className="title op06">
                                         თბილისის ოფისი
@@ -105,12 +105,12 @@ const Contact = () => {
                             para="გთხოვთ დატოვოთ თქვენი საკონტაქტო ინფორმაცია და ჩვენ დაგიკავშირდებით თქვენთვის მოსახერხებელი მეთოდით. ჩვენი გუნდი ყოველთვის მზადაა დაგეხმაროთ!"
                         />
                         <div className="flex maps">
-                            <div>
+                            {/* <div>
                                 <h6>გვიპოვეთ მოსკოვში</h6>
                                 <div className="map">
                                     <MapRus />
                                 </div>
-                            </div>
+                            </div> */}
                             <div>
                                 <h6>გვიპოვეთ თბილისში</h6>
                                 <div className="map">
