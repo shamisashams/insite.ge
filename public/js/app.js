@@ -5126,7 +5126,7 @@ var CostTable = function CostTable(_ref) {
     }, feature.title)), feature.answer.map(function (item, index) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", {
         key: index
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, item.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, item.start_price, "- ", item.end_price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, item.start_time, "h - ", item.end_time, "h"));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, item.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, item.start_price, "- ", item.end_price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, item.start_time, "\u10E1\u10D7 - ", item.end_time, "\u10E1\u10D7"));
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", {
       className: "comment"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -5143,7 +5143,7 @@ var CostTable = function CostTable(_ref) {
     className: "total_cost"
   }, "\u20BE", totalPrice), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", {
     className: "total_time"
-  }, totalStartTime, "-", totalEndTime, " სთ")))));
+  }, totalStartTime, "-", totalEndTime, " \u10E1\u10D7")))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CostTable);
@@ -7215,7 +7215,7 @@ var Projects = function Projects() {
   }, "\u10E9\u10D5\u10D4\u10DC\u10D8 \u10DE\u10DD\u10E0\u10E2\u10E4\u10DD\u10DA\u10D8\u10DD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "grid"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
-    title: "Insite International",
+    title: "Glass Service",
     imgNum: "9",
     link: "http://glassservice.ge/ge",
     target: "_blank"

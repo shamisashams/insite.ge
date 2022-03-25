@@ -21,7 +21,7 @@ const CostTable = ({features, totalPrice, totalStartTime, totalEndTime}) => {
                                             {item.title}
                                         </td>
                                         <td>{item.start_price}- {item.end_price}</td>
-                                        <td>{item.start_time}h - {item.end_time}h</td>
+                                        <td>{item.start_time}სთ - {item.end_time}სთ</td>
                                     </tr>
                                 ))
 
