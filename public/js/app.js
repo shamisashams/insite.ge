@@ -7168,6 +7168,41 @@ var Projects = function Projects() {
   }, "\u10E9\u10D5\u10D4\u10DC\u10D8 \u10DE\u10DD\u10E0\u10E2\u10E4\u10DD\u10DA\u10D8\u10DD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "grid"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
+    title: "Gabi",
+    imgNum: "29",
+    link: "https://gabi.ge/ge",
+    target: "_blank"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
+    title: "Aria",
+    imgNum: "28",
+    link: "https://ariafarm.ge/ge",
+    target: "_blank"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
+    title: "Window Development",
+    imgNum: "27",
+    link: "https://windowdevelopment.ge/ge",
+    target: "_blank"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
+    title: "Orion Cargo",
+    imgNum: "26",
+    link: "https://orioncargo.ge/en",
+    target: "_blank"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
+    title: "\u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8\u10E1 \u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD",
+    imgNum: "25",
+    link: "https://kutaisissamshobiaro.ge/ge",
+    target: "_blank"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
+    title: "\u10D0\u10D5\u10D4\u10EF\u10D8\u10E1 \u10E1\u10D0\u10DA\u10DD\u10DC\u10D8 777",
+    imgNum: "24",
+    link: "https://avejissaloni777.ge/ge",
+    target: "_blank"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
+    title: "Dollarstore",
+    imgNum: "23",
+    link: "https://bunkeri1.ge/ge",
+    target: "_blank"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
     title: "Glass Service",
     imgNum: "9",
     link: "http://glassservice.ge/ge",

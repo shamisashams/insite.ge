@@ -17,6 +17,41 @@ const Projects = () => {
                     <div className="title main">ჩვენი პორტფოლიო</div>
                     <div className="grid">
                         <ProjectBox
+                            title="Gabi"
+                            imgNum="29"
+                            link="https://gabi.ge/ge" target="_blank"
+                        />
+                        <ProjectBox
+                            title="Aria"
+                            imgNum="28"
+                            link="https://ariafarm.ge/ge" target="_blank"
+                        />
+                        <ProjectBox
+                            title="Window Development"
+                            imgNum="27"
+                            link="https://windowdevelopment.ge/ge" target="_blank"
+                        />
+                        <ProjectBox
+                            title="Orion Cargo"
+                            imgNum="26"
+                            link="https://orioncargo.ge/en" target="_blank"
+                        />
+                        <ProjectBox
+                            title="ქუთაისის სამშობიარო"
+                            imgNum="25"
+                            link="https://kutaisissamshobiaro.ge/ge" target="_blank"
+                        />
+                        <ProjectBox
+                            title="ავეჯის სალონი 777"
+                            imgNum="24"
+                            link="https://avejissaloni777.ge/ge" target="_blank"
+                        />
+                        <ProjectBox
+                            title="Dollarstore"
+                            imgNum="23"
+                            link="https://bunkeri1.ge/ge" target="_blank"
+                        />
+                        <ProjectBox
                             title="Glass Service"
                             imgNum="9"
                             link="http://glassservice.ge/ge" target="_blank"
