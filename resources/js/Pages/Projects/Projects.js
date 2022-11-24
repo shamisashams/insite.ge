@@ -17,6 +17,11 @@ const Projects = () => {
                     <div className="title main">ჩვენი პორტფოლიო</div>
                     <div className="grid">
                         <ProjectBox
+                            title="Ray11"
+                            imgNum="35"
+                            link="https://ray11.com/en" target="_blank"
+                        />
+                        <ProjectBox
                             title="Rayshop"
                             imgNum="30"
                             link="https://rayshop.ge/ge" target="_blank"
@@ -55,6 +60,11 @@ const Projects = () => {
                             title="Orion Cargo"
                             imgNum="26"
                             link="https://orioncargo.ge/en" target="_blank"
+                        />
+                        <ProjectBox
+                            title="Shok Shop"
+                            imgNum="34"
+                            link="https://sshop.ge/ge" target="_blank"
                         />
                         <ProjectBox
                             title="ქუთაისის სამშობიარო"

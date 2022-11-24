@@ -7168,6 +7168,11 @@ var Projects = function Projects() {
   }, "\u10E9\u10D5\u10D4\u10DC\u10D8 \u10DE\u10DD\u10E0\u10E2\u10E4\u10DD\u10DA\u10D8\u10DD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "grid"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
+    title: "Ray11",
+    imgNum: "35",
+    link: "https://ray11.com/en",
+    target: "_blank"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
     title: "Rayshop",
     imgNum: "30",
     link: "https://rayshop.ge/ge",
@@ -7206,6 +7211,11 @@ var Projects = function Projects() {
     title: "Orion Cargo",
     imgNum: "26",
     link: "https://orioncargo.ge/en",
+    target: "_blank"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
+    title: "Shok Shop",
+    imgNum: "34",
+    link: "https://sshop.ge/ge",
     target: "_blank"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProjectBox_ProjectBox__WEBPACK_IMPORTED_MODULE_3__.default, {
     title: "\u10E5\u10E3\u10D7\u10D0\u10D8\u10E1\u10D8\u10E1 \u10E1\u10D0\u10DB\u10E8\u10DD\u10D1\u10D8\u10D0\u10E0\u10DD",
