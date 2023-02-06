@@ -2977,7 +2977,7 @@ var Footer = function Footer() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/images/icons/footer/1.svg",
     alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u10DF\u10D8\u10E3\u10DA\u10D8 \u10E8\u10D0\u10E0\u10E2\u10D0\u10D5\u10D0\u10E1 \u10E5. 40, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10D8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u10EC\u10E7\u10DC\u10D4\u10D7\u10D8\u10E1 \u10D2\u10D6\u10D0\u10E2\u10D9\u10D4\u10EA\u10D8\u10DA\u10D8 41, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10D8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/images/icons/footer/2.svg",
@@ -3448,7 +3448,7 @@ var MapRus = function MapRus() {
 };
 var MapGeo = function MapGeo() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", {
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.5461439191117!2d44.76741831543646!3d41.730311479234196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472e79d397513%3A0xa743c3c5de72322d!2s40%20Zhiuli%20Shartava%20St%2C%20T'bilisi!5e0!3m2!1sen!2sge!4v1638795722636!5m2!1sen!2sge",
+    src: "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1053.0418367723094!2d44.72715219487532!3d41.71076235225929!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDQyJzM5LjIiTiA0NMKwNDMnMzguMSJF!5e0!3m2!1sen!2sge!4v1675678381350!5m2!1sen!2sge",
     style: {
       border: "0"
     },

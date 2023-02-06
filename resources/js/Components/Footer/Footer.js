@@ -42,7 +42,7 @@ const Footer = () => {
                             <div className="flex">
                                 <img src="/images/icons/footer/1.svg" alt="" />
                                 <p>
-                                    ჟიული შარტავას ქ. 40, <br /> თბილისი
+                                    წყნეთის გზატკეცილი 41, <br /> თბილისი
                                 </p>
                             </div>
                             <div className="flex">

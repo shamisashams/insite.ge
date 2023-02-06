@@ -15,7 +15,7 @@ export const MapRus = () => {
 export const MapGeo = () => {
     return (
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.5461439191117!2d44.76741831543646!3d41.730311479234196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472e79d397513%3A0xa743c3c5de72322d!2s40%20Zhiuli%20Shartava%20St%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1638795722636!5m2!1sen!2sge"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1053.0418367723094!2d44.72715219487532!3d41.71076235225929!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDQyJzM5LjIiTiA0NMKwNDMnMzguMSJF!5e0!3m2!1sen!2sge!4v1675678381350!5m2!1sen!2sge"
             style={{ border: "0" }}
             allowFullScreen=""
             loading="lazy"
