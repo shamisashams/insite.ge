@@ -4427,7 +4427,7 @@ var Contact = function Contact() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "images/icons/contact/1.svg",
     alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "\u10DF\u10D8\u10E3\u10DA\u10D8 \u10E8\u10D0\u10E0\u10E2\u10D0\u10D5\u10D0\u10E1 \u10E5. 40, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "\u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10D8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "\u10EC\u10E7\u10DC\u10D4\u10D7\u10D8\u10E1 \u10D2\u10D6\u10D0\u10E2\u10D9\u10D4\u10EA\u10D8\u10DA\u10D8 41, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " \u10D7\u10D1\u10D8\u10DA\u10D8\u10E1\u10D8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: " info flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "images/icons/contact/2.svg",

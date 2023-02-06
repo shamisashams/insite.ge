@@ -74,8 +74,7 @@ const Contact = () => {
                                                 alt=""
                                             />
                                             <div>
-                                                ჟიული შარტავას ქ. 40, <br />
-                                                თბილისი
+                                                წყნეთის გზატკეცილი 41, <br /> თბილისი
                                             </div>
                                         </div>
                                         <div className=" info flex">
